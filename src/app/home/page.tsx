@@ -303,7 +303,7 @@ function HomePage() {
                 data-wow-duration="0.8s"
               >
                 <Link
-                  href="/team"
+                  href="#"
                   className="btn btn-icon btn-primary btn-shadow"
                 >
                   {" "}
