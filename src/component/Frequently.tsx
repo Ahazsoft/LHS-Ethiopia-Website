@@ -8,7 +8,7 @@ import Image from "next/image";
 function Frequently() {
     return (
         <>
-            <section className="content-inner" style={{ backgroundImage: `url(${IMAGES.bg3png.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right bottom', }}>
+            <section className="content-inner  overlay-secondary-dark " style={{ backgroundImage: `url(${IMAGES.bg3png.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right bottom', }}>
                 <div className="container">
                     <div className="row content-wrapper style-5">
                         <div className="col-xxl-7 col-xl-6 col-lg-5 m-b30 align-self-center">
@@ -20,7 +20,7 @@ function Frequently() {
                                 <Accordion className="accordion dz-accordion style-1" defaultActiveKey="0">
                                     {accordiondata.map((data, i) => (
                                         <Accordion.Item eventKey={data.key} key={i} className="wow fadeInUp" data-wow-delay={data.delay} data-wow-duration="0.7s">
-                                            <Accordion.Header>{data.title}</Accordion.Header>
+                                            <Accordion.Header >{data.title}</Accordion.Header>
                                             <Accordion.Body>
                                                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
                                             </Accordion.Body>
@@ -36,7 +36,7 @@ function Frequently() {
                                 </div>
                                 <div className="item1">
                                     <div className="info-widget style-5">
-                                        <div className="widget-media text-primary">
+                                        <div className="widget-media text-golden">
                                             <i className="feather icon-phone-call dz-ring-effect" />
                                         </div>
                                         <div className="widget-content">
@@ -44,7 +44,7 @@ function Frequently() {
                                             <Link href="tel:+11234567890" className="text-secondary">+1 123 456 7890</Link>
                                         </div>
                                     </div>
-                                    <Link href="/appointment" className="btn btn-lg btn-icon btn-primary btn-shadow">
+                                    <Link href="/appointment" className="btn btn-lg btn-icon btn-purple btn-shadow">
                                         <span className="w-100">Appointment</span> <span className="right-icon">
                                             <i className="feather icon-arrow-right" /></span>
                                     </Link>

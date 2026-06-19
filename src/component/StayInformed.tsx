@@ -51,7 +51,7 @@ function StayInformed() {
                                     <div className="dz-card style-2 dz-card-overlay card-sm no-image">
                                         <div className="dz-info">
                                             <div className="post-date">12 Jan 2025</div>
-                                            <h3 className="dz-title"> <Link href="/blog-details">Strategies for Balancing Business Demands with Optimal</Link> </h3>
+                                            <h3 className="dz-title"> <Link href="/blog-details">Why I Chose a Different Path as a Doctor</Link> </h3>
                                             <div className="bottom-info ms-auto">
                                                 <Link href="/blog-details" className="btn btn-square btn-white rounded-circle">
                                                     <i className="feather icon-arrow-up-right" />
