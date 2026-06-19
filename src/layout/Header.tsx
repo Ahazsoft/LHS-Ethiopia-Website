@@ -139,7 +139,7 @@ function Header() {
                                 <div className="extra-cell">
                                     <ul className="header-right">
                                         <li className="nav-item">
-                                            <Link href="/appointment" className="btn  btn-purple"> Appointment </Link>
+                                            <Link href="#" className="btn  btn-purple"> Appointment </Link>
                                         </li>
                                         <li className="nav-item">
                                             <button onClick={() => handleclick(1)} type="button" className="toggle-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#headerSidebar" aria-controls="offcanvasLeft">
