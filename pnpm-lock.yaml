@@ -11,6 +11,9 @@ importers:
       '@emailjs/browser':
         specifier: ^4.4.1
         version: 4.4.1
+      apexcharts:
+        specifier: ^5.15.1
+        version: 5.15.1
       lightgallery:
         specifier: ^2.8.3
         version: 2.9.0
@@ -22,7 +25,7 @@ importers:
         version: 19.2.7
       react-apexcharts:
         specifier: ^1.7.0
-        version: 1.9.0(apexcharts@5.15.0)(react@19.2.7)
+        version: 1.9.0(apexcharts@5.15.1)(react@19.2.7)
       react-bootstrap:
         specifier: ^2.10.10
         version: 2.10.10(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -542,8 +545,8 @@ packages:
   '@types/warning@3.0.4':
     resolution: {integrity: sha512-CqN8MnISMwQbLJXO3doBAV4Yw9hx9/Pyr2rZ78+NfaCnhyRA/nKrpyk6E7mKw17ZOaQdLpK9GiUjrqLzBlN3sg==}
 
-  apexcharts@5.15.0:
-    resolution: {integrity: sha512-ATswoiZi8wynKcwqf0eyE0Is5mBQoDpxZN3PlSVy41OrD+9GMBp2kZQRjyGK+5/j0GFjHkuAd7GKOrt5VMoPrw==}
+  apexcharts@5.15.1:
+    resolution: {integrity: sha512-7sC5bKzBPg48AbgTMhkCVXuReLQj/MHTucaOkb+eAgq/2GQCj/mjFrAn97k7yNySdIQlmxoJs8VEAQUb33cN3A==}
 
   aria-hidden@1.2.6:
     resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
@@ -1342,7 +1345,7 @@ snapshots:
 
   '@types/warning@3.0.4': {}
 
-  apexcharts@5.15.0: {}
+  apexcharts@5.15.1: {}
 
   aria-hidden@1.2.6:
     dependencies:
@@ -1531,9 +1534,9 @@ snapshots:
       object-assign: 4.1.1
       react-is: 16.13.1
 
-  react-apexcharts@1.9.0(apexcharts@5.15.0)(react@19.2.7):
+  react-apexcharts@1.9.0(apexcharts@5.15.1)(react@19.2.7):
     dependencies:
-      apexcharts: 5.15.0
+      apexcharts: 5.15.1
       prop-types: 15.8.1
       react: 19.2.7
 
