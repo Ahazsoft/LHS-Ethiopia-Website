@@ -14,7 +14,7 @@ function WhyChoose() {
                             <Image src={IMAGES.about5} alt="about" />
                         </div>
                         <div className="item1">
-                            <div className="info-widget style-11 bg-primary text-center">
+                            <div className="info-widget style-11 bg-golden text-center">
                                 <span className="content-text text-white">
                                     <span className="counter"><CountUp end={20} duration={5} /></span>+
                                 </span>
@@ -31,12 +31,12 @@ function WhyChoose() {
                         {whychoosedata.map((data, i) => (
                             <div className="col-sm-6" key={i}>
                                 <div className="icon-bx-wraper style-4 text-center text-white wow fadeInUp" data-wow-delay={data.delay} data-wow-duration="0.7s">
-                                    <div className="icon-bx bg-primary">
+                                    <div className="icon-bx bg-golden">
                                         <span className="icon-cell"> <i className="flaticon-check" /> </span>
                                     </div>
                                     <div className="icon-content">
                                         <h3 className="dz-title">{data.title}</h3>
-                                        <p>We offer a wide range of health services to meet all your needs.</p>
+                                        <p>{data.desc}</p>
                                     </div>
                                 </div>
                             </div>

@@ -55,7 +55,7 @@ function RealPatient() {
                                             <Image src={IMAGES.smallavatar5} alt="" />
                                         </div>
                                         <div className="widget-content">
-                                            <h6 className="title">Dr. Natali jackson</h6>
+                                            <h6 className="title">Dr. Samuel Alem</h6>
                                             <ul className="star-list">
                                                 <li><i className="fa fa-star" /></li>
                                                 <li><i className="fa fa-star" /></li>
@@ -94,10 +94,10 @@ function RealPatient() {
                                             <div className="dz-media">
                                                 <div className="media-inner">
                                                     <Image src={data.image} alt="/" />
-                                                    <Link onClick={handleShow} href={"#"} className="video-bx1 video-sm popup-youtube">
+                                                    {/* <Link onClick={handleShow} href={"#"} className="video-bx1 video-sm popup-youtube">
                                                         <div className="video-btn bg-primary"> <i className="fa fa-play" /> </div>
                                                         <span>Watch The Video</span>
-                                                    </Link>
+                                                    </Link> */}
                                                 </div>
                                                 <div className="testimonial-info">
                                                     <h5 className="testimonial-name">{data.name}</h5>

@@ -21,7 +21,7 @@ function ServiceBox() {
                                 </span>
                                 <div className="icon-content">
                                     <h3 className="dz-title">{data.title}</h3>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <p>{data.desc}</p>
                                 </div>
                             </div>
                             <div className="icon-bx-footer">

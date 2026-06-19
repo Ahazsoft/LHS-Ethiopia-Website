@@ -31,9 +31,10 @@ function AppointmentData() {
                         <div className="col-lg-6" data-bottom-top="transform: translateY(100px)" data-top-bottom="transform: translateY(-10px)">
                             <div className="form-wrapper style-1 text-vr-wrapper">
                                 <div className="text-vertical">Appointment Now</div>
-                                <div className="form-body bg-primary background-blend-burn" style={{ backgroundImage: `url(${IMAGES.bg2png.src})`, backgroundSize: 'cover' }}>
+                                <div className="form-body bg-purple background-blend-burn">
+                                {/* <div className="form-body bg-purple background-blend-burn" style={{ backgroundImage: `url(${IMAGES.bg2png.src})`, backgroundSize: 'cover' }}> */}
                                     <div className="title-head">
-                                        <h2 className="form-title m-b0">Make An <span>Appointment</span> <br /> Apply For Treatments</h2>
+                                        <h2 className="form-title m-b0">Make An <span className="text-golden">Appointment</span> <br /> Apply For Treatments</h2>
                                     </div>
                                     <form ref={form} onSubmit={handleSubmit} className="dzForm" method="POST">
                                         <input type="hidden" className="form-control" name="dzToDo" value="Appointment" />

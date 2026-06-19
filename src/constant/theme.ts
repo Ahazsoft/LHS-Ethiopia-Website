@@ -6,11 +6,22 @@ import bg1png from '../../public/assets/images/background/bg1.png'
 import bg2png from '../../public/assets/images/background/bg2.png'
 import bg3png from '../../public/assets/images/background/bg3.png'
 import bg5png from '../../public/assets/images/background/bg5.png'
-import logo from '../../public/assets/images/logo.svg'
+import logo from '../../public/assets/images/logo.png'
 import logo1 from '../../public/assets/images/logo/logo1.png'
 import logo2 from '../../public/assets/images/logo/logo2.png'
 import logo3 from '../../public/assets/images/logo/logo3.png'
-import logowhite from '../../public/assets/images/logo-white.svg'
+import partner1 from '../../public/assets/images/logo/partner/TrustedPartner1.png'
+import partner2 from '../../public/assets/images/logo/partner/TrustedPartner2.png'
+import partner3 from '../../public/assets/images/logo/partner/TrustedPartner3.png'
+import partner4 from '../../public/assets/images/logo/partner/TrustedPartner4.png'
+import partner5 from '../../public/assets/images/logo/partner/TrustedPartner5.png'
+import partner6 from '../../public/assets/images/logo/partner/TrustedPartner6.png'
+import partner7 from '../../public/assets/images/logo/partner/TrustedPartner7.png'
+import partner8 from '../../public/assets/images/logo/partner/TrustedPartner8.png'
+import partner9 from '../../public/assets/images/logo/partner/TrustedPartner9.png'
+import partner10 from '../../public/assets/images/logo/partner/TrustedPartner10.png'
+import partner11 from '../../public/assets/images/logo/partner/TrustedPartner11.png'
+import logowhite from '../../public/assets/images/logo-white.png'
 import logosmall1 from '../../public/assets/images/logo/small/logo1.png'
 import logosmall2 from '../../public/assets/images/logo/small/logo2.png'
 import logosmall3 from '../../public/assets/images/logo/small/logo3.png'
@@ -22,25 +33,25 @@ import logomiddle2 from '../../public/assets/images/logo/middle/logo2.png'
 import logomiddle3 from '../../public/assets/images/logo/middle/logo3.png'
 import logomiddle4 from '../../public/assets/images/logo/middle/logo4.png'
 import google from '../../public/assets/images/google.svg'
-import smallavatar1 from '../../public/assets/images/avatar/small/avatar1.webp';
-import smallavatar2 from '../../public/assets/images/avatar/small/avatar2.webp';
-import smallavatar3 from '../../public/assets/images/avatar/small/avatar3.webp';
-import smallavatar4 from '../../public/assets/images/avatar/small/avatar4.webp';
-import smallavatar5 from '../../public/assets/images/avatar/small/avatar5.webp';
+import smallavatar1 from '../../public/assets/images/avatar/small/Rectangle1.png';
+import smallavatar2 from '../../public/assets/images/avatar/small/Rectangle2.png';
+import smallavatar3 from '../../public/assets/images/avatar/small/Rectangle3.png';
+import smallavatar4 from '../../public/assets/images/avatar/small/Rectangle4.png';
+import smallavatar5 from '../../public/assets/images/avatar/small/Rectangle41.png';
 import smallavatar6 from '../../public/assets/images/avatar/small/avatar6.webp';
-import herobannerbg1 from '../../public/assets/images/hero-banner/bg1.webp'
-import herobanner1 from '../../public/assets/images/hero-banner/LandingPageGuy.png'
-import about1 from '../../public/assets/images/about/img1.webp'
-import about2 from '../../public/assets/images/about/img2.webp'
-import about3 from '../../public/assets/images/about/img3.webp'
-import about4 from '../../public/assets/images/about/img4.webp'
-import about5 from '../../public/assets/images/about/img5.webp'
+import herobannerbg1 from '../../public/assets/images/hero-banner/bg1.webp';
+import herobanner1 from '../../public/assets/images/hero-banner/LandingPageGuy.png';
+import about1 from '../../public/assets/images/about/bg1.png';
+import about2 from '../../public/assets/images/about/bg2.png';
+import about3 from '../../public/assets/images/about/Doctor3.png';
+import about4 from '../../public/assets/images/about/about4.png'
+import about5 from '../../public/assets/images/about/Doctor.png'
 import about6 from '../../public/assets/images/about/img6.webp'
 import about7 from '../../public/assets/images/about/img7.webp'
 import about8 from '../../public/assets/images/about/img8.webp'
-import about1png from '../../public/assets/images/about/img1.png'
-import about2png from '../../public/assets/images/about/img2.png'
-import about3png from '../../public/assets/images/about/img3.png'
+import about1png from '../../public/assets/images/about/Doctor3.png'
+import about2png from '../../public/assets/images/about/Doctor2.png'
+import about3png from '../../public/assets/images/about/about3.png'
 import blogsmall1 from '../../public/assets/images/blog/small/img1.webp'
 import blogsmall2 from '../../public/assets/images/blog/small/img2.webp'
 import blogsmall3 from '../../public/assets/images/blog/small/img3.webp'
@@ -53,15 +64,15 @@ import bloggrid6 from '../../public/assets/images/blog/grid/img6.webp'
 import blog1 from '../../public/assets/images/blog/img1.webp'
 import blogmiddle1 from '../../public/assets/images/blog/middle/img1.webp'
 import blogmiddle2 from '../../public/assets/images/blog/middle/img2.webp'
-import blogoverlay1 from '../../public/assets/images/blog/overlay/img1.webp'
-import blogoverlaylarge1 from '../../public/assets//images/blog/overlay/large/img1.webp'
+import blogoverlay1 from '../../public/assets/images/blog/overlay/blog1.png'
+import blogoverlaylarge1 from '../../public/assets//images/blog/overlay/large/blog2.png'
 import blogoverlaylarge2 from '../../public/assets//images/blog/overlay/large/img2.webp'
 import blogoverlaylarge3 from '../../public/assets//images/blog/overlay/large/img3.webp'
 import blogoverlaylarge4 from '../../public/assets//images/blog/overlay/large/img4.webp'
 import blogoverlaylarge5 from '../../public/assets//images/blog/overlay/large/img5.webp'
 import blogoverlaylarge6 from '../../public/assets//images/blog/overlay/large/img6.webp'
-import blogoverlaysmall1 from '../../public/assets//images/blog/overlay/small/img1.webp'
-import testimonial1 from '../../public/assets/images/testimonial/img1.webp'
+import blogoverlaysmall1 from '../../public/assets//images/blog/overlay/small/blog3.png'
+import testimonial1 from '../../public/assets/images/testimonial/Testimonial1.png'
 import testimonial2 from '../../public/assets/images/testimonial/img2.webp'
 import testimonial3 from '../../public/assets/images/testimonial/img3.webp'
 import testimonial4 from '../../public/assets/images/testimonial/img4.webp'
@@ -125,11 +136,22 @@ export const IMAGES = {
     bg3png: bg3png,
     bg5png: bg5png,
     logo: logo,
-    logowhite: logowhite,
-    google: google,
     logo1: logo1,
     logo2: logo2,
     logo3: logo3,
+    logowhite: logowhite,
+    google: google,
+    partner1: partner1,
+    partner2: partner2,
+    partner3: partner3,
+    partner4: partner4,
+    partner5: partner5,
+    partner6: partner6,
+    partner7: partner7,
+    partner8: partner8,
+    partner9: partner9,
+    partner10: partner10,
+    partner11: partner11,
     smallavatar1: smallavatar1,
     smallavatar2: smallavatar2,
     smallavatar3: smallavatar3,

@@ -14,7 +14,7 @@ import RealPatient from "@/component/RealPatient";
 import Howitwork from "@/component/Howitwork";
 import MeetDr from "@/component/MeetDr";
 import Frequently from "@/component/Frequently";
-import Awards from "@/component/Awards";
+import Partners from "@/component/Partners";
 import StayInformed from "@/component/StayInformed";
 import MapWraper from "@/component/MapWraper";
 
@@ -217,7 +217,7 @@ function HomePage() {
                     </div>
                     <div className="widget-content">
                       <h6 className="title">Have a Question?</h6>
-                      <Link href="mailto:info@example.com">
+                      <Link href="mailto:info@lhsethiopia.com">
                         info@example.com
                       </Link>
                     </div>
@@ -227,7 +227,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-        sfas
+
         <section
           className="content-inner"
           style={{
@@ -273,7 +273,7 @@ function HomePage() {
         </section>
         <AppointmentData />
         <section
-          className="content-inner overlay-secondary-dark background-blend-luminosity bg-img-fix overflow-hidden"
+          className="content-inner overlay-custom-purple background-blend-luminosity bg-img-fix overflow-hidden"
           style={{
             backgroundImage: `URL(${IMAGES.bg1})`,
             backgroundRepeat: "no-repeat",
@@ -318,22 +318,22 @@ function HomePage() {
           </div>
         </section>
         <section
-          className="clearfix p-t50 overlay-secondary-dark bg-primary background-blend-multiply overflow-hidden"
-          style={{
-            backgroundImage: `url(${IMAGES.bg3.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right center",
-            backgroundSize: "cover",
-          }}
+          className="clearfix p-t50  bg-purple-primary background-blend-multiply overflow-hidden"
+          // style={{
+          // backgroundImage: `url(${IMAGES.bg3.src})`,
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundPosition: "right center",
+          //   backgroundSize: "cover",
+          // }}
         >
           <RealPatient />
         </section>
         <Howitwork />
-        <MeetDr />
+        {/* <MeetDr /> */}
         <Frequently />
-        <Awards />
+        <Partners />
         <StayInformed />
-        <MapWraper />
+        {/* <MapWraper /> */}
       </main>
       <Footer />
     </>
