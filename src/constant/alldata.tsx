@@ -54,7 +54,7 @@ export type HeaderItem = {
 export const headerdata: HeaderItem[] = [
   {
     title: "Home",
-    to: "#",
+    to: "/",
   },
   {
     title: "About Us",
@@ -100,8 +100,8 @@ export const footerdata1 = [
     icon: <i className="feather icon-phone" />,
     title: "Call Us",
     paragraph: (
-      <Link href="tel:+11234567890" className=" text-white">
-        +1 123 456 7890
+      <Link href="tel:+251943104334" className=" text-white">
+        +251943104334
       </Link>
     ),
   },
@@ -110,8 +110,8 @@ export const footerdata1 = [
     icon: <i className="feather icon-mail" />,
     title: "Send us a Mail",
     paragraph: (
-      <Link href="mailto:info@example.com" className="text-white">
-        info@example.com
+      <Link href="mailto:info@lhsethiopia.com" className="text-white">
+        info@lhsethiopia.com
       </Link>
     ),
   },
@@ -130,11 +130,11 @@ export const footerdata2 = [
     span3: "Travel Arrangement",
     span4: "Treatment coordination",
     span5: "Post-treatment support",
-    link1: "/service-detail",
-    link2: "/service-detail",
-    link3: "/service-detail",
-    link4: "/service-detail",
-    link5: "/service-detail",
+    link1: "#",
+    link2: "#",
+    link3: "#",
+    link4: "#",
+    link5: "#",
     delay: "0.4s",
   },
   {
@@ -146,8 +146,8 @@ export const footerdata2 = [
     span5: "Our Sitemap",
     link1: "#",
     link2: "#",
-    link3: "/contact-us",
-    link4: "/blog-grid",
+    link3: "#",
+    link4: "#",
     link5: "#",
     delay: "0.6s",
   },
@@ -172,11 +172,11 @@ export const footerdata2 = [
     span3: "Our Team",
     span4: "Appointments",
     span5: "Contact Us",
-    link1: "/about-us",
-    link2: "/services",
-    link3: "/team",
+    link1: "#",
+    link2: "#",
+    link3: "#",
     link4: "/appointment",
-    link5: "/contact-us",
+    link5: "#",
     delay: "0.8s",
   },
 ];
@@ -307,63 +307,62 @@ export const empolydata = [
     delay: "0.2s",
     image: IMAGES.team1,
     title: "Dr. Yabets Taye",
-    position: "Cardiac Surgery",
+    position: "Deputy Managing Director",
   },
   {
     id: 2,
     delay: "0.4s",
     image: IMAGES.team2,
     title: "Dr. Yonathan Gary",
-    position: "Pediatric Clinic",
+    position: "Managing Director",
   },
-//   {
-//     id: 3,
-//     delay: "0.6s",
-//     image: IMAGES.team3,
-//     title: "Rihana Roy",
-//     position: "Gynecology",
-//   },
-//   {
-//     id: 5,
-//     delay: "1.0s",
-//     image: IMAGES.team1,
-//     title: "Santiago Rivas",
-//     position: "Cardiac Surgery",
-//   },
-//   {
-//     id: 6,
-//     delay: "1.2s",
-//     image: IMAGES.team2,
-//     title: "Danial Frankie",
-//     position: "Pediatric Clinic",
-//   },
-//   {
-//     id: 4,
-//     delay: "0.8s",
-//     image: IMAGES.team4,
-//     title: "Esteban Serrano",
-//     position: "Neurology",
-//   },
-//   {
-//     id: 7,
-//     delay: "1.4s",
-//     image: IMAGES.team3,
-//     title: "Roman Petrov",
-//     position: "Gynecology",
-//   },
-//   {
-//     id: 8,
-//     delay: "1.6s",
-//     image: IMAGES.team4,
-//     title: "Kenneth Fong",
-//     position: "Neurology",
-//   },
+  // {
+  //   id: 3,
+  //   delay: "0.6s",
+  //   image: IMAGES.team3,
+  //   title: "Rihana Roy",
+  //   position: "Gynecology",
+  // },
+  // {
+  //   id: 5,
+  //   delay: "1.0s",
+  //   image: IMAGES.team1,
+  //   title: "Santiago Rivas",
+  //   position: "Cardiac Surgery",
+  // },
+  // {
+  //   id: 6,
+  //   delay: "1.2s",
+  //   image: IMAGES.team2,
+  //   title: "Danial Frankie",
+  //   position: "Pediatric Clinic",
+  // },
+  // {
+  //   id: 4,
+  //   delay: "0.8s",
+  //   image: IMAGES.team4,
+  //   title: "Esteban Serrano",
+  //   position: "Neurology",
+  // },
+  // {
+  //   id: 7,
+  //   delay: "1.4s",
+  //   image: IMAGES.team3,
+  //   title: "Roman Petrov",
+  //   position: "Gynecology",
+  // },
+  // {
+  //   id: 8,
+  //   delay: "1.6s",
+  //   image: IMAGES.team4,
+  //   title: "Kenneth Fong",
+  //   position: "Neurology",
+  // },
 ];
 // component
 // alllocation
 export const locationdata = [
-  { delay: "0.2s", title: "United State" },
-  { delay: "0.4s", title: "Canada" },
+  { delay: "0.2s", title: "Addis Ababa" },
 ];
 // awards
 export const awardswiperdata = [
@@ -518,7 +517,7 @@ export const mapdata = [
     title: "Call Us",
     para: (
       <p>
-        <Link href="tel:+11234567890">+1 123 456 7890</Link>
+        <Link href="tel:+251943104334">+251943104334</Link>
       </p>
     ),
   },
@@ -529,7 +528,7 @@ export const mapdata = [
     title: "Send us a Mail",
     para: (
       <p>
-        <Link href="mailto:info@example.com">email@domain.com</Link>
+        <Link href="mailto:info@lhsethiopia.com">info@lhsethiopia.com</Link>
       </p>
     ),
   },

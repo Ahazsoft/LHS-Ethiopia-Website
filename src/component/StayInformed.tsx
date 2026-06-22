@@ -11,7 +11,7 @@ function StayInformed() {
                             <h2 className="title m-b0">Stay Informed with <br /> Our Latest Health Blogs</h2>
                         </div>
                         <div className="col-lg-5 col-md-4 text-md-end d-none d-md-block wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
-                            <Link href="/blog-grid" className="btn btn-icon btn-primary btn-shadow"> View All
+                            <Link href="#" className="btn btn-icon btn-primary btn-shadow"> View All
                                 <span className="right-icon"><i className="feather icon-arrow-right" /></span>
                             </Link>
                         </div>
@@ -22,10 +22,11 @@ function StayInformed() {
                                 <div className="dz-info">
                                     <div className="content-half">
                                         <div className="post-date">12 Jan 2025</div>
-                                        <h3 className="dz-title"> <Link href="/blog-details">The Art of Managing Business and Patient Care</Link> </h3>
+                                        <h3 className="dz-title"> <Link href="#">The Art of Managing Business and Patient Care</Link> </h3>
                                     </div>
                                     <div className="bottom-info">
-                                        <Link href="/blog-details" className="btn btn-icon btn-lg btn-primary btn-shadow"> Read More
+                                        <Link href="#" className="btn btn-icon btn-lg btn-primary btn-shadow"> Read More
+                                        {/* <Link href="/blog-details" className="btn btn-icon btn-lg btn-primary btn-shadow"> Read More */}
                                             <span className="right-icon"><i className="feather icon-arrow-right" /></span>
                                         </Link>
                                     </div>
@@ -37,8 +38,8 @@ function StayInformed() {
                                 <div className="dz-info">
                                     <div className="post-date">12 Jan 2025</div>
                                     <div className="bottom-info">
-                                        <h3 className="dz-title"> <Link href="/blog-details">The Art of Managing Business and Patient Care</Link> </h3>
-                                        <Link href="/blog-details" className="btn btn-square btn-white rounded-circle">
+                                        <h3 className="dz-title"> <Link href="#">The Art of Managing Business and Patient Care</Link> </h3>
+                                        <Link href="#" className="btn btn-square btn-white rounded-circle">
                                             <i className="feather icon-arrow-up-right" />
                                         </Link>
                                     </div>
@@ -51,9 +52,9 @@ function StayInformed() {
                                     <div className="dz-card style-2 dz-card-overlay card-sm no-image">
                                         <div className="dz-info">
                                             <div className="post-date">12 Jan 2025</div>
-                                            <h3 className="dz-title"> <Link href="/blog-details">Why I Chose a Different Path as a Doctor</Link> </h3>
+                                            <h3 className="dz-title"> <Link href="#">Why I Chose a Different Path as a Doctor</Link> </h3>
                                             <div className="bottom-info ms-auto">
-                                                <Link href="/blog-details" className="btn btn-square btn-white rounded-circle">
+                                                <Link href="#" className="btn btn-square btn-white rounded-circle">
                                                     <i className="feather icon-arrow-up-right" />
                                                 </Link>
                                             </div>
@@ -65,8 +66,8 @@ function StayInformed() {
                                         <div className="dz-info">
                                             <div className="post-date">12 Jan 2025</div>
                                             <div className="bottom-info">
-                                                <h3 className="dz-title"> <Link href="/blog-details">Effective Healthcare Tips</Link> </h3>
-                                                <Link href="/blog-details" className="btn btn-square btn-white rounded-circle">
+                                                <h3 className="dz-title"> <Link href="#">Effective Healthcare Tips</Link> </h3>
+                                                <Link href="#" className="btn btn-square btn-white rounded-circle">
                                                     <i className="feather icon-arrow-up-right" />
                                                 </Link>
                                             </div>
