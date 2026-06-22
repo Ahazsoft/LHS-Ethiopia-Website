@@ -185,7 +185,7 @@ function Footer() {
               <p className="m-0 text-sm">
                 © {new Date().getFullYear()} Designed By{" "}
                 <a
-                  href="https://ahazsoftware.com"
+                  href="https://ahaz.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:underline font-medium"

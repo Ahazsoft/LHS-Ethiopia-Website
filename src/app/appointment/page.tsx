@@ -14,7 +14,7 @@ const Appointment = () =>{
             <main className="page-content">
                 <PageBanner title="Appointment" bnrimage={IMAGES.bnr2.src} />                
                 <AppointmentData />
-                <section className="content-inner overlay-secondary-dark background-blend-luminosity bg-img-fix overflow-hidden" style={{ backgroundImage: `URL(${IMAGES.bg1.src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'right center' }}>
+                <section className="content-inner bg-purple-primary background-blend-luminosity bg-img-fix overflow-hidden" >
                     <div className="container">
                         <Whychoose />
                     </div>

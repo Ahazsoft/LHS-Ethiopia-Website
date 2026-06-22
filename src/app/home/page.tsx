@@ -76,7 +76,7 @@ function HomePage() {
                         </span>
                       </Link>
                       <Link
-                        href="/contact-us"
+                        href="#"
                         className="btn btn-lg btn-icon btn-secondary wow fadeInUp"
                         data-wow-delay="0.6s"
                         data-wow-duration="0.8s"
@@ -156,7 +156,7 @@ function HomePage() {
                           <div className="widget-content">
                             <h6 className="mb-0">Successfully diagnosis</h6>
                             <Link
-                              href="/team-detail"
+                              href="#"
                               className="btn btn-square btn-outline-purple rounded-circle"
                             >
                               <i className="feather icon-arrow-up-right text-[#6f42c1]" />
@@ -213,12 +213,12 @@ function HomePage() {
                 >
                   <div className="info-widget style-4 move-4">
                     <div className="widget-media">
-                      <Image src={IMAGES.smallavatar6} alt="" />
+                      <Image src={IMAGES.smallavatar2} alt="" />
                     </div>
                     <div className="widget-content">
                       <h6 className="title">Have a Question?</h6>
                       <Link href="mailto:info@lhsethiopia.com">
-                        info@example.com
+                        info@lhsethiopia.com
                       </Link>
                     </div>
                   </div>
@@ -259,7 +259,7 @@ function HomePage() {
                 data-wow-delay="0.4s"
                 data-wow-duration="0.8s"
               >
-                <Link href="/services" className="btn btn-icon btn-secondary">
+                <Link href="#" className="btn btn-icon btn-secondary">
                   {" "}
                   View All
                   <span className="right-icon">

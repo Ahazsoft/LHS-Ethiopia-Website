@@ -76,7 +76,7 @@ function AppointmentData() {
                                             </div>
                                             <div className="col-sm-12 m-b30">
                                                 <div className="form-floating floating-underline input-light">
-                                                    <textarea name="dzMessage" className="form-control" id="inputMessage" rows={6} placeholder="Select Service"></textarea>
+                                                    <textarea name="dzMessage" className="form-control" id="inputMessage" rows={5} placeholder="Select Service"></textarea>
                                                     <label htmlFor="inputMessage">Message</label>
                                                 </div>
                                             </div>
