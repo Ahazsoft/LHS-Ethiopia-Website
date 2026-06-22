@@ -308,6 +308,7 @@ export const empolydata = [
     image: IMAGES.team1,
     title: "Dr. Yabets Taye",
     position: "Deputy Managing Director",
+    linkedin:"https://www.linkedin.com/in/yabets-t-bifitu-md-97a59387"
   },
   {
     id: 2,
@@ -315,6 +316,7 @@ export const empolydata = [
     image: IMAGES.team2,
     title: "Dr. Yonathan Gary",
     position: "Managing Director",
+    linkedin:"http://linkedin.com/in/dr-yonathan-gary"
   },
   // {
   //   id: 3,
