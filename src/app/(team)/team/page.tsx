@@ -21,7 +21,7 @@ function Team() {
                     <div className="container">
                         <div className="row">
                             {empolydata.map((item, i) => (
-                                <div className="col-xl-3 col-sm-6 wow fadeInUp" data-wow-delay={item.delay} data-wow-duration="0.8s" key={i}>
+                                <div className="col-xl-6 col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay={item.delay} data-wow-duration="0.8s" key={i}>
                                     <div className={active === item.id ? "dz-team style-1 active box-hover" : "dz-team style-1 box-hover"} 
                                         onMouseEnter={() => setActive(item.id)}
                                     >
@@ -53,7 +53,7 @@ function Team() {
                         </div>
                     </div>
                 </section>
-                <MeetDr />
+               {/* <MeetDr />*/}
                 <Frequently />
             </main>
             <Footer />            

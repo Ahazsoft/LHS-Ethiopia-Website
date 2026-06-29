@@ -26,7 +26,7 @@ function ServiceBox() {
                             </div>
                             <div className="icon-bx-footer">
                                 <span className="text-badge"><i className="fa fa-circle text-primary" /> 25+ Doctor</span>
-                                <Link href="#" className="btn btn-square btn-primary rounded-circle">
+                                <Link href="/service-detail" className="btn btn-square btn-primary rounded-circle">
                                     <i className="feather icon-arrow-up-right" />
                                 </Link>
                             </div>

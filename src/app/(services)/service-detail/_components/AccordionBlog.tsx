@@ -9,7 +9,7 @@ const AccordionBlog = () =>{
                 <Accordion.Item eventKey={data.key} key={i} className="wow fadeInUp" data-wow-delay={data.delay} data-wow-duration="0.7s">
                     <Accordion.Header>{data.title}</Accordion.Header>
                     <Accordion.Body>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        {data.answer}
                     </Accordion.Body>
                 </Accordion.Item>
             ))}

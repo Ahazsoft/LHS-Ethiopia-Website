@@ -130,11 +130,11 @@ export const footerdata2 = [
     span3: "Travel Arrangement",
     span4: "Treatment coordination",
     span5: "Post-treatment support",
-    link1: "#",
-    link2: "#",
-    link3: "#",
-    link4: "#",
-    link5: "#",
+    link1: "/service-detail/consultation",
+    link2: "/service-detail/medical-escort",
+    link3: "/service-detail/travel-arrangement",
+    link4: "/service-detail/treatment-coordination",
+    link5: "/service-detail/post-treatment-support",
     delay: "0.4s",
   },
   {
@@ -172,11 +172,11 @@ export const footerdata2 = [
     span3: "Our Team",
     span4: "Appointments",
     span5: "Contact Us",
-    link1: "#",
-    link2: "#",
-    link3: "#",
+    link1: "/about-us",
+    link2: "/services",
+    link3: "/team",
     link4: "/appointment",
-    link5: "#",
+    link5: "/contact-us",
     delay: "0.8s",
   },
 ];
@@ -186,16 +186,16 @@ export const testidata = [
   {
     treat: "Optimal Treatment",
     delay: "0.2s",
-    title: "Kenneth Fong",
+    title: "Yeshitela Admas",
     position: "Patient",
-    image: IMAGES.testimonial2,
+    image: IMAGES.testimonial1,
   },
   {
     treat: "Best Treatment",
     delay: "0.4s",
     title: "Danial Frankie",
     position: "Patient",
-    image: IMAGES.testimonial3,
+    image: IMAGES.testimonial2,
   },
   {
     treat: "Recommended Care",
@@ -291,15 +291,13 @@ export const blogdata2 = [
 ];
 // servicedetails
 export const servicedetails = [
-  { columnstand: "active", title: "Angioplasty" },
-  { title: "Cardiology" },
-  { title: "Dental" },
-  { title: "Endocrinology" },
-  { title: "Eye Care" },
-  { title: "Neurology" },
-  { title: "Orthopedics" },
-  { title: "RMI" },
+  { columnstand: "active", title: "Consultation", link: "/service-detail/consultation" },
+  { title: "Medical Escort", link: "/service-detail/medical-escort" },
+  { title: "Travel Arrangement", link: "/service-detail/travel-arrangement" },
+  { title: "Treatment Coordination", link: "/service-detail/treatment-coordination" },
+  { title: "Post-Treatment Support", link: "/service-detail/post-treatment-support" },
 ];
+
 // teamdetail
 export const empolydata = [
   {
@@ -701,47 +699,60 @@ export const serviceboxdata = [
   {
     id: 1,
     delay: "0.1s",
-    title: "Consultation and Assessment",
+    slug: "consultation",
+    title: "Consultation",
     svg1: SVGICONS.iconcell1,
     svg2: SVGICONS.iconbg1,
     desc: "Personalized health assessments and recommendations for medical facilities",
+    fullDesc: "At Lighthouse Healthcare Solutions, we begin every patient journey with a thorough consultation and medical assessment. Our clinician-led team reviews your medical history, current condition, and treatment goals to recommend the most suitable healthcare destination — whether Turkey, Thailand, or India.",
+    steps: ["Medical History Review", "Specialist Recommendation", "Cost Estimation", "Destination Selection"],
   },
   {
     id: 2,
     delay: "0.2s",
-    title: "Commercial Medical Escort",
+    slug: "medical-escort",
+    title: "Medical Escort",
     svg1: SVGICONS.iconcell2,
     svg2: SVGICONS.iconbg2,
     desc: "Assistance with flights, visas, and insurance.",
+    fullDesc: "Our clinician-led team accompanies you throughout your entire medical journey abroad. From departure to return, a qualified doctor travels with you ensuring your safety, comfort, and continuity of care at every step.",
+    steps: ["Flight Booking", "Visa Assistance", "Airport Transfer", "Hospital Accompaniment"],
   },
   {
     id: 3,
     delay: "0.3s",
-    title: "Travel Arrangement and Follow-Up",
+    slug: "travel-arrangement",
+    title: "Travel Arrangement",
     svg1: SVGICONS.iconcell3,
     svg2: SVGICONS.iconbg3,
     desc: "Comfortable lodging options near your treatment center.",
+    fullDesc: "We handle all your travel logistics so you can focus entirely on your health. From booking flights and accommodation to arranging local transportation near your treatment center, LHS ensures a smooth and stress-free experience.",
+    steps: ["Flight Booking", "Hotel Accommodation", "Local Transportation", "Post-Travel Follow-Up"],
   },
   {
     id: 4,
     delay: "0.4s",
+    slug: "treatment-coordination",
     title: "Treatment Coordination",
     svg1: SVGICONS.iconcell4,
     svg2: SVGICONS.iconbg4,
     desc: "Scheduling appointments and ensuring continuous communication with healthcare providers.",
+    fullDesc: "We coordinate directly with hospitals and specialists abroad to schedule your appointments, share medical records, and ensure seamless communication between you and your healthcare providers throughout your treatment.",
+    steps: ["Hospital Selection", "Appointment Scheduling", "Medical Records Transfer", "Doctor Communication"],
   },
   {
     id: 5,
     delay: "0.5s",
+    slug: "post-treatment-support",
     title: "Post-Treatment Support",
     svg1: SVGICONS.iconcell5,
     svg2: SVGICONS.iconbg5,
     desc: "Follow-up care and access to rehabilitation services.",
+    fullDesc: "Our support does not end when you return home. LHS provides continuous post-treatment follow-up, connects you with rehabilitation services, and ensures your recovery is on track with regular check-ins from our medical team.",
+    steps: ["Recovery Monitoring", "Rehabilitation Access", "Medication Guidance", "Regular Check-ins"],
   },
-  // { id: 6, delay: '0.6s', title: 'Neurology', svg1: SVGICONS.iconcell6, svg2: SVGICONS.iconbg6, },
-  // { id: 7, delay: '0.7s', title: 'Orthopedics', svg1: SVGICONS.iconcell7, svg2: SVGICONS.iconbg7, },
-  // { id: 8, delay: '0.8s', title: 'RMI', svg1: SVGICONS.iconcell8, svg2: SVGICONS.iconbg8, },
-];
+]
+
 // sidebar
 export const tagdata = [
   { title: "Acupressure", num: "(10)" },

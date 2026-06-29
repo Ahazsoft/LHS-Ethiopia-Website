@@ -3,17 +3,30 @@ import { IMAGES } from "@/constant/theme";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import PageBanner from "@/component/PageBanner";
-import { servicedetails, worldclasslistdata } from "@/constant/alldata";
+import { serviceboxdata } from "@/constant/alldata";
 import Image from "next/image";
-import AccordionBlog from "./_components/AccordionBlog";
-import SurgeryBlog from "./_components/SurgeryBlog";
 
-function ServiceDetail() {
+async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const service = serviceboxdata.find((s) => s.slug === slug);
+
+    if (!service) {
+        return (
+            <>
+                <Header />
+                <main className="page-content">
+                    <PageBanner title="Service Not Found" bnrimage={IMAGES.bnr2.src} />
+                </main>
+                <Footer />
+            </>
+        );
+    }
+
     return (
         <>
             <Header />
             <main className="page-content">
-                <PageBanner title="Service Detail" bnrimage={IMAGES.bnr2.src} />
+                <PageBanner title={service.title} bnrimage={IMAGES.bnr2.src} />
                 <section className="content-inner service-single">
                     <div className="container">
                         <div className="row">
@@ -22,24 +35,16 @@ function ServiceDetail() {
                                     <Image src={IMAGES.bloggrid2} alt="" className="object-fit-cover" />
                                 </div>
                                 <div className="content-item wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.7s">
-                                    <h2>Angioplasty</h2>
-                                   <p>Angioplasty is a minimally invasive procedure used to widen narrowed or blocked coronary arteries, restoring healthy blood flow to the heart. It is often performed during a heart attack or to relieve persistent chest pain caused by coronary artery disease.</p>
-                                   <p>During the procedure, a thin, flexible tube called a catheter is guided through a blood vessel—usually in the groin or wrist—to the site of the blockage. A tiny balloon at the tip is then gently inflated to compress the plaque against the artery wall. In most cases, a small mesh tube called a stent is placed to keep the artery open long term. Recovery is typically much faster than open-heart surgery, and many patients can return to normal activities within a week, often with significantly improved quality of life.</p> </div>
+                                    <h2>{service.title}</h2>
+                                    <p>{service.fullDesc}</p>
+                                </div>
                                 <div className="content-item wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.7s">
-                                    <h3>Steps in Angioplasty</h3>
+                                    <h3>What We Do</h3>
                                     <ul className="list-check text-secondary grid-2 m-b30">
-                                        {worldclasslistdata.map((item, i) => (
-                                            <li key={i}>{item.title}</li>
+                                        {service.steps.map((step, i) => (
+                                            <li key={i}>{step}</li>
                                         ))}
                                     </ul>
-                                </div>
-                               {/*<div className="content-item wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.7s">
-                                    <h3>Available Doctors Under Surgery</h3>
-                                    <SurgeryBlog />
-                                </div>*/} 
-                                <div className="content-item wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.7s">
-                                    <h3>Frequently asked questions</h3>
-                                   <AccordionBlog />
                                 </div>
                             </div>
                             <div className="col-lg-4 m-b30">
@@ -49,25 +54,27 @@ function ServiceDetail() {
                                             <h4 className="title">All Services</h4>
                                         </div>
                                         <ul>
-                                            {servicedetails.map((item, i) => (
-                                                <li key={i} className={item.columnstand}><Link href={item.link || "#"}>{item.title}</Link></li>
+                                            {serviceboxdata.map((item, i) => (
+                                                <li key={i} className={item.slug === slug ? "active" : ""}>
+                                                    <Link href={`/service-detail/${item.slug}`}>{item.title}</Link>
+                                                </li>
                                             ))}
                                         </ul>
                                     </div>
-                                    <div className="widget_contact wow fadeInUp" 
+                                    <div className="widget_contact wow fadeInUp"
                                         style={{ backgroundImage: `url(${IMAGES.bg3png.src})` }} data-wow-delay="0.4s" data-wow-duration="0.7s"
                                     >
                                         <div className="widget-content">
-                                            <Image src={IMAGES.question} width="80" alt="" />
+                                            <Image src={IMAGES.question} width={80} height={80} alt="" />
                                             <h4 className="title">Do you need any help?</h4>
                                             <div className="phone-number">
-                                                <Link href="tel:+251943104334">+251 943 104 334</Link>
+                                                <Link href="tel:+251943104334">+251943104334</Link>
                                             </div>
                                             <div className="email">
-                                                <Link href="mailto:info@support.com">info@support.com</Link>
+                                                <Link href="mailto:info@lhsethiopia.com">info@lhsethiopia.com</Link>
                                             </div>
                                             <div className="link-btn">
-                                                <Link href="#" scroll={false} className="btn btn-lg btn-icon btn-white hover-secondary btn-shadow">
+                                                <Link href="/contact-us" className="btn btn-lg btn-icon btn-white hover-secondary btn-shadow">
                                                     Contact Us <span className="right-icon"><i className="feather icon-arrow-right" /></span>
                                                 </Link>
                                             </div>
