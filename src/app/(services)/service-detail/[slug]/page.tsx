@@ -32,7 +32,7 @@ async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) 
                         <div className="row">
                             <div className="col-lg-8 single-inner order-lg-1">
                                 <div className="single-media dz-media single-media height-sm radius-lg wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.7s">
-                                    <Image src={IMAGES.bloggrid2} alt="" className="object-fit-cover" />
+                                    <Image src={service.image ?? IMAGES.bloggrid2} alt={service.title} className="object-fit-cover" />
                                 </div>
                                 <div className="content-item wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.7s">
                                     <h2>{service.title}</h2>
