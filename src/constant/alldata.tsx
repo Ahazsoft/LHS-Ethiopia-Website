@@ -58,7 +58,7 @@ export const headerdata: HeaderItem[] = [
   },
   {
     title: "About Us",
-    to: "#",
+    to: "about-us",
     // content: [
     //   { title: "About Us", to: "/about-us" },
     //   { title: "Appointment", to: "/appointment" },
@@ -73,7 +73,7 @@ export const headerdata: HeaderItem[] = [
   },
   {
     title: "Services",
-    to: "#",
+    to: "services",
     // content: [
     //   { title: "Team", to: "/team" },
     //   { title: "Team Detail", to: "/team-detail" },
@@ -81,17 +81,17 @@ export const headerdata: HeaderItem[] = [
   },
   {
     title: "Testimonials",
-    to: "#",
+    to: "testimonial",
   },
   {
     title: "Gallery",
-    to: "#",
+    to: "gallery",
   },
   {
     title: "Blogs",
-    to: "#",
+    to: "blogs",
   },
-  { title: "Contact Us", to: "#" },
+  { title: "Contact Us", to: "contact-us" },
 ];
 // footer
 export const footerdata1 = [

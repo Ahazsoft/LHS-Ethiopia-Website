@@ -73,7 +73,7 @@ function AboutUs() {
                 data-wow-duration="0.8s"
               >
                 <h2 className="title m-b0">
-                  We Employ only <br /> Specialists{" "}
+                  Meet our team{" "}
                 </h2>
               </div>
               <div
