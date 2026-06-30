@@ -303,19 +303,19 @@ export const empolydata = [
   {
     id: 1,
     delay: "0.2s",
-    image: IMAGES.team1,
-    title: "Dr. Yabets Taye",
-    position: "Deputy Managing Director",
-    linkedin:"https://www.linkedin.com/in/yabets-t-bifitu-md-97a59387"
-  },
-  {
-    id: 2,
-    delay: "0.4s",
     image: IMAGES.team2,
     title: "Dr. Yonathan Gary",
     position: "Managing Director",
     linkedin:"http://linkedin.com/in/dr-yonathan-gary"
   },
+  {
+    id: 2,
+    delay: "0.4s",
+    image: IMAGES.team1,
+    title: "Dr. Yabets Taye",
+    position: "Deputy Managing Director",
+    linkedin:"https://www.linkedin.com/in/yabets-t-bifitu-md-97a59387"
+    },
   // {
   //   id: 3,
   //   delay: "0.6s",

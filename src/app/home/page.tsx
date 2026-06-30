@@ -53,7 +53,7 @@ function HomePage() {
                         Guiding You To
                         <br />
                         Quality Healthcare{" "}
-                        <span className="text-white"> Abroad </span>{" "}
+                        <span className="text-white"> Domestic and Abroad </span>{" "}
                         <Image src={IMAGES.herobannerline} alt="" />{" "}
                       </h1>
                       <p
