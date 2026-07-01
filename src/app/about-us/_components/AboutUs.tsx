@@ -7,6 +7,7 @@ import { IMAGES } from "@/constant/theme";
 
 import PageBanner from "@/component/PageBanner";
 import WorldClass from "@/component/WorldClass";
+import KeyDestination from "@/component/KeyDestination";
 import Lightgallerydata from "@/component/LightGalleryData";
 import Whychoose from "@/component/WhyChoose";
 import MeetDr from "@/component/MeetDr";
@@ -243,6 +244,19 @@ function AboutUs() {
               </div>
             </div>
           </div>
+        </section>
+        <section
+        className="content-inner overlay-custom-purple background-blend-luminosity bg-img-fix overflow-hidden"
+        style={{
+        backgroundImage: `URL(${IMAGES.bg1})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "right center",
+            }}
+              >
+         <div className="container">
+              <KeyDestination />
+        </div>
         </section>
         <Schedule />
         <Clientswiper1 />

@@ -17,6 +17,7 @@ import Frequently from "@/component/Frequently";
 import Partners from "@/component/Partners";
 import StayInformed from "@/component/StayInformed";
 import MapWraper from "@/component/MapWraper";
+import KeyDestination from "@/component/KeyDestination";
 
 function HomePage() {
   return (
@@ -330,7 +331,19 @@ function HomePage() {
         </section>
         <Howitwork />
         {/* <MeetDr /> */}
-        <Frequently />
+        <section
+        className="content-inner overlay-custom-purple background-blend-luminosity bg-img-fix overflow-hidden"
+        style={{
+        backgroundImage: `URL(${IMAGES.bg1})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "right center",
+            }}
+              >
+         <div className="container">
+              <KeyDestination />
+        </div>
+        </section>
         <Partners />
         <StayInformed />
         {/* <MapWraper /> */}

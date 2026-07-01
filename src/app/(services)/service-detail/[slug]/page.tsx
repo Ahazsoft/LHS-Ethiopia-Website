@@ -10,6 +10,16 @@ async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) 
     const { slug } = await params;
     const service = serviceboxdata.find((s) => s.slug === slug);
 
+    const keywordTags: Record<string, string[]> = {
+        consultation: ["Medical Consultation", "Specialist Advice", "Treatment Planning", "Health Assessment"],
+        "medical-escort": ["Medical Escort Service", "Doctor Accompaniment", "Patient Support", "Safe Medical Travel"],
+        "travel-arrangement": ["Medical Travel", "Flight Booking", "Hospital Accommodation", "Local Transport"],
+        "treatment-coordination": ["Treatment Coordination", "Hospital Scheduling", "Specialist Appointments", "Care Coordination"],
+        "post-treatment-support": ["Post-Treatment Care", "Recovery Follow-Up", "Rehabilitation Support", "Medication Guidance"],
+    };
+
+    const keywords = keywordTags[service?.slug ?? ""] ?? [service?.title ?? "Healthcare Support", "Patient Care", "Medical Support"];
+
     if (!service) {
         return (
             <>
@@ -32,11 +42,21 @@ async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) 
                         <div className="row">
                             <div className="col-lg-8 single-inner order-lg-1">
                                 <div className="single-media dz-media single-media height-sm radius-lg wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.7s">
-                                    <Image src={IMAGES.bloggrid2} alt="" className="object-fit-cover" />
+                                    <Image src={service.image ?? IMAGES.bloggrid2} alt={service.title} className="object-fit-cover" />
                                 </div>
                                 <div className="content-item wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.7s">
                                     <h2>{service.title}</h2>
                                     <p>{service.fullDesc}</p>
+                                    <div className="mt-3">
+                                        
+                                        <div className="d-flex flex-wrap gap-2">
+                                            {keywords.map((keyword, i) => (
+                                                <span key={i} className="badge bg-light text-dark px-3 py-2">
+                                                    {keyword}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="content-item wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.7s">
                                     <h3>What We Do</h3>
