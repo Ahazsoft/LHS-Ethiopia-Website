@@ -46,166 +46,87 @@ export default function ServiceDetailDefault() {
                   {renderParagraphs(service.overview)}
                 </div>
 
-                {/* When is it the right option? (new) */}
-                {service.whenIsItRight && (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.25s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>When is it the right option?</h3>
-                    <div>{service.whenIsItRight}</div>
-                  </div>
-                )}
+                {/* 1. When air ambulance support is the right option */}
+                <div
+                  className="content-item wow fadeInUp"
+                  data-wow-delay="0.3s"
+                  data-wow-duration="0.7s"
+                >
+                  <h3>When air ambulance support is the right option</h3>
+                  <p>
+                    Some patients are too unstable, too dependent on equipment,
+                    or too medically complex to travel on a scheduled commercial
+                    flight, even with an escort. Air ambulance coordination is
+                    built for exactly these cases: critical transfers, complex
+                    repatriations, and situations where continuous medical care
+                    is required from the moment the patient leaves one facility
+                    until they're handed over at the next.
+                  </p>
+                </div>
 
-                {/* Who It's For – handles both plain text and bullet list */}
-                {service.whoItsForBullets ? (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>Who It's For</h3>
-                    <ul className="list-check text-secondary">
-                      {service.whoItsForBullets.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : service.whoItsFor ? (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>Who It's For</h3>
-                    {renderParagraphs(service.whoItsFor)}
-                  </div>
-                ) : null}
+                {/* 2. How air ambulance coordination works */}
+                <div
+                  className="content-item wow fadeInUp"
+                  data-wow-delay="0.4s"
+                  data-wow-duration="0.7s"
+                >
+                  <h3>How air ambulance coordination works</h3>
+                  <p>
+                    Air ambulance coordination is built around clinical judgment
+                    first, logistics second.
+                  </p>
+                  <ul style={{ listStyle: 'none', paddingLeft: '0' }}>
+                    <li className="mb-3" style={{ position: 'relative', paddingLeft: '25px' }}>
+                      <span style={{ position: 'absolute', left: 0, top: 0, color: '#3b1b51', fontWeight: 'bold', fontSize: '18px', lineHeight: 1.4 }}>•</span>
+                      <span style={{ fontWeight: 700, color: '#cfb755' }}>Clinical assessment.</span>
+                      <span> Our physicians assess the patient's condition, stability, and equipment needs to confirm that air ambulance transport, rather than a lower level of care, is the appropriate option.</span>
+                    </li>
+                    <li className="mb-3" style={{ position: 'relative', paddingLeft: '25px' }}>
+                      <span style={{ position: 'absolute', left: 0, top: 0, color: '#3b1b51', fontWeight: 'bold', fontSize: '18px', lineHeight: 1.4 }}>•</span>
+                      <span style={{ fontWeight: 700, color: '#cfb755' }}>Flight coordination.</span>
+                      <span> We arrange the aircraft, crew, and ground transfers through our partner network, East African Aviation, AMREF Flying Doctors, and BlueDot (Dubai).</span>
+                    </li>
+                    <li className="mb-3" style={{ position: 'relative', paddingLeft: '25px' }}>
+                      <span style={{ position: 'absolute', left: 0, top: 0, color: '#3b1b51', fontWeight: 'bold', fontSize: '18px', lineHeight: 1.4 }}>•</span>
+                      <span style={{ fontWeight: 700, color: '#cfb755' }}>Physician-led transfer.</span>
+                      <span> On East African Aviation flights, our own doctors serve as lead physician onboard, overseeing the patient's care from departure through handover at the receiving facility.</span>
+                    </li>
+                  </ul>
+                </div>
 
-                {/* How It Works (supports simple and detailed, with purple bullet + golden phrase) */}
-                {(service.howItWorks || service.howItWorksDetailed) && (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.4s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>How It Works</h3>
-                    <ul style={{ listStyle: 'none', paddingLeft: '0' }}>
-                      {(service.howItWorksDetailed || service.howItWorks).map((step, idx) => {
-                        const firstDot = step.indexOf('.');
-                        const hasPhrase = firstDot !== -1;
-                        const phrase = hasPhrase ? step.slice(0, firstDot + 1) : step;
-                        const rest = hasPhrase ? step.slice(firstDot + 1).trim() : '';
+                {/* 3. Who air ambulance coordination is for */}
+                <div
+                  className="content-item wow fadeInUp"
+                  data-wow-delay="0.5s"
+                  data-wow-duration="0.7s"
+                >
+                  <h3>Who air ambulance coordination is for</h3>
+                  <ul className="list-check text-secondary">
+                    <li>Critically ill or unstable patients requiring continuous monitoring</li>
+                    <li>Patients dependent on ventilation, advanced life support, or specialized equipment in transit</li>
+                    <li>Emergency medical repatriations</li>
+                    <li>Cases where commercial travel, even with escort support, isn't medically appropriate</li>
+                  </ul>
+                </div>
 
-                        return (
-                          <li
-                            key={idx}
-                            className="mb-3"
-                            style={{ position: 'relative', paddingLeft: '25px' }}
-                          >
-                            {/* dark purple bullet */}
-                            <span
-                              style={{
-                                position: 'absolute',
-                                left: 0,
-                                top: 0,
-                                color: '#3b1b51',
-                                fontWeight: 'bold',
-                                fontSize: '18px',
-                                lineHeight: 1.4,
-                              }}
-                            >
-                              •
-                            </span>
+                {/* 4. Choosing the right level of support */}
+                <div
+                  className="content-item wow fadeInUp"
+                  data-wow-delay="0.6s"
+                  data-wow-duration="0.7s"
+                >
+                  <h3>Choosing the right level of support</h3>
+                  <p>
+                    Air ambulance is the right choice when a patient's condition
+                    doesn't allow for commercial travel. If a patient is stable
+                    enough to sit upright and fly on a scheduled flight with
+                    supervision, commercial medical escort may be the safer and
+                    more cost effective option. Our clinical team can assess the
+                    case and recommend the appropriate level of care.
+                  </p>
+                </div>
 
-                            {/* bold golden lead phrase */}
-                            <span style={{ fontWeight: 700, color: '#cfb755' }}>
-                              {phrase}
-                            </span>
-
-                            {/* rest of the sentence */}
-                            {rest && <span> {rest}</span>}
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                )}
-
-                {/* Choosing the Right Level of Support (for Commercial Medical Escort) */}
-                {service.choosingRightSupport && (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.45s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>Choosing the Right Level of Support</h3>
-                    <p>{service.choosingRightSupport}</p>
-                  </div>
-                )}
-
-                {/* How We Support (for Medical Tourism) */}
-                {service.howWeSupport && (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.5s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>How We Support Your Medical Journey</h3>
-                    <ul className="list-check text-secondary">
-                      {service.howWeSupport.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {/* Why Patients Choose LHS (for Medical Tourism) */}
-                {service.whyChooseLHS && (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.55s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>Why Patients Choose LHS for Care Abroad</h3>
-                    <ul className="list-check text-secondary">
-                      {service.whyChooseLHS.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {/* Preferred Treatment Destinations (for Medical Tourism) */}
-                {service.preferredDestinations && (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.6s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>Preferred Treatment Destinations</h3>
-                    <p>{service.preferredDestinations}</p>
-                  </div>
-                )}
-
-                {/* Prescription & Medication Coordination (for Medical Assistance) */}
-                {service.prescriptionCoordination && (
-                  <div
-                    className="content-item wow fadeInUp"
-                    data-wow-delay="0.65s"
-                    data-wow-duration="0.7s"
-                  >
-                    <h3>{service.prescriptionCoordination.title}</h3>
-                    <ul className="list-check text-secondary">
-                      {service.prescriptionCoordination.bullets.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {/* Frequently Asked Questions */}
+                {/* FAQs */}
                 {service.faqs && (
                   <div
                     className="content-item wow fadeInUp"
