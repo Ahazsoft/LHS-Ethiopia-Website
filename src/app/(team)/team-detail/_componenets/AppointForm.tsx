@@ -1,6 +1,6 @@
 "use client"
 import { useRef, useState } from "react";
-import { IMAGES } from "../constant/theme";
+import { IMAGES } from "@/constant/theme";
 import { Dropdown } from "react-bootstrap";
 import Image from "next/image";
 import { useEmailService } from "@/constant/useEmailService";
