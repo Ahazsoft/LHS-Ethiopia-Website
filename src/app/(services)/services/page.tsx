@@ -19,11 +19,32 @@ function Services() {
                         <ServiceBox />
                     </div>
                 </section>
-                <section className="content-inner overlay-secondary-dark background-blend-luminosity bg-img-fix overflow-hidden" style={{ backgroundImage: `URL(${IMAGES.bg1.src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'right center' }}>
-                    <div className="container">
-                        <Whychoose />
-                    </div>
-                </section>
+               <section
+  className="content-inner bg-img-fix overflow-hidden position-relative"
+  style={{
+    backgroundImage: `url(${IMAGES.bg1.src})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'right center',
+  }}
+>
+  {/* Dark purple overlay */}
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(59, 27, 81, 0.98)',  // #3b1b51
+      backdropFilter: 'blur(4px)',
+      zIndex: 1,
+    }}
+  />
+  <div className="container position-relative" style={{ zIndex: 2 }}>
+    <Whychoose />
+  </div>
+</section>
              {/*   <section className="content-inner">
                     <div className="container">
                         <div className="section-head style-1 text-center">
