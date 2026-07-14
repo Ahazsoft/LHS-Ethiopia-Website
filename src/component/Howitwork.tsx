@@ -58,7 +58,7 @@ function Howitwork() {
                       href="/appointment"
                       className="btn btn-lg btn-icon btn-primary btn-shadow"
                     >
-                      Appointment{" "}
+                      Send an Enquiry {" "}
                       <span className="right-icon">
                         <i className="feather icon-arrow-right" />
                       </span>

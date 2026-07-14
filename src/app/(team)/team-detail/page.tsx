@@ -132,7 +132,7 @@ function TeamDetail() {
                                 <div className="form-wrapper style-1 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.7s">
                                     <div className="form-body bg-primary background-blend-burn" style={{ backgroundImage: `url(${IMAGES.bg2png})` }}>
                                         <div className="title-head">
-                                            <h2 className="form-title m-b0">Make An <span>Appointment</span> Apply For Treatments</h2>
+                                            <h2 className="form-title m-b0">Request <span>Assistance</span>Tell Us About Your Case</h2>
                                         </div>
                                        <AppointForm />
                                     </div>

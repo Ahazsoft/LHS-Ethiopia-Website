@@ -216,7 +216,7 @@ function Header() {
                     <li className="nav-item">
                       <Link href="/appointment" className="btn  btn-purple">
                         {" "}
-                        Appointment{" "}
+                        Send an Enquiry {" "}
                       </Link>
                     </li>
                     <li className="nav-item">
