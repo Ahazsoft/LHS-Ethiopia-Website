@@ -209,7 +209,7 @@ export const servicedetails = [
 export const serviceDetailData: Record<string, ServiceDetail> = {
   "air-ambulance-coordination": {
     title: "Air Ambulance Coordination",
-    image: IMAGES.herobannerheart,
+    image: IMAGES.about5,
     overview: `Medically supervised air transport for patients whose condition requires more than a commercial flight can safely provide.`,
     subheading: "When air ambulance support is the right option",
     subheadingcontent: `Some patients are too unstable, too dependent on equipment, or too medically complex to travel on a scheduled commercial flight, even with an escort. Air ambulance coordination is built for exactly these cases: critical transfers, complex repatriations, and situations where continuous medical care is required from the moment the patient leaves one facility until they're handed over at the next.`,
