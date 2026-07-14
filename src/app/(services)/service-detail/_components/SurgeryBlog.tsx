@@ -14,7 +14,7 @@ const SurgeryBlog = () =>{
                         <div className="dz-media">
                             <Image src={item.image} alt="/" />
                             <Link href="/appointment" className="btn btn-primary">
-                                <i className="feather icon-calendar m-r5" /> Appointment Now
+                                <i className="feather icon-calendar m-r5" /> Request Assistance
                             </Link>
                         </div>
                         <div className="dz-content">

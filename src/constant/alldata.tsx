@@ -28,7 +28,7 @@ export const headerinfo = [
     title: "Online Appointment",
     paragraph: (
       <span>
-        Book Now
+        Request Assistance
         <i className="feather icon-arrow-right" />
       </span>
     ),
@@ -170,7 +170,7 @@ export const footerdata2 = [
     span1: "About Us",
     span2: "Our Services",
     span3: "Our Team",
-    span4: "Appointments",
+    span4: "Enquiries",
     span5: "Contact Us",
     link1: "/about-us",
     link2: "/services",
@@ -291,12 +291,164 @@ export const blogdata2 = [
 ];
 // servicedetails
 export const servicedetails = [
-  { columnstand: "active", title: "Consultation", link: "/service-detail/consultation" },
-  { title: "Medical Escort", link: "/service-detail/medical-escort" },
-  { title: "Travel Arrangement", link: "/service-detail/travel-arrangement" },
-  { title: "Treatment Coordination", link: "/service-detail/treatment-coordination" },
-  { title: "Post-Treatment Support", link: "/service-detail/post-treatment-support" },
+  { 
+    columnstand: "active", 
+    title: "Air Ambulance Coordination", 
+    link: "/service-detail/air-ambulance-coordination" 
+  },
+  { 
+    title: "Commercial Medical Escort", 
+    link: "/service-detail/commercial-medical-escort" 
+  },
+  { 
+    title: "Medical Tourism", 
+    link: "/service-detail/medical-tourism" 
+  },
+  { 
+    title: "Medical Assistance", 
+    link: "/service-detail/medical-assistance" 
+  },
 ];
+
+// Add this new data object (below the servicedetails array)
+export const serviceDetailData = {
+  "air-ambulance-coordination": {
+    title: "Air Ambulance Coordination",
+    image: IMAGES.herobannerheart,
+    overview: `Medically supervised air transport for patients whose condition requires more than a commercial flight can safely provide.`,
+    subheading: "When air ambulance support is the right option",
+    subheadingcontent: `Some patients are too unstable, too dependent on equipment, or too medically complex to travel on a scheduled commercial flight, even with an escort. Air ambulance coordination is built for exactly these cases: critical transfers, complex repatriations, and situations where continuous medical care is required from the moment the patient leaves one facility until they're handed over at the next.`,
+    whoItsForBullets: [
+      "Critically ill or unstable patients requiring continuous monitoring",
+      "Patients dependent on ventilation, advanced life support, or specialized equipment in transit",
+      "Emergency medical repatriations",
+      "Cases where commercial travel, even with escort support, isn't medically appropriate"
+    ],
+    howItWorks: [
+      "Clinical assessment. Our physicians assess the patient's condition, stability, and equipment needs to confirm that air ambulance transport, rather than a lower level of care, is the appropriate option.",
+      "Flight coordination. We arrange the aircraft, crew, and ground transfers through our partner network, East African Aviation, AMREF Flying Doctors, and BlueDot (Dubai).",
+      "Physician-led transfer. On East African Aviation flights, our own doctors serve as lead physician onboard, overseeing the patient's care from departure through handover at the receiving facility."
+    ],
+    choosingRightSupport: `Air ambulance is the right choice when a patient's condition doesn't allow for commercial travel. If a patient is stable enough to sit upright and fly on a scheduled flight with supervision, commercial medical escort may be the safer and more cost effective option. Our clinical team can assess the case and recommend the appropriate level of care.`,
+    faqs: [
+      {
+        question: "Is Lighthouse Healthcare Solutions an air ambulance operator?",
+        answer: "We coordinate air ambulance missions through a network of vetted fixed wing aircraft operators and medical teams. We do not own or operate the aircraft ourselves. This allows us to match each case to the right aircraft and crew for the patient's specific medical needs and location."
+      },
+      {
+        question: "Do you provide helicopter transport?",
+        answer: "At this time, our air ambulance coordination is fixed wing only. If a case requires helicopter transport, we can advise on referral options, but it is not currently part of our direct service offering."
+      },
+      {
+        question: "How quickly can an air ambulance mission be arranged?",
+        answer: "Most non-emergency transfers are coordinated within 4 hours. Emergency cases are prioritized and can be arranged within 2 hours, depending on aircraft availability and required regulatory clearances. Our team begins mission planning as soon as we receive the case details."
+      },
+      {
+        question: "Can a family member or companion travel with the patient?",
+        answer: "Yes, a family member can fly with the patient, subject to the aircraft configuration and the medical crew and equipment required for the patient's condition. This is confirmed during the medical assessment stage."
+      },
+      {
+        question: "Do you handle ground transportation at departure and arrival?",
+        answer: "Yes. Ground ambulance coordination at both the pickup and destination is included as part of the mission, so the patient moves from bedside to bedside under continuous coordination."
+      },
+      {
+        question: "What information do you need to start a case?",
+        answer: "Typically the patient's current location and condition, receiving hospital or destination, and contact details for the referring physician or family. Our team will guide you through any additional information needed once you submit an enquiry."
+      }
+    ]
+  },
+
+  "medical-assistance": {
+    title: "Medical Assistance",
+    image: IMAGES.about5,
+    overview: `End to end coordination for insurers and corporates operating in Ethiopia and the region.`,
+    medicalAssistanceSections: [
+      {
+        title: "Network Navigation & Appointment Logistics",
+        items: [
+          "Vetted Provider Network. A carefully audited network of leading hospitals, diagnostic centers, and specialist clinicians across East Africa.",
+          "Doctor Matching. Patients are matched to verified specialists based on clinical track record, credentialing, and case complexity.",
+          "Booking & Admission Coordination. Fast tracked scheduling for outpatient consultations, diagnostics, and planned inpatient admissions, reducing administrative delay for the client."
+        ]
+      },
+      {
+        title: "Medical Case Management",
+        items: [
+          "Clinical Auditing. Ongoing review of inpatient charts by our medical officers to confirm clinical necessity, monitor treatment progress, and prevent unnecessary delays or over treatment.",
+          "Progress Reporting. Standardized, secure updates provided directly to the insurer or employer, keeping all stakeholders aligned on recovery timelines.",
+          "Discharge Planning & Repatriation. Coordinated discharge protocols, including care transition summaries and transport arrangements if a patient needs to return to their home community."
+        ]
+      },
+      {
+        title: "On Site Hospital Assistance & Patient Advocacy",
+        items: [
+          "Field Case Managers. Dedicated coordinators accompany patients during complex hospital visits or admissions, acting as a clinical point of contact throughout.",
+          "Billing & Document Verification. Real time review of medical records, lab requests, and interim billing to ensure transparency before claims reach the insurer.",
+          "Language & Cultural Support. Bedside communication support so patients and families fully understand diagnoses, treatment risks, and consent requirements."
+        ]
+      },
+      {
+        title: "Prescription & Medication Coordination",
+        items: [
+          "Chronic Medication Management. Ongoing tracking of recurring prescriptions for insured members and corporate employees managing chronic conditions.",
+          "Prescription Verification. Refill requests are confirmed directly with the treating physician to ensure safety and compliance.",
+          "Delivery Logistics. Secure, temperature controlled delivery of medication from certified pharmacies to the patient's home or workplace."
+        ]
+      }
+    ],
+    faqs: [
+      // … (keep existing FAQs)
+    ]
+  },
+
+  "commercial-medical-escort": {
+    title: "Commercial Medical Escort",
+    image: IMAGES.testimonial1,
+    overview: `Medically supervised travel on commercial flights for patients who are fit to travel independently but need professional oversight along the way.`,
+    subheading: "When medical escort support is the right option",
+    subheadingcontent: `Many patients are fit to fly on commercial airlines but still need medical support, supervision, or reassurance during the journey. Medical escort services are designed for patients who can remain seated throughout travel but shouldn't fly alone, whether due to their medical condition, stage of recovery, age, or ongoing treatment needs. This service allows safe travel on scheduled flights, with a qualified LHS clinician accompanying the patient from departure through arrival.`,
+    whoItsForBullets: [
+      "Patients recovering from surgery or illness",
+      "Elderly patients requiring supervision during travel",
+      "Patients travelling for ongoing treatment or follow up care",
+      "Individuals who shouldn't fly unaccompanied for medical reasons"
+    ],
+    howItWorks: [
+      "Medical review. Before travel, our medical team reviews the patient's condition to confirm suitability for escort based travel, assessing stability, mobility, medication requirements, and any in flight considerations.",
+      "Travel coordination. Once approved, we arrange travel logistics, airline notifications where required, and any medical equipment or medication needed during the flight.",
+      "Journey support. Patients are accompanied by qualified LHS medical professionals, doctors or paramedics, who provide monitoring, assistance, and reassurance from departure to arrival."
+    ],
+    choosingRightSupport: `Medical escort services are suitable when a patient is fit to sit and travel but needs medical supervision. If a patient requires continuous monitoring, specialized equipment, or stretcher support, air ambulance coordination may be the more appropriate option. Our clinical team can help assess and recommend the safest choice.`,
+    faqs: [
+      // … (keep existing FAQs)
+    ]
+  },
+
+  "medical-tourism": {
+    title: "Medical Tourism",
+    image: IMAGES.about3,
+    overview: `Trusted coordination for treatment abroad, from first consultation through post treatment follow up.`,
+    subheading: "When care isn't available at home",
+    subheadingcontent: `Sometimes the right specialist, the right treatment, or an acceptable waiting time simply isn't available locally. When that happens, going abroad for care shouldn't mean navigating an unfamiliar health system alone, in a language you don't speak, with no one to call if something changes. LHS coordinates the full journey so patients can focus on getting well, not on logistics.`,
+    howWeSupport: [
+      "Consultation. We review your case and connect you with the right specialist and facility abroad.",
+      "Treatment Coordination. We liaise directly with partner hospitals in Thailand, India, Turkey, and Dubai to arrange appointments, documentation, and treatment plans.",
+      "Travel Arrangement. We coordinate visas, flights, and accommodation around your treatment schedule.",
+      "Medical Escort, where needed. For patients who need supervision en route, an LHS clinician can accompany you throughout the trip.",
+      "Post Treatment Support. We stay engaged after you return home, coordinating follow up care and continuity with your local providers."
+    ],
+    whyChooseLHS: [
+      "A vetted network of 70+ hospitals across 7 countries",
+      "Clinician-led coordination, not a purely administrative booking service",
+      "Support before, during, and after treatment, not just at the booking stage",
+      "Established relationships with hospitals in Thailand, India, Turkey, and Dubai"
+    ],
+    closingNote: `Medical Tourism is one of LHS's four core services, backed by the same clinician-led approach behind our air ambulance, medical assistance, and escort work.`,
+    faqs: [
+      // … (keep existing FAQs)
+    ]
+  }
+};
 
 // teamdetail
 export const empolydata = [
@@ -700,23 +852,27 @@ export const serviceboxdata = [
     id: 1,
     delay: "0.1s",
     slug: "consultation",
-    title: "Consultation",
+    title: "Air Ambulance Coordination",
+    tag:"24/7 Response",
+    link: "/service-detail/air-ambulance-coordination",
     image: IMAGES.about3,
     svg1: SVGICONS.iconcell1,
     svg2: SVGICONS.iconbg1,
-    desc: "Personalized health assessments and recommendations for medical facilities",
-    fullDesc: "At Lighthouse Healthcare Solutions, we begin every patient journey with a thorough consultation and medical assessment. Our clinician-led team reviews your medical history, current condition, and treatment goals to recommend the most suitable healthcare destination — whether Turkey, Thailand, or India.",
-    steps: ["Medical History Review", "Specialist Recommendation", "Cost Estimation", "Destination Selection"],
+    desc: "24/7 coordination of fixed wing air ambulance missions for critically ill or injured patients requiring urgent medical evacuation.",
+   // fullDesc: "At Lighthouse Healthcare Solutions, we begin every patient journey with a thorough consultation and medical assessment. Our clinician-led team reviews your medical history, current condition, and treatment goals to recommend the most suitable healthcare destination — whether Turkey, Thailand, or India.",
+    //steps: ["Medical History Review", "Specialist Recommendation", "Cost Estimation", "Destination Selection"],
   },
   {
     id: 2,
     delay: "0.2s",
     slug: "medical-escort",
-    title: "Medical Escort",
+    title: "Commercial Medical Escort",
+    tag:  "Trusted Network",
+    link: "/service-detail/commercial-medical-escort",
     image: IMAGES.testimonial2,
     svg1: SVGICONS.iconcell2,
     svg2: SVGICONS.iconbg2,
-    desc: "Assistance with flights, visas, and insurance.",
+    desc: "Qualified medical escorts accompany patients on commercial flights, providing clinical monitoring and support during international patient transfer.",
     fullDesc: "Our clinician-led team accompanies you throughout your entire medical journey abroad. From departure to return, a qualified doctor travels with you ensuring your safety, comfort, and continuity of care at every step.",
     steps: ["Flight Booking", "Visa Assistance", "Airport Transfer", "Hospital Accompaniment"],
   },
@@ -724,37 +880,29 @@ export const serviceboxdata = [
     id: 3,
     delay: "0.3s",
     slug: "travel-arrangement",
-    title: "Travel Arrangement",
+    title: "Medical Tourism",
+    tag: "Global Coverage",
+    link: "/service-detail/medical-tourism",
     image: IMAGES.about4,
     svg1: SVGICONS.iconcell3,
     svg2: SVGICONS.iconbg3,
-    desc: "Comfortable lodging options near your treatment center.",
-    fullDesc: "We handle all your travel logistics so you can focus entirely on your health. From booking flights and accommodation to arranging local transportation near your treatment center, LHS ensures a smooth and stress-free experience.",
-    steps: ["Flight Booking", "Hotel Accommodation", "Local Transportation", "Post-Travel Follow-Up"],
+    desc: "Coordinated medical tourism support for patients seeking specialized treatment abroad, including hospital selection, travel logistics, and continuity of care from consultation through recovery.",
+    //fullDesc: "We handle all your travel logistics so you can focus entirely on your health. From booking flights and accommodation to arranging local transportation near your treatment center, LHS ensures a smooth and stress-free experience.",
+    //steps: ["Flight Booking", "Hotel Accommodation", "Local Transportation", "Post-Travel Follow-Up"],
   },
   {
     id: 4,
     delay: "0.4s",
     slug: "treatment-coordination",
-    title: "Treatment Coordination",
+    title: "Medical Assistance",
+    tag: "Case Managers",
+    link: "/service-detail/medical-assistance",
     image: IMAGES.bg1,
     svg1: SVGICONS.iconcell4,
     svg2: SVGICONS.iconbg4,
-    desc: "Scheduling appointments and ensuring continuous communication with healthcare providers.",
-    fullDesc: "We coordinate directly with hospitals and specialists abroad to schedule your appointments, share medical records, and ensure seamless communication between you and your healthcare providers throughout your treatment.",
-    steps: ["Hospital Selection", "Appointment Scheduling", "Medical Records Transfer", "Doctor Communication"],
-  },
-  {
-    id: 5,
-    delay: "0.5s",
-    slug: "post-treatment-support",
-    title: "Post-Treatment Support",
-    image: IMAGES.bg2,
-    svg1: SVGICONS.iconcell5,
-    svg2: SVGICONS.iconbg5,
-    desc: "Follow-up care and access to rehabilitation services.",
-    fullDesc: "Our support does not end when you return home. LHS provides continuous post-treatment follow-up, connects you with rehabilitation services, and ensures your recovery is on track with regular check-ins from our medical team.",
-    steps: ["Recovery Monitoring", "Rehabilitation Access", "Medication Guidance", "Regular Check-ins"],
+    desc: "Medical assistance and case management for international insurers, assistance companies, employers, NGOs, diplomatic missions, and corporate organizations operating in Ethiopia.",
+    //fullDesc: "We coordinate directly with hospitals and specialists abroad to schedule your appointments, share medical records, and ensure seamless communication between you and your healthcare providers throughout your treatment.",
+    //steps: ["Hospital Selection", "Appointment Scheduling", "Medical Records Transfer", "Doctor Communication"],
   },
 ]
 

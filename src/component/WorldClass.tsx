@@ -102,15 +102,7 @@ function WorldClass() {
               data-wow-delay="0.4s"
               data-wow-duration="0.8s"
             >
-              Lighthouse Healthcare Solutions (LHS) is a clinician-led medical
-              travel and emergency transport company founded by doctors who are
-              deeply passionate about pre-hospital and critical care. At our
-              core,we are experienced healthcare
-              professionals with years of clinical and operational expertise.
-              Our team includes an Emergency Medicine Specialist, other doctors
-              with direct patient care experience, and a Business Development
-              Specialist with healthcare sector knowledge. We deliver solutions
-              with medical precision, compassion, and professionalism
+               Lighthouse Healthcare Solutions (LHS) is a clinician-led medical travel and emergency transport company, founded by doctors passionate about pre-hospital and critical care. With years of clinical and operational expertise, our team of emergency medicine specialists and healthcare professionals delivers solutions grounded in precision, compassion, and professionalism. Guided by four core pillars, Air Ambulance, Commercial Medical Escort, Medical Tourism, and Medical Assistance, we provide seamless, patient-centered care across borders, ensuring safety, dignity, and trust at every stage of the journey.
             </p>
           </div>
           <ul
@@ -131,7 +123,7 @@ function WorldClass() {
               href="/appointment"
               className="btn btn-lg btn-icon btn-secondary btn-shadow m-r30 mb-3 mb-sm-0"
             >
-              Appointment
+              Send an Enquiry 
               <span className="right-icon">
                 <i className="feather icon-arrow-right" />
               </span>

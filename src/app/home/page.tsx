@@ -18,6 +18,7 @@ import Partners from "@/component/Partners";
 import StayInformed from "@/component/StayInformed";
 import MapWraper from "@/component/MapWraper";
 import KeyDestination from "@/component/KeyDestination";
+import WhyChooseLHS from "@/component/WhyChooseLHS";
 
 function HomePage() {
   return (
@@ -50,11 +51,10 @@ function HomePage() {
                         data-wow-delay="0.2s"
                         data-wow-duration="0.8s"
                       >
-                        {" "}
-                        Guiding You To
-                        <br />
-                        Quality Healthcare{" "}
-                        <span className="text-white"> Domestic and Abroad </span>{" "}
+                        Coordinated Medical Care,
+                        {" "}<br />
+                        At Every Stage{" "}
+                        <span className="text-white">Anywhere You Need It </span>{" "}
                         <Image src={IMAGES.herobannerline} alt="" />{" "}
                       </h1>
                       <p
@@ -197,10 +197,8 @@ function HomePage() {
                             </div>
                           </div>
                           <p>
-                            “At Lighthouse Healthcare Solutions, from personalized consultation to
-                            post-treatment follow-up, we deliver end-to-end
-                            support that ensures a seamless, stress-free
-                            healthcare journey.”
+                            “At Lighthouse Healthcare Solutions, from personalized consultation to post-treatment follow-up, we deliver comprehensive support that ensures a coordinated, stress-free healthcare journey.
+”
                           </p>
                         </div>
                       </div>
@@ -246,15 +244,28 @@ function HomePage() {
           <div className="container">
             <div className="section-head style-1 m-b30 row align-items-end">
               <div
-                className="col-xl-7 col-md-9 wow fadeInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="0.8s"
-              >
-                <h2 className="title m-b0">
-                  Start Feeling Your Best <br /> Explore Our Wellness
-                  Services{" "}
-                </h2>
-              </div>
+         className="col-xl-7 col-md-9 wow fadeInUp"
+        data-wow-delay="0.2s"
+        data-wow-duration="0.8s"
+        >
+        {/* Eyebrow/Label */}
+        <span className="eyebrow">
+        Our Services
+        </span>
+
+        {/* Heading */}
+      <h1 className="title m-b0">
+      Your Trusted Partner for International Medical Transport & Healthcare Coordination
+      </h1>
+
+       {/* Subheading */}
+        <p className="subheading">
+        From emergency air ambulance response to commercial medical escorts, medical tourism planning, 
+        and medical assistance for insurers and corporate organizations, Lighthouse Healthcare Solutions 
+        provides physician led case management for patients and partners across Ethiopia and internationally.
+         </p>
+          </div>
+
               <div
                 className="col-xl-5 col-md-3 text-lg-end d-none d-md-block wow fadeInUp"
                 data-wow-delay="0.4s"
@@ -284,6 +295,7 @@ function HomePage() {
         >
           <div className="container">
             <WhyChoose />
+            <WhyChooseLHS />
           </div>
         </section>
         <section className="content-inner">

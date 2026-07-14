@@ -47910,5 +47910,19 @@ footer.site-footer.footer-dark .fb-inner {
   -ms-transition: none;
   transition: none;
 }
+/* FAQ accordion – question text */
+.accordion-button {
+  color: #333 !important;               /* dark grey text */
+  background-color: #f8f9fa !important; /* light background so it's visible */
+}
+/* FAQ accordion – question text when opened */
+.accordion-button:not(.collapsed) {
+  color: #cfb755 !important;            /* golden when active (optional) */
+  background-color: #f8f9fa !important;
+}
+/* FAQ accordion – answer text */
+.accordion-body {
+  color: #555 !important;               /* slightly lighter grey */
+}
 
 /*# sourceMappingURL=style.css.map */
