@@ -1,6 +1,30 @@
+import React from "react";
 import Link from "next/link";
 import { IMAGES, SVGICONS } from "./theme";
 import Image, { StaticImageData } from "next/image";
+interface ServiceDetail {
+  title: string;
+  image: StaticImageData;
+  overview: string;
+  subheading?: string;
+  subheadingcontent?: string;
+  whoItsFor?: string;
+  whoItsForBullets?: string[];
+  howItWorks?: string[];
+  choosingRightSupport?: string;
+  sections?: {
+    title: string;
+    content?: string;
+    items?: string[];
+  }[];
+  medicalAssistanceSections?: {
+    title: string;
+    items: string[];
+  }[];
+  closingNote?: string;
+  preferredDestinations?: string;
+  faqs: { question: string; answer: string }[];
+}
 
 // layout
 // header
@@ -182,7 +206,7 @@ export const servicedetails = [
 ];
 
 // ========== UPDATED serviceDetailData (all sections + FAQs included) ==========
-export const serviceDetailData = {
+export const serviceDetailData: Record<string, ServiceDetail> = {
   "air-ambulance-coordination": {
     title: "Air Ambulance Coordination",
     image: IMAGES.herobannerheart,
@@ -496,9 +520,14 @@ export const pricingdata1 = [
   { title: "Women's Health" }, { title: "Emergency Medicine" }, { title: "Family Medicine" },
   { title: "24/7 customer support" }, { title: "Video Call Support" },
 ];
-
-export const pricingdata2 = [
-  // ... (truncated for brevity; keep your original pricing data unchanged)
+type PricingItem = {
+  delay: string;
+  coloumnstand?: string;
+  title: React.ReactElement;
+  feature: React.ReactElement;
+};
+export const pricingdata2: PricingItem[] = [
+    // ... (truncated for brevity; keep your original pricing data unchanged)
 ];
 
 export const testiswipeerdata = [

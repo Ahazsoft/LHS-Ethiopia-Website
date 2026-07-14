@@ -81,7 +81,7 @@ export default function WhyChooseLHS() {
               {/* Title */}
               <h5
                 className="dz-title mb-3"
-                style={{ color: "#cfb755", fontWeight: 600 ,fontsize:"0.9rem" }}
+                style={{ color: "#cfb755", fontWeight: 600 ,fontSize:"0.9rem" }}
               >
                 {item.title}
               </h5>
