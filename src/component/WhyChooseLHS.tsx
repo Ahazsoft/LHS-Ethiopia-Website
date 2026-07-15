@@ -88,8 +88,8 @@ export default function WhyChooseLHS() {
               </h5>
 
               {/* Description */}
-              <p  className="text-white opacity-90"
-                style={{ lineHeight: 1.7, fontSize: "0.7rem",fontFamily:"'poppins',sans-serif" }}>
+              <p  className="text-white opacity-50"
+                style={{ lineHeight: 1.7, fontSize: "0.9rem",fontFamily:"'poppins',sans-serif" }}>
                 {item.description}
               </p>
             </div>
