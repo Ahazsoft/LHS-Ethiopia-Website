@@ -47,7 +47,7 @@ function Header() {
   return (
     <>
       <header className="site-header header style-1">
-        <div className="header-info-bar d-none d-xxl-block">
+        {/* <div className="header-info-bar d-none d-xxl-block">
           <div className="container-fluid">
             <div className="row">
               {headerinfo.map((data, i) => (
@@ -67,7 +67,7 @@ function Header() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         <div
           className={`sticky-header main-bar-wraper ${scroll ? "is-fixed" : ""}`}
         >

@@ -503,7 +503,7 @@ export const inspirationaldata = [
 ];
 
 export const mapdata = [
-  { id: 1, delay: "0.2s", icon: <i className="feather icon-map-pin" />, title: "Address", para: <p>234 Oak Drive, Villagetown, USA</p> },
+  { id: 1, delay: "0.2s", icon: <i className="feather icon-map-pin" />, title: "Address", para: <p>Minna bldg, wello sefer, Addis Ababa, Ethiopia</p> },
   { id: 2, delay: "0.4s", icon: <i className="feather icon-phone" />, title: "Call Us", para: <p><Link href="tel:+251943104334">+251943104334</Link></p> },
   { id: 3, delay: "0.6s", icon: <i className="feather icon-mail" />, title: "Send us a Mail", para: <p><Link href="mailto:info@lhsethiopia.com">info@lhsethiopia.com</Link></p> },
   { id: 4, delay: "0.8s", icon: <i className="feather icon-clock" />, title: "Opening Time", para: <p>Mon-Thu: 8:00am-5:00pm <br /> Fri: 8:00am-1:00pm</p> },
