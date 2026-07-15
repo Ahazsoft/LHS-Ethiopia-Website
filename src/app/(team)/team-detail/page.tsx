@@ -64,7 +64,7 @@ function TeamDetail() {
                                             </div>
                                             <div className="icon-content">
                                                 <h5 className="dz-title fw-semibold">Address</h5>
-                                                <p className="fw-normal">234 Oak Drive, Villagetown, USA</p>
+                                                <p className="fw-normal">Minna bldg, wello sefer, Addis Ababa, Ethiopia</p>
                                             </div>
                                         </div>
                                         <div className="icon-bx-wraper style-1 m-b20">

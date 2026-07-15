@@ -44,6 +44,7 @@ export default function WhyChooseLHS() {
           className="title m-b0 wow fadeInUp text-white"
           data-wow-delay="0.2s"
           data-wow-duration="0.7s"
+          style={{ fontFamily: "'Poppins', sans-serif" }}
         >
           What Sets Us Apart
         </h2>
@@ -81,14 +82,14 @@ export default function WhyChooseLHS() {
               {/* Title */}
               <h5
                 className="dz-title mb-3"
-                style={{ color: "#cfb755", fontWeight: 600 ,fontSize:"0.9rem" }}
+                style={{ color: "#cfb755", fontWeight: 600 ,fontSize:"0.9rem" ,fontFamily:"'poppins',sans-serif"}}
               >
                 {item.title}
               </h5>
 
               {/* Description */}
               <p  className="text-white opacity-90"
-                style={{ lineHeight: 1.7, fontSize: "0.7rem" }}>
+                style={{ lineHeight: 1.7, fontSize: "0.7rem",fontFamily:"'poppins',sans-serif" }}>
                 {item.description}
               </p>
             </div>
