@@ -168,6 +168,10 @@
 		height: 80px;
 		padding-#{$dz-pos-left}: 30px;
 		color: var(--bs-heading-color);
+
+		&.menu-open{
+			z-index: 1000;
+		}
 		
 		.extra-cell{
 			display: flex;
@@ -206,6 +210,14 @@
 							rect{
 								fill: var(--bs-heading-color);
 							}
+						}
+						&.navicon{
+							min-width: 18px;
+							width: 18px;
+							height: 14px;
+							padding: 0;
+							position: relative;
+							z-index: 1000;
 						}
 						.badge{						
 							position: absolute;
@@ -376,27 +388,30 @@
 
 // Navbar Toggler
 .w3menu-toggler {
-    border: 0 solid #efbb20;
+    border: 0;
     font-size: 16px;
-    line-height: 24px;
-    margin: 40px 0 39px 15px;
+    line-height: 1;
+    margin: 0;
     padding: 0;
-	float: $dz-pos-right;
+	float: none;
 	outline: none !important;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	
 	@include respond('tab-port'){
-		margin: 18px 0px 16px 20px;
+		margin: 0;
 	}
 	@include respond('phone'){
-		margin: 10px 0px 10px 20px;
+		margin: 0;
 	}
 }
 
 // Navicon
 .navicon{
-	width: 45px;
-    height: 45px;
-	background: var(--bs-secondary);
+	width: 18px;
+    height: 14px;
+	background: transparent;
 	position: relative;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -407,7 +422,8 @@
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
-	border-radius: var(--radius-sm);
+	border-radius: 0;
+	padding: 0;
 	
 	@include respond('tab-port-min'){
 		display: none;
@@ -415,12 +431,12 @@
 	span{
 		display: block;
 		position: absolute;
-		height: 2px;
+		height: 1.5px;
 		width: 100%;
-		border-radius: 1px;
+		border-radius: 2px;
 		opacity: 1;
-		background: #fff;
-		#{$dz-pos-left}:10px;
+		background: #cfb755;
+		#{$dz-pos-left}:0;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
@@ -431,22 +447,22 @@
 		transition: .25s ease-in-out;
 		
 		&:nth-child(1) {
-			top: 13px;
-			width: 22px;
+			top: 0;
+			width: 100%;
 		}
 		&:nth-child(2) {
-			top: 22px;
-			width: 25px;
+			top: 6px;
+			width: 100%;
 		}
 		&:nth-child(3) {
-			top: 32px;
-			width: 20px;
+			top: 12px;
+			width: 100%;
 		}
 		
 	}
 	
 	&.open span:nth-child(1) {
-	  top: 23px;
+	  top: 6px;
 	  -webkit-transform: rotate(135deg);
 	  -moz-transform: rotate(135deg);
 	  -o-transform: rotate(135deg);
@@ -457,8 +473,8 @@
 		#{$dz-pos-left}: -60px;
 	}
 	&.open span:nth-child(3) {
-		top: 23px;
-		width: 23px;
+		top: 6px;
+		width: 100%;
 		-webkit-transform: rotate(-135deg);
 		-moz-transform: rotate(-135deg);
 		-o-transform: rotate(-135deg);

@@ -75,12 +75,12 @@ export type HeaderItem = {
 
 export const headerdata: HeaderItem[] = [
   { title: "Home", to: "/" },
-  { title: "About Us", to: "about-us" },
-  { title: "Services", to: "services" },
-  { title: "Testimonials", to: "testimonial" },
-  { title: "Gallery", to: "gallery" },
-  { title: "Blogs", to: "blogs" },
-  { title: "Contact Us", to: "contact-us" },
+  { title: "About Us", to: "/about-us" },
+  { title: "Services", to: "/services" },
+  { title: "Testimonials", to: "/testimonial" },
+  { title: "Gallery", to: "/gallery" },
+  { title: "Blogs", to: "/blog-grid" },
+  { title: "Contact Us", to: "/contact-us" },
 ];
 
 // footer
@@ -116,16 +116,16 @@ export const footerdata1 = [
 export const footerdata2 = [
   {
     title: "Our Services",
-    span1: "Consultation",
-    span2: "Medical Escort",
-    span3: "Travel Arrangement",
-    span4: "Treatment coordination",
-    span5: "Post-treatment support",
-    link1: "/service-detail/consultation",
-    link2: "/service-detail/medical-escort",
-    link3: "/service-detail/travel-arrangement",
-    link4: "/service-detail/treatment-coordination",
-    link5: "/service-detail/post-treatment-support",
+    span1: "Air Ambulance Coordination",
+    span2: "Commercial Medical Escort",
+    span3: "Medical Tourism",
+    span4: "Medical Assistance",
+    span5: "All Services",
+    link1: "/service-detail/air-ambulance-coordination",
+    link2: "/service-detail/commercial-medical-escort",
+    link3: "/service-detail/medical-tourism",
+    link4: "/service-detail/medical-assistance",
+    link5: "/services",
     delay: "0.4s",
   },
   {
@@ -476,9 +476,9 @@ export const clientswiperdata2 = [
 ];
 
 export const countupdata = [
-  { title: "Specialists", delay: "0.4s", countup: 200, span: "+" },
-  { title: "Happy Patients", delay: "0.6s", countup: 45, span: "K" },
-  { title: "Winning Awards", delay: "0.8s", countup: 150, span: "+" },
+  { title: "Specialists", delay: "0.4s", countup: 1300, span: "+" },
+  { title: "Repatriation", delay: "0.6s", countup: 400, span: "+" },
+  { title: "JCI Accredited Hospitals", delay: "0.8s", countup: 50, span: "+" },
 ];
 
 export const accordiondata = [
@@ -497,9 +497,27 @@ export const howitworkdata = [
 ];
 
 export const inspirationaldata = [
-  { columnstand: "m-r25", delay: "0.2s", title: "Mission", svg: SVGICONS.mission },
-  { columnstand: "m-l25", delay: "0.4s", title: "Vision", svg: SVGICONS.vision },
-  { columnstand: "m-r25", delay: "0.6s", title: "Values", svg: SVGICONS.values },
+  {
+    columnstand: "m-r25",
+    delay: "0.2s",
+    title: "Mission",
+    svg: SVGICONS.mission,
+    desc: "To deliver clinician-led medical travel and emergency transport that keeps patients safe, informed, and supported at every stage of their healthcare journey.",
+  },
+  {
+    columnstand: "m-l25",
+    delay: "0.4s",
+    title: "Vision",
+    svg: SVGICONS.vision,
+    desc: "To be Ethiopia’s most trusted partner for coordinated international medical care—bridging borders with precision, compassion, and professional excellence.",
+  },
+  {
+    columnstand: "m-r25",
+    delay: "0.6s",
+    title: "Values",
+    svg: SVGICONS.values,
+    desc: "Safety, dignity, transparency, and clinical excellence guide every coordination decision we make for patients and families.",
+  },
 ];
 
 export const mapdata = [

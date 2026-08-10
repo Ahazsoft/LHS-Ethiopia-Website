@@ -785,7 +785,7 @@ label.error {
 			font-size: 18px;
 			text-transform: uppercase;
 			font-weight: 600;
-			background-color: var(--bs-secondary);
+			background-color: var(--bs-primary);
 			width: 50px;
 			display: flex;
 			align-items: center;
@@ -807,6 +807,9 @@ label.error {
 			span{
 				color: #FAFF17;
 			}
+		}
+		.form-body.bg-secondary .form-title span{
+			color: #fff;
 		}
 		@include custommq ($max:1380px){
 			&[class*="m-l"]{
@@ -916,5 +919,76 @@ label.error {
         -moz-transform-origin: 0 0;
         -o-transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
+	}
+}
+
+/* LHS Request Assistance form – brand palette */
+.lhs-assistance-form{
+	.text-vertical{
+		background-color: #3b1b51;
+		color: #ffffff;
+	}
+	.form-body{
+		background-color: #c0a94c;
+		background-image: none;
+	}
+	.form-title{
+		color: #3b1b51;
+		span{
+			color: #3b1b51 !important;
+		}
+	}
+	.title-head h6{
+		color: #231f20;
+	}
+	.floating-underline{
+		.form-control,
+		.dropdown-toggle{
+			color: #ffffff !important;
+			caret-color: #ffffff;
+			border-bottom-color: rgba(255, 255, 255, 0.85);
+			-webkit-text-fill-color: #ffffff;
+		}
+		.form-control:focus,
+		.form-control:not(:placeholder-shown){
+			color: #ffffff !important;
+			caret-color: #ffffff;
+			border-bottom-color: #3b1b51 !important;
+			-webkit-text-fill-color: #ffffff;
+		}
+		label{
+			color: rgba(255, 255, 255, 0.8) !important;
+		}
+		.form-control:focus ~ label,
+		.form-control:not(:placeholder-shown) ~ label{
+			color: #3b1b51 !important;
+		}
+		.form-control:-webkit-autofill,
+		.form-control:-webkit-autofill:hover,
+		.form-control:-webkit-autofill:focus,
+		.form-control:-webkit-autofill:active{
+			-webkit-text-fill-color: #ffffff !important;
+			transition: background-color 9999s ease-out;
+		}
+	}
+	.bs-select{
+		.dropdown-toggle{
+			color: #ffffff !important;
+			-webkit-text-fill-color: #ffffff;
+			&::after{
+				color: #ffffff;
+			}
+		}
+		.dropdown-menu{
+			background: #ffffff;
+		}
+		.dropdown-item{
+			color: #3b1b51;
+			&:hover,
+			&:focus{
+				background: rgba(59, 27, 81, 0.08);
+				color: #3b1b51;
+			}
+		}
 	}
 }

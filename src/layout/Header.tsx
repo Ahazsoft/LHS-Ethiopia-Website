@@ -1,15 +1,14 @@
 "use client";
 import Link from "next/link";
 import { IMAGES } from "../constant/theme";
-import { headerdata, headerinfo, HeaderItem } from "../constant/alldata";
-import { useEffect, useRef, useState } from "react";
+import { headerdata, HeaderItem } from "../constant/alldata";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useEmailService } from "@/constant/useEmailService";
 
 function Header() {
   const [show, setShow] = useState<number | null>(null);
   const handleclick = (index: number) => {
-    setShow(index);
+    setShow((prev) => (prev === index ? null : index));
   };
   const [isActive, setIsActive] = useState<number | null>(null);
   function menuHandler(index: number) {
@@ -30,19 +29,7 @@ function Header() {
     }
   }
 
-  // email
-  const form = useRef<HTMLFormElement | null>(null);
-  const { sendEmail } = useEmailService();
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!form.current) return;
-    const result = await sendEmail(form.current);
-    if (result.success) {
-      console.log("SUCCESS!", result.message);
-    } else {
-      console.error("FAILED...", result.message);
-    }
-  };
+  const isMenuOpen = show === 2;
 
   return (
     <>
@@ -78,22 +65,13 @@ function Header() {
                   <Image src={IMAGES.logowhite} alt="logo" />
                 </Link>
               </div>
-              <button
-                onClick={() => handleclick(2)}
-                className={`w3menu-toggler navicon ${show ? "open" : ""}`}
-                type="button"
-                data-target="#W3Menu"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
               <div
                 onClick={() => setShow(null)}
-                className="menu-close fade-overlay"
+                className={`menu-close fade-overlay ${isMenuOpen ? "open" : ""}`}
+                aria-hidden={!isMenuOpen}
               ></div>
               <div
-                className={`header-nav w3menu w3menu-end mo-left ${show === 2 ? "show" : ""}`}
+                className={`header-nav w3menu w3menu-end mo-left ${isMenuOpen ? "show" : ""}`}
                 id="W3Menu"
               >
                 <div className="logo-header logo-dark">
@@ -210,7 +188,7 @@ function Header() {
                   </ul>
                 </div>
               </div>
-              <div className={`extra-nav ${scroll ? "active" : ""}`}>
+              <div className={`extra-nav ${scroll ? "active" : ""} ${isMenuOpen ? "menu-open" : ""}`}>
                 <div className="extra-cell">
                   <ul className="header-right">
                     <li className="nav-item">
@@ -219,6 +197,21 @@ function Header() {
                         Send an Enquiry {" "}
                       </Link>
                     </li>
+                    <li className="nav-item d-lg-none">
+                      <button
+                        onClick={() => handleclick(2)}
+                        className={`w3menu-toggler navicon ${isMenuOpen ? "open" : ""}`}
+                        type="button"
+                        data-target="#W3Menu"
+                        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                        aria-expanded={isMenuOpen}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </li>
+                    {/* Sidebar offcanvas toggle — disabled per client request
                     <li className="nav-item">
                       <button
                         onClick={() => handleclick(1)}
@@ -233,12 +226,14 @@ function Header() {
                         <span></span>
                       </button>
                     </li>
+                    */}
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/* Sidebar offcanvas panel — disabled per client request
         <div
           className={`offcanvas dz-offcanvas offcanvas offcanvas-end ${show === 1 ? "show" : ""}`}
           tabIndex={-1}
@@ -337,32 +332,12 @@ function Header() {
                       <i className="fa-brands fa-whatsapp" />
                     </Link>{" "}
                   </li>
-                  {/* <li>
-                    <Link
-                      href="https://www.facebook.com/dexignzone"
-                      target="_blank"
-                    >
-                      <i className="fa-brands fa-facebook-f" />
-                    </Link>{" "}
-                  </li>
-                  <li>
-                    <Link href="https://x.com/dexignzone" target="_blank">
-                      <i className="fa-brands fa-x-twitter" />
-                    </Link>{" "}
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.youtube.com/@dexignzone"
-                      target="_blank"
-                    >
-                      <i className="fa-brands fa-youtube" />
-                    </Link>{" "}
-                  </li> */}
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        */}
       </header>
     </>
   );

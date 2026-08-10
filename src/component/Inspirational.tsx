@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { inspirationaldata } from "../constant/alldata";
-import { IMAGES, SVGICONS } from "../constant/theme";
+import { IMAGES } from "../constant/theme";
 
 function Inspirational() {
     return (
@@ -10,7 +10,7 @@ function Inspirational() {
                     <div className="row g-lg-5 align-items-center">
                         <div className="col-lg-7 m-b10">
                             <div className="section-head style-1 m-b30 max-w600">
-                                <h2 className="title wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Inspirational Health <br /> Our Vision and Mission</h2>
+                                <h2 className="title wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Our Mission and Vision</h2>
                                 <p className="small wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">To enhance the health and well-being of our community by providing compassionate, high-quality healthcare services through dedicated professionals and advanced medical practices.</p>
                             </div>
                             {inspirationaldata.map((item, i) => (
@@ -22,8 +22,8 @@ function Inspirational() {
                                         </svg>
                                     </div>
                                     <div className="icon-content">
-                                        <h3 className="dz-title">{item.title} </h3>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                                        <h3 className="dz-title">{item.title}</h3>
+                                        <p>{item.desc}</p>
                                     </div>
                                 </div>
                             ))}

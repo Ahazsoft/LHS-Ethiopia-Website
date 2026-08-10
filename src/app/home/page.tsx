@@ -57,14 +57,14 @@ function HomePage() {
                         <span className="text-white">Anywhere You Need It </span>{" "}
                         <Image src={IMAGES.herobannerline} alt="" />{" "}
                       </h1>
-                      <p
+                      {/* <p
                         className="text wow fadeInUp"
                         data-wow-delay="0.4s"
                         data-wow-duration="0.8s"
                       >
                         Ethiopia’s Most Trusted Medical Travel Facilitator for
                         Turkey, Thailand & India
-                      </p>
+                      </p> */}
                       <Link
                         href="/appointment"
                         className="btn btn-lg btn-icon btn-primary m-r20 wow fadeInUp"
@@ -155,7 +155,7 @@ function HomePage() {
                           {/* progress chart */}
                           <DiagnosisReport />
                           <div className="widget-content">
-                            <h6 className="mb-0">Successfully diagnosis</h6>
+                            <h6 className="mb-0">Satisfied Clients</h6>
                             <Link
                               href="#"
                               className="btn btn-square btn-outline-purple rounded-circle"
@@ -173,10 +173,10 @@ function HomePage() {
                         <div className="info-widget style-3 move-1">
                           <div className="widget-head">
                             <div className="widget-media">
-                              <Image src={IMAGES.smallavatar5} alt="" />
+                              <Image src={IMAGES.team2} alt="Dr. Yonathan Gary" />
                             </div>
                             <div className="widget-content">
-                              <h6 className="title">Dr. Abebe Kebede</h6>
+                              <h6 className="title">Dr. Yonathan Gary</h6>
                               <ul className="star-list">
                                 <li>
                                   <i className="fa fa-star" />
