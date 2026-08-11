@@ -117,11 +117,8 @@ function AboutUs() {
                 data-bottom-top="transform: translateY(50px)"
                 data-top-bottom="transform: translateY(-50px)"
               >
-                <div className="form-wrapper style-1">
-                  <div
-                    className="form-body bg-primary background-blend-burn"
-                    style={{ backgroundImage: `url(${IMAGES.bg2png.src})` }}
-                  >
+                <div className="form-wrapper style-1 lhs-assistance-form">
+                  <div className="form-body">
                     <div className="title-head">
                       <h2 className="form-title m-b0">
                         Make An <span>Appointment</span> <br /> Apply For
@@ -150,7 +147,7 @@ function AboutUs() {
                               type="text"
                               className="form-control"
                               id="inputYourName"
-                              placeholder="Your Name"
+                              placeholder=" "
                             />
                             <label htmlFor="inputYourName">Your Name</label>
                           </div>
@@ -162,7 +159,7 @@ function AboutUs() {
                               type="email"
                               className="form-control"
                               id="inputYourEmail"
-                              placeholder="Your Email"
+                              placeholder=" "
                             />
                             <label htmlFor="inputYourEmail">Your Email</label>
                           </div>
@@ -171,10 +168,10 @@ function AboutUs() {
                           <div className="form-floating floating-underline input-light">
                             <input
                               name="dzPhoneNumber"
-                              type="number"
+                              type="tel"
                               className="form-control dz-number"
                               id="inputPhoneNumber"
-                              placeholder="Phone Number"
+                              placeholder=" "
                             />
                             <label htmlFor="inputPhoneNumber">
                               Phone Number
@@ -185,7 +182,7 @@ function AboutUs() {
                           <div className="form-floating floating-underline input-light">
                             <Dropdown className="form-control bs-select">
                               <Dropdown.Toggle as="div">
-                                {selectCat}
+                                {selectCat || "Select Service"}
                               </Dropdown.Toggle>
                               <Dropdown.Menu>
                                 <Dropdown.Item
@@ -219,7 +216,7 @@ function AboutUs() {
                               className="form-control"
                               id="inputMessage"
                               rows={6}
-                              placeholder="Select Service"
+                              placeholder=" "
                             ></textarea>
                             <label htmlFor="inputMessage">Message</label>
                           </div>

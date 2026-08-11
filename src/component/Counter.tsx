@@ -19,7 +19,7 @@ function Counter() {
                                 <Image className="avatar rounded-circle border border-white border-3" src={IMAGES.smallavatar3} alt="" />
                                 <Image className="avatar rounded-circle border border-white border-3" src={IMAGES.smallavatar4} alt="" />
                             </div>
-                            <h2 className="text-white font-20 m-b0 fw-medium">300+ Appointment Booking Confirm for this Week</h2>
+                            <h2 className="text-white font-20 m-b0 fw-medium">4K+ Case Queries</h2>
                         </div>
                         {countupdata.map((data, i) => (
                             <div className="col-lg-3 col-4 m-b30 d-flex wow fadeInUp" data-wow-delay={data.delay} data-wow-duration="0.8s" key={i}>

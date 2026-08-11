@@ -56,12 +56,12 @@ function AppointmentData() {
             data-bottom-top="transform: translateY(100px)"
             data-top-bottom="transform: translateY(-10px)"
           >
-            <div className="form-wrapper style-1 text-vr-wrapper">
+            <div className="form-wrapper style-1 text-vr-wrapper lhs-assistance-form">
               <div className="text-vertical">Request Assistance</div>
-              <div className="form-body bg-purple background-blend-burn">
+              <div className="form-body">
                 <div className="title-head">
                   <h2 className="form-title m-b0">
-                    Request <span className="text-golden">Assistance</span>{" "}
+                    Request <span>Assistance</span>{" "}
                     <br /> Tell Us About Your Case
                   </h2>
                   <h6>
@@ -74,14 +74,12 @@ function AppointmentData() {
                   <input type="hidden" className="form-control" name="reCaptchaEnable" value="0" />
                   <div className="dzFormMsg"></div>
 
-                  {/* Hidden fields to pass dropdown values */}
                   <input type="hidden" name="dzService" value={serviceType} />
                   {serviceType === "Medical Tourism" && (
                     <input type="hidden" name="dzDestination" value={destination} />
                   )}
 
                   <div className="row">
-                    {/* Full Name */}
                     <div className="col-sm-6 m-b30">
                       <div className="form-floating floating-underline input-light">
                         <input
@@ -89,13 +87,12 @@ function AppointmentData() {
                           type="text"
                           className="form-control"
                           id="inputFullName"
-                          placeholder="Full Name"
+                          placeholder=" "
                           required
                         />
                         <label htmlFor="inputFullName">Full Name</label>
                       </div>
                     </div>
-                    {/* Company (optional) */}
                     <div className="col-sm-6 m-b30">
                       <div className="form-floating floating-underline input-light">
                         <input
@@ -109,7 +106,6 @@ function AppointmentData() {
                       </div>
                     </div>
 
-                    {/* Email */}
                     <div className="col-sm-6 m-b30">
                       <div className="form-floating floating-underline input-light">
                         <input
@@ -117,13 +113,12 @@ function AppointmentData() {
                           type="email"
                           className="form-control"
                           id="inputEmail"
-                          placeholder="Email Address"
+                          placeholder=" "
                           required
                         />
                         <label htmlFor="inputEmail">Email Address</label>
                       </div>
                     </div>
-                    {/* Phone Number */}
                     <div className="col-sm-6 m-b30">
                       <div className="form-floating floating-underline input-light">
                         <input
@@ -131,15 +126,13 @@ function AppointmentData() {
                           type="tel"
                           className="form-control"
                           id="inputPhone"
-                          placeholder="+251 9..."
+                          placeholder=" "
                           required
                         />
-                        <label htmlFor="inputPhone">Phone Number(Include country code)
-                        </label>
+                        <label htmlFor="inputPhone">Phone Number(Include country code)</label>
                       </div>
                     </div>
 
-                    {/* Country */}
                     <div className="col-sm-6 m-b30">
                       <div className="form-floating floating-underline input-light">
                         <input
@@ -147,13 +140,12 @@ function AppointmentData() {
                           type="text"
                           className="form-control"
                           id="inputCountry"
-                          placeholder="Country"
+                          placeholder=" "
                           required
                         />
                         <label htmlFor="inputCountry">Country</label>
                       </div>
                     </div>
-                    {/* Service Required */}
                     <div className="col-sm-6 m-b30">
                       <div className="form-floating floating-underline input-light">
                         <Dropdown className="form-control bs-select">
@@ -174,7 +166,6 @@ function AppointmentData() {
                       </div>
                     </div>
 
-                    {/* Preferred Treatment Destination (conditional) */}
                     {serviceType === "Medical Tourism" && (
                       <div className="col-sm-6 m-b30">
                         <div className="form-floating floating-underline input-light">
@@ -197,7 +188,6 @@ function AppointmentData() {
                       </div>
                     )}
 
-                    {/* Case Description */}
                     <div className="col-sm-12 m-b30">
                       <div className="form-floating floating-underline input-light">
                         <textarea
@@ -205,14 +195,13 @@ function AppointmentData() {
                           className="form-control"
                           id="inputMessage"
                           rows={5}
-                          placeholder="Describe your case..."
+                          placeholder=" "
                           required
                         ></textarea>
                         <label htmlFor="inputMessage">Case Description</label>
                       </div>
                     </div>
 
-                    {/* Submit */}
                     <div className="col-sm-12">
                       <button
                         type="submit"

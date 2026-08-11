@@ -76,7 +76,7 @@ function Howitwork() {
                         <div className="content-bx style-1 m-auto text-center">
                           <span className="content-text text-white">
                             <span className="counter">
-                              <CountUp end={180} duration={5} />
+                              <CountUp end={1300} duration={5} />
                             </span>
                             +
                           </span>
@@ -87,12 +87,12 @@ function Howitwork() {
                         <div className="content-bx style-1 m-auto text-center">
                           <span className="content-text text-white">
                             <span className="counter">
-                              <CountUp start={5} end={45} duration={5} />
+                              <CountUp end={400} duration={5} />
                             </span>
-                            K
+                            +
                           </span>
                           <h3 className="title text-white m-b0">
-                            Happy Patients
+                            Repatriation
                           </h3>
                         </div>
                       </div>

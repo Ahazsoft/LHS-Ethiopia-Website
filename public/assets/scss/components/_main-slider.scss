@@ -21,12 +21,16 @@
 		}
 		.text-vertical{
 			font-weight: bold;
-			font-size: 16px;
+			font-size: 14px;
+			letter-spacing: 2px;
 			writing-mode: tb;
 			transform: rotate(-180deg) translateY(50%);
 			position: absolute;
-			left: 50px;
+			left: 18px;
 			top: 50%;
+			z-index: 2;
+			white-space: nowrap;
+			pointer-events: none;
 		}
 		.text{
 			font-size: 20px;
@@ -35,7 +39,7 @@
 			margin-bottom: 35px;
 		}
 		.hero-content{
-			margin-left: -50px;
+			margin-left: 40px;
 		}
 		.circle-wrapper{
 			width: 100%;
@@ -139,10 +143,11 @@
 				}
 			}
 			.hero-content{
-				margin-left: 0;
+				margin-left: 30px;
 			}
 			.text-vertical{
-				left: 30px;
+				left: 12px;
+				font-size: 13px;
 			}
 			.item3{
 				top: 150px;
@@ -162,7 +167,7 @@
 		}
 		@media only screen and (max-width: 1380px){
 			.hero-content{
-				margin-left: -50px;
+				margin-left: 30px;
 			}
 			.hero-thumbnail{
 				margin-left: -40px;

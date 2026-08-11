@@ -6,7 +6,7 @@ import { ApexOptions } from 'apexcharts';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 const DiagnosisReport = () =>{
-    const series = [82];
+    const series = [94];
     const options : ApexOptions ={        
         chart: {
             type: 'radialBar',

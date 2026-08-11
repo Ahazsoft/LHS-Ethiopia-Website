@@ -605,6 +605,10 @@
 		visibility: visible;
 	}
 }
+.menu-close.fade-overlay.open{
+	opacity: 0.5;
+	visibility: visible;
+}
 
 // Full Width
 .w3menu-end.header-nav .nav > li > .mega-menu{
