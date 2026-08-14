@@ -26,8 +26,10 @@ function WhyChoose() {
                                         <span className="icon-cell"> <i className="flaticon-check" /> </span>
                                     </div>
                                     <div className="icon-content">
-                                        <h3 className="dz-title">{data.title}</h3>
-                                        <p>{data.desc}</p>
+                                        <h3 className="dz-title" style={{ fontSize: "0.9rem", fontWeight: 600 }}>
+                                            {data.title}
+                                        </h3>
+                                        <p style={{ fontSize: "0.7rem", lineHeight: 1.7 }}>{data.desc}</p>
                                     </div>
                                 </div>
                             </div>
