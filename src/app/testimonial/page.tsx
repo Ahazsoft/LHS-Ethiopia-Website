@@ -30,28 +30,20 @@ function Testimonial() {
                         <div className="row justify-content-center">
                             {testidata.map((item, i) => (
                                 <div className="col-xl-6 col-lg-12 m-b20 wow fadeInUp" data-wow-delay={item.delay} data-wow-duration="0.7s" key={i}>
-                                    <div className="testimonial-1">
-                                        <div className="dz-media">
-                                            <div className="media-inner">
-                                                <Image src={item.image} alt="/" />
-                                           {/* <div className="video-bx1 video-sm">
-                                                    <Link onClick={handleShow} href="#" scroll={false} className="popup-youtube video-btn bg-primary">
-                                                        <i className="fa fa-play" />
-                                                    </Link>
-                                                    <span>Watch The Video</span>
-                                                </div> */}
-                                            </div>
-                                            <div className="testimonial-info">
-                                                <h5 className="testimonial-name">{item.title}</h5>
-                                                <span className="testimonial-position">{item.position}</span>
+                                    <div className="testimonial-quote-card h-100">
+                                        <div className="widget-head">
+                                            <div className="widget-content">
+                                                <h5 className="title">{item.title}</h5>
+                                                <ul className="star-list">
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div className="testimonial-detail">
-                                            <div className="testimonial-text">
-                                                <h3 className="title">{item.treat}</h3>
-                                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable</p>
-                                            </div>
-                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable</p>
                                     </div>
                                 </div>
                             ))}

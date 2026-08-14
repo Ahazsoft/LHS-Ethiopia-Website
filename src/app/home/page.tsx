@@ -118,29 +118,7 @@ function HomePage() {
                         data-top-bottom="transform: translateY(50px)"
                       >
                         <div className="info-widget style-1 move-3">
-                          <div className="avatar-group">
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar1}
-                              alt=""
-                            />
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar2}
-                              alt=""
-                            />
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar3}
-                              alt=""
-                            />
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar4}
-                              alt=""
-                            />
-                          </div>
-                          <div className="clearfix ms-2">
+                          <div className="clearfix">
                             <span className="number text-primary">150k</span>
                             <span>Patient recovers</span>
                           </div>
@@ -211,9 +189,6 @@ function HomePage() {
                   data-top-bottom="transform: translateY(30px)"
                 >
                   <div className="info-widget style-4 move-4">
-                    <div className="widget-media">
-                      <Image src={IMAGES.smallavatar2} alt="" />
-                    </div>
                     <div className="widget-content">
                       <h6 className="title">Have a Question?</h6>
                       <Link href="mailto:info@lhsethiopia.com">

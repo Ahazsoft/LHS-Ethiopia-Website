@@ -1,6 +1,5 @@
 "use client"
 import { useRef } from "react";
-import { IMAGES } from "../constant/theme";
 import { useEmailService } from "@/constant/useEmailService";
 
 function Getintouch() {
@@ -20,13 +19,13 @@ function Getintouch() {
     return (
         <>
             <div className="col-xl-5 m-b30" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
-                <div className="form-wrapper style-1">
-                    <div className="form-body bg-primary background-blend-burn" 
-                        style={{ backgroundImage: `url(${IMAGES.bg2png.src})`, backgroundSize: 'cover' }} 
-                    >
-                        <div className="section-head style-1 m-b30">
-                            <h2 className="title text-white m-b0">Get in Touch</h2>
-                            <p className="text-white m-b0 fw-medium">You can react us anytime</p>
+                <div className="form-wrapper style-1 lhs-assistance-form">
+                    <div className="form-body">
+                        <div className="title-head">
+                            <h2 className="form-title m-b0">
+                                Get in <span>Touch</span>
+                            </h2>
+                            <h6>You can reach us anytime</h6>
                         </div>
                         <form ref={form} onSubmit={handleSubmit} className="dzForm">
                             <input type="hidden" className="form-control" name="dzToDo" value="Contact" />
@@ -35,31 +34,31 @@ function Getintouch() {
                             <div className="row">
                                 <div className="col-sm-6 m-b30">
                                     <div className="form-floating floating-underline input-light">
-                                        <input name="dzFirstName" type="text" className="form-control" id="inputFirstName" placeholder="First Name" />
+                                        <input name="dzFirstName" type="text" className="form-control" id="inputFirstName" placeholder=" " />
                                         <label htmlFor="inputFirstName">First Name</label>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 m-b30">
                                     <div className="form-floating floating-underline input-light">
-                                        <input name="dzLastName" type="text" className="form-control" id="inputLastName" placeholder="Last Name" />
+                                        <input name="dzLastName" type="text" className="form-control" id="inputLastName" placeholder=" " />
                                         <label htmlFor="inputLastName">Last Name</label>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 m-b30">
                                     <div className="form-floating floating-underline input-light">
-                                        <input name="dzEmail" type="email" className="form-control" id="inputYourEmail" placeholder="Your Email" />
+                                        <input name="dzEmail" type="email" className="form-control" id="inputYourEmail" placeholder=" " />
                                         <label htmlFor="inputYourEmail">Your Email</label>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 m-b30">
                                     <div className="form-floating floating-underline input-light">
-                                        <input name="dzPhoneNumber" type="number" className="form-control dz-number" id="inputPhoneNumber" placeholder="Phone Number" />
+                                        <input name="dzPhoneNumber" type="tel" className="form-control dz-number" id="inputPhoneNumber" placeholder=" " />
                                         <label htmlFor="inputPhoneNumber">Phone Number</label>
                                     </div>
                                 </div>
                                 <div className="col-sm-12 m-b30">
                                     <div className="form-floating floating-underline input-light">
-                                        <textarea name="dzMessage" className="form-control" id="inputMessage" rows={6} placeholder="Select Service"></textarea>
+                                        <textarea name="dzMessage" className="form-control" id="inputMessage" rows={6} placeholder=" "></textarea>
                                         <label htmlFor="inputMessage">Message</label>
                                     </div>
                                 </div>
