@@ -214,7 +214,7 @@ export default async function ServiceDetailSlugPage({
                     <div className="content-item wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.7s">
                       <h3>Why patients choose LHS for care abroad</h3>
                       <ul className="list-check text-secondary">
-                        <li>A vetted network of 70+ hospitals across 7 countries</li>
+                        <li>A vetted network of 50+ JCI accredited hospitals across 7 countries</li>
                         <li>Clinician-led coordination, not a purely administrative booking service</li>
                         <li>Support before, during, and after treatment, not just at the booking stage</li>
                         <li>Established relationships with hospitals in Thailand, India, Turkey, and Dubai</li>

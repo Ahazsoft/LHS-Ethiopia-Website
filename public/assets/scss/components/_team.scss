@@ -59,6 +59,7 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			flex-wrap: wrap;
 			gap: 10px;
 			padding: 35px 20px 15px 20px;
 			margin-top: -20px;
@@ -66,12 +67,25 @@
 			position: relative;
 			z-index: 1;
 		}
+		.dz-team-bio{
+			flex: 1 1 100%;
+			margin: 4px 0 0;
+			font-size: 14px;
+			line-height: 1.7;
+			color: #231f20;
+		}
 		.btn-square{
 			height: 40px;
 			width: 40px;
 			min-width: 40px;
 			border-radius: 10px;
 			font-size: 20px;
+
+			&.is-open{
+				background-color: #3b1b51;
+				border-color: #3b1b51;
+				color: #fff;
+			}
 		}
 		.dz-social{
 			display: flex;
@@ -111,6 +125,9 @@
 			.dz-name a{
 				color: #fff;
 			}
+			.dz-team-bio{
+				color: #fff;
+			}
 			.btn-square{
 				background-color: #fff;
 				color: var(--bs-secondary);
@@ -121,7 +138,16 @@
 					-moz-animation: toRightFromLeft 0.3s forwards;
 					animation: toRightFromLeft 0.3s forwards;
 				}
-				
+
+				&.is-open{
+					background-color: #3b1b51;
+					border-color: #3b1b51;
+					color: #fff;
+
+					i{
+						animation: none;
+					}
+				}
 			}
 			.dz-social{
 				transform: translateY(0px);

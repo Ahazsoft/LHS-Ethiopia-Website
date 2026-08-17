@@ -192,7 +192,7 @@ function Header() {
                 <div className="extra-cell">
                   <ul className="header-right">
                     <li className="nav-item">
-                      <Link href="/appointment" className="btn  btn-purple">
+                      <Link href="/appointment" className="btn btn-purple btn-shadow">
                         {" "}
                         Send an Enquiry {" "}
                       </Link>
@@ -267,10 +267,10 @@ function Header() {
                 <li>Minna bldg, wello sefer, Addis Ababa, Ethiopia</li>
                 <li>
                   <Link
-                    href="mailto:info@lhsethiopia.com"
+                    href="mailto:info@lighthouse.healthcare"
                     className="text-body"
                   >
-                    info@lhsethiopia.com
+                    info@lighthouse.healthcare
                   </Link>
                 </li>
                 <li>

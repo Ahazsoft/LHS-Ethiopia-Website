@@ -32,7 +32,7 @@ function RealPatient() {
                                 <div className="info-widget style-3 move-1">
                                     <div className="widget-head">
                                         <div className="widget-content">
-                                            <h6 className="title">Dr. Samrawit Alem</h6>
+                                            <h6 className="title">Samrawit T.</h6>
                                             <ul className="star-list">
                                                 <li><i className="fa fa-star" /></li>
                                                 <li><i className="fa fa-star" /></li>
@@ -42,7 +42,7 @@ function RealPatient() {
                                             </ul>
                                         </div>
                                     </div>
-                                    <p>“It is a long established fact that a reader will be distracted by the readable content”</p>
+                                    <p>“LHS coordinated everything for my father's emergency transfer to Dubai. From hospital to air ambulance, their team was fast, caring, and professional. We’re forever grateful!”</p>
                                 </div>
                             </div>
                         </div>
