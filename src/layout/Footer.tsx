@@ -73,12 +73,12 @@ function Footer() {
                       <Image src={IMAGES.logo} alt="" />
                     </Link>
                   </div>
-                  <p>
+                  {/* <p>
                     Lighthouse Healthcare Solutions (LHS) is a clinician-led
                     medical travel and emergency transport company founded by
                     doctors who are deeply passionate about pre-hospital and
                     critical care.
-                  </p>
+                  </p> */}
                 </div>
               </div>
               {footerdata2.map((data, i) => (

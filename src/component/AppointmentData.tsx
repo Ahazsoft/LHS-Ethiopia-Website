@@ -156,6 +156,7 @@ function AppointmentData() {
                             {SERVICE_OPTIONS.map((option) => (
                               <Dropdown.Item
                                 key={option}
+                                active={serviceType === option}
                                 onClick={() => setServiceType(option)}
                               >
                                 {option}
@@ -177,6 +178,7 @@ function AppointmentData() {
                               {DESTINATION_OPTIONS.map((option) => (
                                 <Dropdown.Item
                                   key={option}
+                                  active={destination === option}
                                   onClick={() => setDestination(option)}
                                 >
                                   {option}

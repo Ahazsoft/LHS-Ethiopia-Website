@@ -119,8 +119,8 @@ function HomePage() {
                       >
                         <div className="info-widget style-1 move-3">
                           <div className="clearfix">
-                            <span className="number text-primary">150k</span>
-                            <span>Patient recovers</span>
+                            <span className="number text-primary">4k</span>
+                            <span>Case queries</span>
                           </div>
                         </div>
                       </div>
@@ -191,8 +191,8 @@ function HomePage() {
                   <div className="info-widget style-4 move-4">
                     <div className="widget-content">
                       <h6 className="title">Have a Question?</h6>
-                      <Link href="mailto:info@lhsethiopia.com">
-                        info@lhsethiopia.com
+                      <Link href="mailto:info@lighthouse.healthcare">
+                        info@lighthouse.healthcare
                       </Link>
                     </div>
                   </div>

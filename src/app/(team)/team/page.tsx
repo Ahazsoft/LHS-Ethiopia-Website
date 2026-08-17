@@ -12,6 +12,7 @@ import Image from "next/image";
 
 function Team() {
     const [active, setActive] = useState(1);
+    const [openId, setOpenId] = useState<number | null>(null);
     return (
         <>
             <Header />
@@ -36,9 +37,19 @@ function Team() {
                                                 <h3 className="dz-name"><Link href="/team-detail">{item.title}</Link></h3>
                                                 <span className="dz-position">{item.position}</span>
                                             </div>
-                                            <Link href="/team-detail" className="btn btn-square btn-secondary">
-                                                <i className="feather icon-arrow-right" />
-                                            </Link>
+                                            <button
+                                                type="button"
+                                                className={`btn btn-square btn-secondary${openId === item.id ? " is-open" : ""}`}
+                                                title={openId === item.id ? "Show less" : "Show more"}
+                                                aria-expanded={openId === item.id}
+                                                aria-label={openId === item.id ? "Show less" : "Show more"}
+                                                onClick={() => setOpenId((current) => (current === item.id ? null : item.id))}
+                                            >
+                                                <i className={`feather ${openId === item.id ? "icon-chevron-up" : "icon-arrow-right"}`} />
+                                            </button>
+                                            {openId === item.id && item.bio && (
+                                                <p className="dz-team-bio">{item.bio}</p>
+                                            )}
                                         </div>
                                         <ul className="dz-social">
                                             <li><Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>

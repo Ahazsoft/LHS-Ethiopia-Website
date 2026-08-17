@@ -17,7 +17,7 @@ const differentiators = [
     icon: "feather icon-globe",       // Regional Reach
     title: "Regional Reach, Local Expertise",
     description:
-      "A network of 70+ hospitals across 7 countries, paired with deep knowledge of Ethiopian and East African healthcare systems, logistics, and documentation requirements.",
+      "A network of 50+ vetted JCI accredited hospitals across 7 countries, paired with deep knowledge of Ethiopian and East African healthcare systems, logistics, and documentation requirements.",
     delay: "0.6s",
   },
   {
@@ -70,6 +70,7 @@ export default function WhyChooseLHS() {
                 style={{
                   width: "70px",
                   height: "70px",
+  
                   borderRadius: "50%",
                   border: "2px solid #cfb755",
                   background: "rgba(207, 183, 85, 0.08)",
@@ -87,8 +88,10 @@ export default function WhyChooseLHS() {
               </h5>
 
               {/* Description */}
-              <p  className="text-white opacity-90"
-                style={{ lineHeight: 1.7, fontSize: "0.7rem" }}>
+              <p
+                className="text-white"
+                style={{ fontSize: "0.7rem", lineHeight: 1.7, fontWeight: 200, opacity: 0.7 }}
+              >
                 {item.description}
               </p>
             </div>

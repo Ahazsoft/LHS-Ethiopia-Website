@@ -27,7 +27,8 @@ function Alllocation() {
                 <div className="content-bx style-6 shadow-sm">
                   <div className="dz-media">                    
                     <iframe
-                      src="https://maps.google.com/maps?ll=8.991437,38.772203&z=20&t=m&hl=en-US&gl=US&mapclient=embed&q=XQRC%2BHVG%20Ethio%20China%20St%20Addis%20Ababa"
+                      src="https://maps.google.com/maps?q=Minna+bldg,+wello+sefer,+Addis+Ababa,+Ethiopia&z=17&hl=en&output=embed"
+                      title="Minna bldg, wello sefer, Addis Ababa, Ethiopia"
                       style={{ border: 0, height: "100%", width: "100%" }}
                       allowFullScreen
                       loading="lazy"
@@ -50,7 +51,7 @@ function Alllocation() {
                     </div>
                     <div className="dz-footer">
                       <Link
-                        href="https://maps.app.goo.gl/vWXWsoEbCGhJaVsb9"
+                        href="https://www.google.com/maps/dir/?api=1&destination=Minna+bldg,+wello+sefer,+Addis+Ababa,+Ethiopia"
                         target="_blank"
                         className="icon-link-hover-end"
                       >

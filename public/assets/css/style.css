@@ -22580,6 +22580,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 35px 20px 15px 20px;
   margin-top: -20px;
@@ -22587,12 +22588,24 @@ button {
   position: relative;
   z-index: 1;
 }
+.dz-team.style-1 .dz-team-bio {
+  flex: 1 1 100%;
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #231f20;
+}
 .dz-team.style-1 .btn-square {
   height: 40px;
   width: 40px;
   min-width: 40px;
   border-radius: 10px;
   font-size: 20px;
+}
+.dz-team.style-1 .btn-square.is-open {
+  background-color: #3b1b51;
+  border-color: #3b1b51;
+  color: #fff;
 }
 .dz-team.style-1 .dz-social {
   display: flex;
@@ -22633,6 +22646,10 @@ button {
 .dz-team.style-1:hover .dz-name a {
   color: #fff;
 }
+.dz-team.style-1.active .dz-team-bio,
+.dz-team.style-1:hover .dz-team-bio {
+  color: #fff;
+}
 .dz-team.style-1.active .btn-square,
 .dz-team.style-1:hover .btn-square {
   background-color: #fff;
@@ -22644,6 +22661,17 @@ button {
   -webkit-animation: toRightFromLeft 0.3s forwards;
   -moz-animation: toRightFromLeft 0.3s forwards;
   animation: toRightFromLeft 0.3s forwards;
+}
+.dz-team.style-1 .btn-square.is-open,
+.dz-team.style-1.active .btn-square.is-open,
+.dz-team.style-1:hover .btn-square.is-open {
+  background-color: #3b1b51;
+  border-color: #3b1b51;
+  color: #fff;
+}
+.dz-team.style-1.active .btn-square.is-open i,
+.dz-team.style-1:hover .btn-square.is-open i {
+  animation: none;
 }
 .dz-team.style-1.active .dz-social,
 .dz-team.style-1:hover .dz-social {
@@ -48055,7 +48083,7 @@ footer.site-footer.footer-dark .fb-inner {
   color: #231f20;
 }
 /* Field text must contrast with gold background */
-.lhs-assistance-form .floating-underline .form-control,
+.lhs-assistance-form .floating-underline .form-control:not(.bs-select),
 .lhs-assistance-form .floating-underline .dropdown-toggle,
 .lhs-assistance-form .bs-select .dropdown-toggle {
   color: #ffffff !important;
@@ -48084,19 +48112,72 @@ footer.site-footer.footer-dark .fb-inner {
   -webkit-text-fill-color: #ffffff !important;
   transition: background-color 9999s ease-out;
 }
+.lhs-assistance-form .bs-select {
+  -webkit-text-fill-color: unset;
+}
 .lhs-assistance-form .bs-select .dropdown-toggle::after {
   color: #ffffff;
 }
 .lhs-assistance-form .bs-select .dropdown-menu {
   background: #ffffff;
+  border: 1px solid rgba(59, 27, 81, 0.12);
+  border-radius: 8px;
+  padding: 6px 0;
+  box-shadow: 0 8px 24px rgba(35, 31, 32, 0.12);
+  -webkit-text-fill-color: #3b1b51;
 }
 .lhs-assistance-form .bs-select .dropdown-item {
-  color: #3b1b51;
+  color: #3b1b51 !important;
+  -webkit-text-fill-color: #3b1b51;
+  white-space: normal;
+  padding: 10px 16px;
+  font-weight: 500;
 }
 .lhs-assistance-form .bs-select .dropdown-item:hover,
 .lhs-assistance-form .bs-select .dropdown-item:focus {
-  background: rgba(59, 27, 81, 0.08);
-  color: #3b1b51;
+  background: #3b1b51 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
+}
+.lhs-assistance-form .bs-select .dropdown-item:active,
+.lhs-assistance-form .bs-select .dropdown-item.active {
+  background: #c0a94c !important;
+  color: #3b1b51 !important;
+  -webkit-text-fill-color: #3b1b51;
+}
+
+/* Header enquiry CTA: gold fill like assistance submit, white on hover */
+.site-header .extra-nav .header-right .btn.btn-purple {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #c0a94c !important;
+  border: 1px solid #c0a94c !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  box-shadow: 0 6px 16px rgba(59, 27, 81, 0.18);
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.site-header .extra-nav .header-right .btn.btn-purple:hover,
+.site-header .extra-nav .header-right .btn.btn-purple:focus-visible {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #c0a94c !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(59, 27, 81, 0.2);
+}
+.site-header .extra-nav .header-right .btn.btn-purple:active {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #3b1b51 !important;
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(59, 27, 81, 0.16);
 }
 
 /*# sourceMappingURL=style.css.map */

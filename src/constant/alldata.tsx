@@ -42,8 +42,8 @@ export const headerinfo = [
     image: IMAGES.svgicon2,
     title: "Email Supports",
     paragraph: (
-      <Link href="mailto:info@lhsethiopia.com" className="text-secondary">
-        info@lhsethiopia.com
+      <Link href="mailto:info@lighthouse.healthcare" className="text-secondary">
+        info@lighthouse.healthcare
       </Link>
     ),
   },
@@ -100,8 +100,8 @@ export const footerdata1 = [
     icon: <i className="feather icon-mail" />,
     title: "Send us a Mail",
     paragraph: (
-      <Link href="mailto:info@lhsethiopia.com" className="text-white">
-        info@lhsethiopia.com
+      <Link href="mailto:info@lighthouse.healthcare" className="text-white">
+        info@lighthouse.healthcare
       </Link>
     ),
   },
@@ -161,10 +161,9 @@ export const footerdata2 = [
 // pages
 // testimonial
 export const testidata = [
-  { treat: "Optimal Treatment", delay: "0.2s", title: "Yeshitela Admas", position: "Patient", image: IMAGES.testimonial1 },
-  { treat: "Best Treatment", delay: "0.4s", title: "Danial Frankie", position: "Patient", image: IMAGES.testimonial2 },
-  { treat: "Recommended Care", delay: "0.6s", title: "Rihana Roy", position: "Patient", image: IMAGES.testimonial4 },
-  { treat: "First-Class Treatment", delay: "0.8s", title: "Kenneth Fong", position: "Patient", image: IMAGES.testimonial5 },
+  { treat: "Emergency Transfer", delay: "0.2s", title: "Samrawit T.", position: "Family member", image: IMAGES.testimonial1, message: "LHS coordinated everything for my father's emergency transfer to Dubai. From hospital to air ambulance, their team was fast, caring, and professional. We’re forever grateful!" },
+  { treat: "Treatment Abroad", delay: "0.4s", title: "Abdu M.", position: "Patient", image: IMAGES.testimonial2, message: "LHS helped me get a successful kidney transplant in India. They guided me through every step, and I’m now recovering well. Thank you, LHS!" },
+  { treat: "Physician Referral", delay: "0.6s", title: "Dr. Mekdes A.", position: "Physician", image: IMAGES.testimonial4, message: "LHS made international transfer seamless for my patient. Their updates, coordination, and follow-up were outstanding. I refer with full confidence." },
 ];
 
 export const testiswipeerdata2 = [
@@ -400,7 +399,7 @@ export const serviceDetailData: Record<string, ServiceDetail> = {
       {
         title: "Why patients choose LHS for care abroad",
         items: [
-          "A vetted network of 70+ hospitals across 7 countries",
+          "A vetted network of 50+ JCI accredited hospitals across 7 countries",
           "Clinician-led coordination, not a purely administrative booking service",
           "Support before, during, and after treatment, not just at the booking stage",
           "Established relationships with hospitals in Thailand, India, Turkey, and Dubai"
@@ -439,8 +438,8 @@ export const serviceDetailData: Record<string, ServiceDetail> = {
 
 // teamdetail
 export const empolydata = [
-  { id: 1, delay: "0.2s", image: IMAGES.team2, title: "Dr. Yonathan Gary", position: "Managing Director", linkedin:"http://linkedin.com/in/dr-yonathan-gary" },
-  { id: 2, delay: "0.4s", image: IMAGES.team1, title: "Dr. Yabets Taye", position: "Deputy Managing Director", linkedin:"https://www.linkedin.com/in/yabets-t-bifitu-md-97a59387" },
+  { id: 1, delay: "0.2s", image: IMAGES.team2, title: "Dr. Yonathan Gary", position: "Managing Director", linkedin:"http://linkedin.com/in/dr-yonathan-gary", bio: "Dr. Yonathan Gary Fufa is an Emergency and Critical Care Specialist in Ethiopia with strong experience in emergency medicine, medical evacuations, remote care, and aeromedical transport. He has led over 110 air ambulance missions across Africa, the Middle East, Europe, and Asia. His expertise includes supporting remote expeditions, corporate projects, and international organizations such as the UN and WFP. As Managing Director of Lighthouse Healthcare Solutions, he leads medical escort services, air ambulance operations and ensures safe and continuous patient care with consistent high standards." },
+  { id: 2, delay: "0.4s", image: IMAGES.team1, title: "Dr. Yabets Taye", position: "Deputy Managing Director", linkedin:"https://www.linkedin.com/in/yabets-t-bifitu-md-97a59387", bio: "Dr. Yabets Taye is a general practitioner specializing in medical evacuations and air ambulance transfers. He has strong experience in medical tourism, accompanying patients on commercial flights and air ambulances to leading healthcare destinations. He also provides remote site medical support, including mining operations and field projects. In addition, he has provided medical coverage for international and domestic events. As Deputy Managing Director of LHS, he coordinates medical travel services and ensures safe and continuous patient care across diverse settings with consistent high quality standards." },
 ];
 
 // component
@@ -477,7 +476,7 @@ export const clientswiperdata2 = [
 
 export const countupdata = [
   { title: "Specialists", delay: "0.4s", countup: 1300, span: "+" },
-  { title: "Repatriation", delay: "0.6s", countup: 400, span: "+" },
+  { title: "Medical Repatriation", delay: "0.6s", countup: 400, span: "+" },
   { title: "JCI Accredited Hospitals", delay: "0.8s", countup: 50, span: "+" },
 ];
 
@@ -502,14 +501,14 @@ export const inspirationaldata = [
     delay: "0.2s",
     title: "Mission",
     svg: SVGICONS.mission,
-    desc: "To deliver clinician-led medical travel and emergency transport that keeps patients safe, informed, and supported at every stage of their healthcare journey.",
+    desc: "Lighthouse Healthcare Solutions exists to bridge the distance between patients and the care they need, coordinating air ambulance, medical escort, medical travel, and assistance services so that geography never determines the quality or timeliness of a patient's care.",
   },
   {
     columnstand: "m-l25",
     delay: "0.4s",
     title: "Vision",
     svg: SVGICONS.vision,
-    desc: "To be Ethiopia’s most trusted partner for coordinated international medical care—bridging borders with precision, compassion, and professional excellence.",
+    desc: "To build the most trusted medical coordination network between Africa and the world, setting the benchmark for safety, ethics, and reliability in patient mobility.",
   },
   {
     columnstand: "m-r25",
@@ -523,8 +522,8 @@ export const inspirationaldata = [
 export const mapdata = [
   { id: 1, delay: "0.2s", icon: <i className="feather icon-map-pin" />, title: "Address", para: <p>Minna bldg, wello sefer, Addis Ababa, Ethiopia</p> },
   { id: 2, delay: "0.4s", icon: <i className="feather icon-phone" />, title: "Call Us", para: <p><Link href="tel:+251943104334">+251943104334</Link></p> },
-  { id: 3, delay: "0.6s", icon: <i className="feather icon-mail" />, title: "Send us a Mail", para: <p><Link href="mailto:info@lhsethiopia.com">info@lhsethiopia.com</Link></p> },
-  { id: 4, delay: "0.8s", icon: <i className="feather icon-clock" />, title: "Opening Time", para: <p>Mon-Thu: 8:00am-5:00pm <br /> Fri: 8:00am-1:00pm</p> },
+  { id: 3, delay: "0.6s", icon: <i className="feather icon-mail" />, title: "Send us a Mail", para: <p><Link href="mailto:info@lighthouse.healthcare">info@lighthouse.healthcare</Link></p> },
+  { id: 4, delay: "0.8s", icon: <i className="feather icon-clock" />, title: "Opening Time", para: <p>Mon -Sat: 7:00 - 17:00</p> },
 ];
 
 export const meetdrdata1 = [
@@ -549,9 +548,9 @@ export const pricingdata2: PricingItem[] = [
 ];
 
 export const testiswipeerdata = [
-  { image: IMAGES.testimonial1, name: "Yeshitela Admas", message: `“Lighthouse Healthcare Solutions delivered exceptional care with professionalism and compassion. Their team ensured a smooth and safe process from start to finish, and we felt fully supported throughout.”` },
-  { image: IMAGES.testimonial1, name: "Yeshitela Admas", message: `“Lighthouse Healthcare Solutions delivered exceptional care with professionalism and compassion. Their team ensured a smooth and safe process from start to finish, and we felt fully supported throughout.”` },
-  { image: IMAGES.testimonial1, name: "Yeshitela Admas", message: `“Lighthouse Healthcare Solutions delivered exceptional care with professionalism and compassion. Their team ensured a smooth and safe process from start to finish, and we felt fully supported throughout.”` },
+  { image: IMAGES.testimonial1, name: "Samrawit T.", message: `“LHS coordinated everything for my father's emergency transfer to Dubai. From hospital to air ambulance, their team was fast, caring, and professional. We’re forever grateful!”` },
+  { image: IMAGES.testimonial2, name: "Abdu M.", message: `“LHS helped me get a successful kidney transplant in India. They guided me through every step, and I’m now recovering well. Thank you, LHS!”` },
+  { image: IMAGES.testimonial4, name: "Dr. Mekdes A.", message: `“LHS made international transfer seamless for my patient. Their updates, coordination, and follow-up were outstanding. I refer with full confidence.”` },
 ];
 
 export const serviceboxdata = [
