@@ -47429,10 +47429,12 @@ footer .widget_about p {
   font-size: 15px;
 }
 footer .footer-logo {
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 footer .footer-logo img {
-  max-width: 180px;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
 }
 footer .footer-title {
   margin: 0;
@@ -47440,7 +47442,7 @@ footer .footer-title {
   margin-bottom: 20px;
   position: relative;
   line-height: 1.2;
-  font-size: 35px;
+  font-size: 20px;
 }
 footer .footer-top {
   padding: 70px 0px 30px;
@@ -48178,6 +48180,92 @@ footer.site-footer.footer-dark .fb-inner {
   color: #3b1b51 !important;
   transform: translateY(0);
   box-shadow: 0 4px 10px rgba(59, 27, 81, 0.16);
+}
+
+/* Footer responsive refinements */
+@media (max-width: 1199px) {
+  .site-footer.style-1 .footer-top .footer-logo img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 991px) {
+  footer .footer-title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .site-footer.style-1 .footer-head .title {
+    font-size: 22px;
+  }
+  .site-footer.style-1 .footer-head .fh-inner {
+    padding: 50px 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer.style-1 .footer-top .widget {
+    margin-bottom: 24px;
+  }
+  .site-footer.style-1 .footer-middle .title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .site-footer.style-1 .footer-middle .dzSubscribe.style-1 .input-group {
+    display: block;
+    position: relative;
+  }
+  .site-footer.style-1 .footer-middle .dzSubscribe.style-1 .input-group .form-control {
+    height: auto;
+    min-height: 52px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .site-footer.style-1 .footer-middle .dzSubscribe.style-1 .input-group .input-group-addon {
+    position: static;
+    transform: none;
+    display: block;
+    width: 100%;
+  }
+  .site-footer.style-1 .footer-middle .dzSubscribe.style-1 .input-group .input-group-addon .btn {
+    width: 100%;
+    height: 48px;
+    min-width: 0;
+    border-radius: 12px !important;
+    padding: 0 16px;
+  }
+  .site-footer.style-1 .footer-middle .dzSubscribe.style-1 .input-group .input-group-addon .btn-text {
+    display: inline !important;
+  }
+  .site-footer.style-1 .footer-middle .dzSubscribe.style-1 .input-group .input-group-addon .btn-icon {
+    display: inline-block !important;
+    margin-left: 8px;
+  }
+  .site-footer.style-1 .footer-head .icon-bx-wraper.style-1 {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 575px) {
+  footer .footer-title {
+    font-size: 16px;
+  }
+  .site-footer.style-1 .footer-logo img {
+    max-width: 180px;
+  }
+  .site-footer.style-1 .footer-head .title {
+    font-size: 20px;
+  }
+}
+
+/* Footer nav links: soft gray on purple, golden hover */
+.site-footer.style-1 .widget_services .list-hover1 > li > a > span {
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 0.25s ease;
+}
+.site-footer.style-1 .widget_services .list-hover1 > li > a:hover > span,
+.site-footer.style-1 .widget_services .list-hover1 > li > a:focus > span {
+  color: #c0a94c;
+}
+.site-footer.style-1 .widget_services .list-hover1 > li > a > span:after {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
