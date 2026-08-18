@@ -10,6 +10,14 @@
 		}
 		.footer-top {
 			padding: 80px 0px 45px;
+
+			.widget_about{
+				@include respond('tab-land'){
+					display: flex;
+					justify-content: center;
+					width: 100%;
+				}
+			}
 			
 			@include respond('tab-port'){
 				padding: 50px 0px 20px;
@@ -55,6 +63,19 @@
 				padding: 50px 0 25px;
 			}
 		}
+		.widget_services{
+			.list-hover1 > li > a > span{
+				color: rgba(255, 255, 255, 0.72);
+				transition: color 0.25s ease;
+			}
+			.list-hover1 > li > a:hover > span,
+			.list-hover1 > li > a:focus > span{
+				color: #c0a94c;
+			}
+			.list-hover1 > li > a > span:after{
+				display: none;
+			}
+		}
 		@include respond('phone'){
 			.footer-middle{
 				.fm-inner{
@@ -64,6 +85,51 @@
 					font-size: 20px;
 				}
 				p{
+					font-size: 14px;
+				}
+				.dzSubscribe.style-1{
+					.input-group{
+						display: block;
+						position: relative;
+					}
+					.form-control{
+						height: auto;
+						min-height: 52px;
+						padding: 14px 16px;
+						margin-bottom: 12px;
+						width: 100%;
+					}
+					.input-group-addon{
+						position: static;
+						transform: none;
+						display: block;
+						width: 100%;
+						.btn{
+							width: 100%;
+							height: 48px;
+							border-radius: 12px !important;
+							min-width: 0;
+						}
+						.btn-text{
+							display: inline !important;
+						}
+						.btn-icon{
+							display: inline-block !important;
+							margin-left: 8px;
+						}
+					}
+				}
+			}
+			.footer-top{
+				.footer-logo img{
+					max-width: 180px;
+				}
+			}
+			.footer-head{
+				.title{
+					font-size: 20px;
+				}
+				.text{
 					font-size: 14px;
 				}
 			}

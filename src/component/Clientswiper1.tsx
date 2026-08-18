@@ -1,7 +1,7 @@
 "use client"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { clientswiperdata1 } from "../constant/alldata";
+import { awardswiperdata } from "../constant/alldata";
 import Image from "next/image";
 
 function Clientswiper1() {
@@ -36,8 +36,8 @@ function Clientswiper1() {
                                 }}
                                 modules={[Autoplay]}
                             >
-                                {clientswiperdata1.map((item, i) => (
-                                    <SwiperSlide key={i} className="wow fadeInUp" data-wow-delay={item.delay} data-wow-duration="0.8s">
+                                {awardswiperdata.map((item, i) => (
+                                    <SwiperSlide key={i} className="wow fadeInUp" data-wow-delay={`${(i + 1) * 0.1}s`} data-wow-duration="0.8s">
                                         <div className="clients-logo2">
                                             <Image src={item.image} alt="" />
                                         </div>

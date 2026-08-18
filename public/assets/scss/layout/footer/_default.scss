@@ -13,9 +13,11 @@ footer{
 		}
 	}
 	.footer-logo{
-		margin-bottom:24px;
+		margin-bottom: 0;
 		img{
-			max-width:180px;
+			max-width: 220px;
+			width: 100%;
+			height: auto;
 		}
 	}
 	.footer-title{
