@@ -8,9 +8,18 @@ function WorldClass() {
     <>
       <div className="row content-wrapper style-1 align-items-center">
         <div className="col-xl-6 m-b30">
-          <div className="content-media">
-            <div className="dz-media">
-              <Image src={IMAGES.about1} alt="" />
+          {/* Increased container height to make the image area significantly larger */}
+          <div className="content-media position-relative" style={{ minHeight: "580px" }}>
+            <div 
+              className="dz-media overflow-hidden rounded-4 shadow-lg" 
+              style={{ width: "100%", height: "580px", position: "relative" }}
+            >
+              <Image 
+                src={IMAGES.about1} 
+                alt="Doctor" 
+                fill
+                style={{ objectFit: "cover", objectPosition: "center top" }} 
+              />
             </div>
             <div
               className="item2"
@@ -24,28 +33,28 @@ function WorldClass() {
                 <div className="widget-content">
                   <h4 className="title text-xl font-semibold text-purple-700 mb-4">Open Hours<span className="text-gray-600">(Onsite)</span></h4>
                   <ul className="space-y-2 text-gray-800">
-                 <li className="flex justify-between border-b pb-1">
-                  <span>Monday</span> <strong>09:30 - 07:30</strong>
-                  </li>
+                   <li className="flex justify-between border-b pb-1">
+                   <span>Monday</span> <strong>09:30 - 07:30</strong>
+                   </li>
                   <li className="flex justify-between border-b pb-1">
-                  <span>Tuesday</span> <strong>09:30 - 07:30</strong>
-                  </li>
+                   <span>Tuesday</span> <strong>09:30 - 07:30</strong>
+                   </li>
                   <li className="flex justify-between border-b pb-1">
-                  <span>Wednesday</span> <strong>09:30 - 07:30</strong>
-                  </li>
+                   <span>Wednesday</span> <strong>09:30 - 07:30</strong>
+                   </li>
                   <li className="flex justify-between border-b pb-1">
-                  <span>Thursday</span> <strong>09:30 - 07:30</strong>
-                  </li>
+                   <span>Thursday</span> <strong>09:30 - 07:30</strong>
+                   </li>
                   <li className="flex justify-between border-b pb-1">
-                  <span>Friday</span> <strong>09:30 - 07:30</strong>
-                  </li>
+                   <span>Friday</span> <strong>09:30 - 07:30</strong>
+                   </li>
                   <li className="flex justify-between border-b pb-1">
-                  <span>Saturday</span> <strong>09:30 - 07:30</strong>
-                  </li>
+                   <span>Saturday</span> <strong>09:30 - 07:30</strong>
+                   </li>
                   </ul>
 
                   <p className="mt-4 text-green-700 font-medium">
-                 <strong> Virtual Support:</strong> <span className="text-gray-700">Available 24/7 for patient inquiries, coordination, and assistance.</span>
+                  <strong> Virtual Support:</strong> <span className="text-gray-700">Available 24/7 for patient inquiries, coordination, and assistance.</span>
                   </p>
                 </div>
               </div>
