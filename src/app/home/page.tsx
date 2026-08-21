@@ -17,6 +17,8 @@ import Frequently from "@/component/Frequently";
 import Partners from "@/component/Partners";
 import StayInformed from "@/component/StayInformed";
 import MapWraper from "@/component/MapWraper";
+import KeyDestination from "@/component/KeyDestination";
+import WhyChooseLHS from "@/component/WhyChooseLHS";
 
 function HomePage() {
   return (
@@ -49,21 +51,20 @@ function HomePage() {
                         data-wow-delay="0.2s"
                         data-wow-duration="0.8s"
                       >
-                        {" "}
-                        Guiding You To
-                        <br />
-                        Quality Healthcare{" "}
-                        <span className="text-white"> Abroad </span>{" "}
+                        Coordinated Medical Care,
+                        {" "}<br />
+                        At Every Stage{" "}
+                        <span className="text-white">Anywhere You Need It </span>{" "}
                         <Image src={IMAGES.herobannerline} alt="" />{" "}
                       </h1>
-                      <p
+                      {/* <p
                         className="text wow fadeInUp"
                         data-wow-delay="0.4s"
                         data-wow-duration="0.8s"
                       >
                         Ethiopia’s Most Trusted Medical Travel Facilitator for
                         Turkey, Thailand & India
-                      </p>
+                      </p> */}
                       <Link
                         href="/appointment"
                         className="btn btn-lg btn-icon btn-primary m-r20 wow fadeInUp"
@@ -117,31 +118,9 @@ function HomePage() {
                         data-top-bottom="transform: translateY(50px)"
                       >
                         <div className="info-widget style-1 move-3">
-                          <div className="avatar-group">
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar1}
-                              alt=""
-                            />
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar2}
-                              alt=""
-                            />
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar3}
-                              alt=""
-                            />
-                            <Image
-                              className="avatar rounded-circle avatar-sm border border-white border-2"
-                              src={IMAGES.smallavatar4}
-                              alt=""
-                            />
-                          </div>
-                          <div className="clearfix ms-2">
-                            <span className="number text-primary">150k</span>
-                            <span>Patient recovers</span>
+                          <div className="clearfix">
+                            <span className="number text-primary">4k</span>
+                            <span>Case queries</span>
                           </div>
                         </div>
                       </div>
@@ -154,7 +133,7 @@ function HomePage() {
                           {/* progress chart */}
                           <DiagnosisReport />
                           <div className="widget-content">
-                            <h6 className="mb-0">Successfully diagnosis</h6>
+                            <h6 className="mb-0">Satisfied Clients</h6>
                             <Link
                               href="#"
                               className="btn btn-square btn-outline-purple rounded-circle"
@@ -172,10 +151,10 @@ function HomePage() {
                         <div className="info-widget style-3 move-1">
                           <div className="widget-head">
                             <div className="widget-media">
-                              <Image src={IMAGES.smallavatar5} alt="" />
+                              <Image src={IMAGES.team2} alt="Dr. Yonathan Gary" />
                             </div>
                             <div className="widget-content">
-                              <h6 className="title">Dr. Abebe Kebede</h6>
+                              <h6 className="title">Dr. Yonathan Gary</h6>
                               <ul className="star-list">
                                 <li>
                                   <i className="fa fa-star" />
@@ -196,10 +175,8 @@ function HomePage() {
                             </div>
                           </div>
                           <p>
-                            “At Lighthouse Healthcare Solutions, from personalized consultation to
-                            post-treatment follow-up, we deliver end-to-end
-                            support that ensures a seamless, stress-free
-                            healthcare journey.”
+                            “At Lighthouse Healthcare Solutions, from personalized consultation to post-treatment follow-up, we deliver comprehensive support that ensures a coordinated, stress-free healthcare journey.
+”
                           </p>
                         </div>
                       </div>
@@ -212,13 +189,10 @@ function HomePage() {
                   data-top-bottom="transform: translateY(30px)"
                 >
                   <div className="info-widget style-4 move-4">
-                    <div className="widget-media">
-                      <Image src={IMAGES.smallavatar2} alt="" />
-                    </div>
                     <div className="widget-content">
                       <h6 className="title">Have a Question?</h6>
-                      <Link href="mailto:info@lhsethiopia.com">
-                        info@lhsethiopia.com
+                      <Link href="mailto:info@lighthouse.healthcare">
+                        info@lighthouse.healthcare
                       </Link>
                     </div>
                   </div>
@@ -245,15 +219,28 @@ function HomePage() {
           <div className="container">
             <div className="section-head style-1 m-b30 row align-items-end">
               <div
-                className="col-xl-7 col-md-9 wow fadeInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="0.8s"
-              >
-                <h2 className="title m-b0">
-                  Start Feeling Your Best <br /> Explore Our Wellness
-                  Services{" "}
-                </h2>
-              </div>
+         className="col-xl-7 col-md-9 wow fadeInUp"
+        data-wow-delay="0.2s"
+        data-wow-duration="0.8s"
+        >
+        {/* Eyebrow/Label */}
+        <span className="eyebrow">
+        Our Services
+        </span>
+
+        {/* Heading */}
+      <h1 className="title m-b0">
+      Your Trusted Partner for International Medical Transport & Healthcare Coordination
+      </h1>
+
+       {/* Subheading */}
+        <p className="subheading">
+        From emergency air ambulance response to commercial medical escorts, medical tourism planning, 
+        and medical assistance for insurers and corporate organizations, Lighthouse Healthcare Solutions 
+        provides physician led case management for patients and partners across Ethiopia and internationally.
+         </p>
+          </div>
+
               <div
                 className="col-xl-5 col-md-3 text-lg-end d-none d-md-block wow fadeInUp"
                 data-wow-delay="0.4s"
@@ -283,6 +270,7 @@ function HomePage() {
         >
           <div className="container">
             <WhyChoose />
+            <WhyChooseLHS />
           </div>
         </section>
         <section className="content-inner">
@@ -294,7 +282,7 @@ function HomePage() {
                 data-wow-duration="0.8s"
               >
                 <h2 className="title m-b0">
-                  We Employ only <br /> Specialists{" "}
+                  Meet our team{" "}
                 </h2>
               </div>
               <div
@@ -330,7 +318,19 @@ function HomePage() {
         </section>
         <Howitwork />
         {/* <MeetDr /> */}
-        <Frequently />
+        <section
+        className="content-inner overlay-custom-purple background-blend-luminosity bg-img-fix overflow-hidden"
+        style={{
+        backgroundImage: `URL(${IMAGES.bg1})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "right center",
+            }}
+              >
+         <div className="container">
+              <KeyDestination />
+        </div>
+        </section>
         <Partners />
         <StayInformed />
         {/* <MapWraper /> */}

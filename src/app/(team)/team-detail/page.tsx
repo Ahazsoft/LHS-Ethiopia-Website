@@ -64,7 +64,7 @@ function TeamDetail() {
                                             </div>
                                             <div className="icon-content">
                                                 <h5 className="dz-title fw-semibold">Address</h5>
-                                                <p className="fw-normal">234 Oak Drive, Villagetown, USA</p>
+                                                <p className="fw-normal">Minna bldg, wello sefer, Addis Ababa, Ethiopia</p>
                                             </div>
                                         </div>
                                         <div className="icon-bx-wraper style-1 m-b20">
@@ -132,7 +132,7 @@ function TeamDetail() {
                                 <div className="form-wrapper style-1 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.7s">
                                     <div className="form-body bg-primary background-blend-burn" style={{ backgroundImage: `url(${IMAGES.bg2png})` }}>
                                         <div className="title-head">
-                                            <h2 className="form-title m-b0">Make An <span>Appointment</span> Apply For Treatments</h2>
+                                            <h2 className="form-title m-b0">Request <span>Assistance</span>Tell Us About Your Case</h2>
                                         </div>
                                        <AppointForm />
                                     </div>

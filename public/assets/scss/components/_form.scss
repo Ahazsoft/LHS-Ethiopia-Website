@@ -785,7 +785,7 @@ label.error {
 			font-size: 18px;
 			text-transform: uppercase;
 			font-weight: 600;
-			background-color: var(--bs-secondary);
+			background-color: var(--bs-primary);
 			width: 50px;
 			display: flex;
 			align-items: center;
@@ -807,6 +807,9 @@ label.error {
 			span{
 				color: #FAFF17;
 			}
+		}
+		.form-body.bg-secondary .form-title span{
+			color: #fff;
 		}
 		@include custommq ($max:1380px){
 			&[class*="m-l"]{
@@ -916,5 +919,93 @@ label.error {
         -moz-transform-origin: 0 0;
         -o-transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
+	}
+}
+
+/* LHS Request Assistance form – brand palette */
+.lhs-assistance-form{
+	.text-vertical{
+		background-color: #3b1b51;
+		color: #ffffff;
+	}
+	.form-body{
+		background-color: #c0a94c;
+		background-image: none;
+	}
+	.form-title{
+		color: #3b1b51;
+		span{
+			color: #3b1b51 !important;
+		}
+	}
+	.title-head h6{
+		color: #231f20;
+	}
+	.floating-underline{
+		.form-control:not(.bs-select),
+		.dropdown-toggle{
+			color: #ffffff !important;
+			caret-color: #ffffff;
+			border-bottom-color: rgba(255, 255, 255, 0.85);
+			-webkit-text-fill-color: #ffffff;
+		}
+		.form-control:focus,
+		.form-control:not(:placeholder-shown){
+			color: #ffffff !important;
+			caret-color: #ffffff;
+			border-bottom-color: #3b1b51 !important;
+			-webkit-text-fill-color: #ffffff;
+		}
+		label{
+			color: rgba(255, 255, 255, 0.8) !important;
+		}
+		.form-control:focus ~ label,
+		.form-control:not(:placeholder-shown) ~ label{
+			color: #3b1b51 !important;
+		}
+		.form-control:-webkit-autofill,
+		.form-control:-webkit-autofill:hover,
+		.form-control:-webkit-autofill:focus,
+		.form-control:-webkit-autofill:active{
+			-webkit-text-fill-color: #ffffff !important;
+			transition: background-color 9999s ease-out;
+		}
+	}
+	.bs-select{
+		-webkit-text-fill-color: unset;
+		.dropdown-toggle{
+			color: #ffffff !important;
+			-webkit-text-fill-color: #ffffff;
+			&::after{
+				color: #ffffff;
+			}
+		}
+		.dropdown-menu{
+			background: #ffffff;
+			border: 1px solid rgba(59, 27, 81, 0.12);
+			border-radius: 8px;
+			padding: 6px 0;
+			box-shadow: 0 8px 24px rgba(35, 31, 32, 0.12);
+			-webkit-text-fill-color: #3b1b51;
+		}
+		.dropdown-item{
+			color: #3b1b51 !important;
+			-webkit-text-fill-color: #3b1b51;
+			white-space: normal;
+			padding: 10px 16px;
+			font-weight: 500;
+			&:hover,
+			&:focus{
+				background: #3b1b51 !important;
+				color: #ffffff !important;
+				-webkit-text-fill-color: #ffffff;
+			}
+			&:active,
+			&.active{
+				background: #c0a94c !important;
+				color: #3b1b51 !important;
+				-webkit-text-fill-color: #3b1b51;
+			}
+		}
 	}
 }

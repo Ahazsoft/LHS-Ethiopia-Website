@@ -12,6 +12,7 @@ import Image from "next/image";
 
 function Team() {
     const [active, setActive] = useState(1);
+    const [openId, setOpenId] = useState<number | null>(null);
     return (
         <>
             <Header />
@@ -21,14 +22,14 @@ function Team() {
                     <div className="container">
                         <div className="row">
                             {empolydata.map((item, i) => (
-                                <div className="col-xl-3 col-sm-6 wow fadeInUp" data-wow-delay={item.delay} data-wow-duration="0.8s" key={i}>
+                                <div className="col-xl-6 col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay={item.delay} data-wow-duration="0.8s" key={i}>
                                     <div className={active === item.id ? "dz-team style-1 active box-hover" : "dz-team style-1 box-hover"} 
                                         onMouseEnter={() => setActive(item.id)}
                                     >
                                         <div className="dz-media">
                                             <Image src={item.image} alt="/" />
                                             <Link href="/appointment" className="btn btn-primary">
-                                                <i className="feather icon-calendar m-r5" /> Appointment Now
+                                                <i className="feather icon-calendar m-r5" /> Request Assistance
                                             </Link>
                                         </div>
                                         <div className="dz-content">
@@ -36,9 +37,19 @@ function Team() {
                                                 <h3 className="dz-name"><Link href="/team-detail">{item.title}</Link></h3>
                                                 <span className="dz-position">{item.position}</span>
                                             </div>
-                                            <Link href="/team-detail" className="btn btn-square btn-secondary">
-                                                <i className="feather icon-arrow-right" />
-                                            </Link>
+                                            <button
+                                                type="button"
+                                                className={`btn btn-square btn-secondary${openId === item.id ? " is-open" : ""}`}
+                                                title={openId === item.id ? "Show less" : "Show more"}
+                                                aria-expanded={openId === item.id}
+                                                aria-label={openId === item.id ? "Show less" : "Show more"}
+                                                onClick={() => setOpenId((current) => (current === item.id ? null : item.id))}
+                                            >
+                                                <i className={`feather ${openId === item.id ? "icon-chevron-up" : "icon-arrow-right"}`} />
+                                            </button>
+                                            {openId === item.id && item.bio && (
+                                                <p className="dz-team-bio">{item.bio}</p>
+                                            )}
                                         </div>
                                         <ul className="dz-social">
                                             <li><Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>
@@ -53,7 +64,7 @@ function Team() {
                         </div>
                     </div>
                 </section>
-                <MeetDr />
+               {/* <MeetDr />*/}
                 <Frequently />
             </main>
             <Footer />            

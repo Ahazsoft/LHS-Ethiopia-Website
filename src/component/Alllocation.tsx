@@ -27,7 +27,8 @@ function Alllocation() {
                 <div className="content-bx style-6 shadow-sm">
                   <div className="dz-media">                    
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.8513020636897!2d38.768183!3d8.9858275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8445155044db%3A0x13f19095df1fbba7!2sEthio%20China%20St%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1782112209247!5m2!1sen!2set"
+                      src="https://maps.google.com/maps?q=Minna+bldg,+wello+sefer,+Addis+Ababa,+Ethiopia&z=17&hl=en&output=embed"
+                      title="Minna bldg, wello sefer, Addis Ababa, Ethiopia"
                       style={{ border: 0, height: "100%", width: "100%" }}
                       allowFullScreen
                       loading="lazy"
@@ -50,7 +51,7 @@ function Alllocation() {
                     </div>
                     <div className="dz-footer">
                       <Link
-                        href="https://maps.app.goo.gl/vWXWsoEbCGhJaVsb9"
+                        href="https://www.google.com/maps/dir/?api=1&destination=Minna+bldg,+wello+sefer,+Addis+Ababa,+Ethiopia"
                         target="_blank"
                         className="icon-link-hover-end"
                       >

@@ -30,7 +30,7 @@ function Footer() {
             <div className="fh-inner">
               <div className="row g-3 align-items-center">
                 <div
-                  className="col-xl-3 col-md-12 col-sm-6 wow fadeInUp"
+                  className="col-xl-3 col-lg-12 col-md-12 col-12 mb-3 mb-xl-0 wow fadeInUp"
                   data-wow-delay="0.2s"
                   data-wow-duration="0.8s"
                 >
@@ -39,7 +39,7 @@ function Footer() {
                 </div>
                 {footerdata1.map((data, i) => (
                   <div
-                    className="col-xl-3 col-md-4 col-sm-6 wow fadeInUp"
+                    className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 wow fadeInUp"
                     data-wow-delay={data.delay}
                     data-wow-duration="0.8s"
                     key={i}
@@ -61,29 +61,29 @@ function Footer() {
         </div>
         <div className="footer-top">
           <div className="container border-bottom">
-            <div className="row">
+            <div className="row align-items-start align-items-xl-center">
               <div
-                className="col-xl-3 col-sm-12 wow fadeInUp"
+                className="col-xl-3 col-lg-12 col-12 wow fadeInUp d-flex align-items-center justify-content-center justify-content-xl-start mb-4 mb-xl-0"
                 data-wow-delay="0.2s"
                 data-wow-duration="0.8s"
               >
-                <div className="widget widget_about me-2">
+                <div className="widget widget_about">
                   <div className="footer-logo logo-white">
                     <Link href="/">
                       <Image src={IMAGES.logo} alt="" />
                     </Link>
                   </div>
-                  <p>
+                  {/* <p>
                     Lighthouse Healthcare Solutions (LHS) is a clinician-led
                     medical travel and emergency transport company founded by
                     doctors who are deeply passionate about pre-hospital and
                     critical care.
-                  </p>
+                  </p> */}
                 </div>
               </div>
               {footerdata2.map((data, i) => (
                 <div
-                  className="col-xl-3 col-md-2 col-12 wow fadeInUp"
+                  className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp"
                   data-wow-delay={data.delay}
                   data-wow-duration="0.8s"
                 //   style={{border:"1px solid white"}}
@@ -94,27 +94,27 @@ function Footer() {
                     <ul className="list-hover1 ">
                       <li>
                         <Link href={data.link1}>
-                          <span className="text-white">{data.span1}</span>
+                          <span>{data.span1}</span>
                         </Link>
                       </li>
                       <li>
                         <Link href={data.link2}>
-                          <span className="text-white">{data.span2}</span>
+                          <span>{data.span2}</span>
                         </Link>
                       </li>
                       <li>
                         <Link href={data.link3}>
-                          <span className="text-white">{data.span3}</span>
+                          <span>{data.span3}</span>
                         </Link>
                       </li>
                       <li>
                         <Link href={data.link4}>
-                          <span className="text-white">{data.span4}</span>
+                          <span>{data.span4}</span>
                         </Link>
                       </li>
                       <li>
                         <Link href={data.link5}>
-                          <span className="text-white">{data.span5}</span>
+                          <span>{data.span5}</span>
                         </Link>
                       </li>
                     </ul>

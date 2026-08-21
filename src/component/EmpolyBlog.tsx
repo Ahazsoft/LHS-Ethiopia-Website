@@ -6,6 +6,12 @@ import Image from "next/image";
 
 function EmpolyBlog() {
     const [active, setActive] = useState(1);
+    const [openId, setOpenId] = useState<number | null>(null);
+
+    const toggleBio = (id: number) => {
+        setOpenId((current) => (current === id ? null : id));
+    };
+
     return (
         <>
             <div className="row items-center">
@@ -15,7 +21,7 @@ function EmpolyBlog() {
                             <div className="dz-media">
                                 <Image src={data.image} alt="/" />
                                 <Link href="/appointment" className="btn btn-primary">
-                                    <i className="feather icon-calendar m-r5" /> Appointment Now
+                                    <i className="feather icon-calendar m-r5" /> Request Assistance
                                 </Link>
                             </div>
                             <div className="dz-content">
@@ -23,9 +29,19 @@ function EmpolyBlog() {
                                     <h3 className="dz-name"><Link href="#">{data.title}</Link></h3>
                                     <span className="dz-position">{data.position}</span>
                                 </div>
-                                <Link href="#" className="btn btn-square btn-secondary">
-                                    <i className="feather icon-arrow-right" />
-                                </Link>
+                                <button
+                                    type="button"
+                                    className={`btn btn-square btn-secondary${openId === data.id ? " is-open" : ""}`}
+                                    title={openId === data.id ? "Show less" : "Show more"}
+                                    aria-expanded={openId === data.id}
+                                    aria-label={openId === data.id ? "Show less" : "Show more"}
+                                    onClick={() => toggleBio(data.id)}
+                                >
+                                    <i className={`feather ${openId === data.id ? "icon-chevron-up" : "icon-arrow-right"}`} />
+                                </button>
+                                {openId === data.id && data.bio && (
+                                    <p className="dz-team-bio">{data.bio}</p>
+                                )}
                             </div>
                             <ul className="dz-social">
                                 <li><Link href={data.linkedin} target="_blank"><i className="fa-brands text-secondary fa-linkedin" /></Link></li>

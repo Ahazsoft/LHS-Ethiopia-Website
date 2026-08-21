@@ -13,7 +13,7 @@ import RealPatient from "@/component/RealPatient";
 import ClientSwiper2 from "@/component/ClientSwiper2";
 import { testidata, testiswipeerdata2 } from "@/constant/alldata";
 import Image from "next/image";
-
+import Partners from "@/component/Partners";
 
 function Testimonial() {
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
@@ -30,35 +30,27 @@ function Testimonial() {
                         <div className="row justify-content-center">
                             {testidata.map((item, i) => (
                                 <div className="col-xl-6 col-lg-12 m-b20 wow fadeInUp" data-wow-delay={item.delay} data-wow-duration="0.7s" key={i}>
-                                    <div className="testimonial-1">
-                                        <div className="dz-media">
-                                            <div className="media-inner">
-                                                <Image src={item.image} alt="/" />
-                                                <div className="video-bx1 video-sm">
-                                                    <Link onClick={handleShow} href="#" scroll={false} className="popup-youtube video-btn bg-primary">
-                                                        <i className="fa fa-play" />
-                                                    </Link>
-                                                    <span>Watch The Video</span>
-                                                </div>
-                                            </div>
-                                            <div className="testimonial-info">
-                                                <h5 className="testimonial-name">{item.title}</h5>
-                                                <span className="testimonial-position">{item.position}</span>
+                                    <div className="testimonial-quote-card h-100">
+                                        <div className="widget-head">
+                                            <div className="widget-content">
+                                                <h5 className="title">{item.title}</h5>
+                                                <ul className="star-list">
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                    <li><i className="fa fa-star" /></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div className="testimonial-detail">
-                                            <div className="testimonial-text">
-                                                <h3 className="title">{item.treat}</h3>
-                                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable</p>
-                                            </div>
-                                        </div>
+                                        <p>{item.message}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </section>
-                <section className="content-inner-1 bg-light bg-opacity-50">
+                {/*<section className="content-inner-1 bg-light bg-opacity-50">
                     <div className="container">
                         <div className="row g-4 align-items-center content-wrapper style-19">
                             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.7s">
@@ -142,11 +134,12 @@ function Testimonial() {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="clearfix p-t50 overlay-secondary-dark bg-primary background-blend-multiply overflow-hidden" style={{ backgroundImage: `url(${IMAGES.bg3})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right center', backgroundSize: 'cover' }}>
+                </section> */}
+              {/*  <section className="clearfix p-t50 overlay-secondary-dark bg-primary background-blend-multiply overflow-hidden" style={{ backgroundImage: `url(${IMAGES.bg3})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right center', backgroundSize: 'cover' }}>
                     <RealPatient />
-                </section>
-                <ClientSwiper2 />
+                </section>*/}
+               {/* <ClientSwiper2 />*/}
+                <Partners/>
             </main>
             <Footer />                       
             <Modal show={show} onHide={handleClose} centered  size={"lg"} className="video-model">                           

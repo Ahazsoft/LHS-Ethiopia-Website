@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Beads / Dolt files (added by bd init)
+/.beads
+/.agents
+/.claude
+/.codex
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/
+AGENTS.md
+CLAUDE.md
+
+
+

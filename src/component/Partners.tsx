@@ -18,7 +18,7 @@ function Partners() {
                   data-wow-delay="0.2s"
                   data-wow-duration="0.8s"
                 >
-                  Trusted Partners{" "}
+                  Qualified Partners{" "}
                 </h2>
                 <p
                   className="wow fadeInUp"

@@ -1,9 +1,8 @@
 "use client"
 import { useState } from "react";
 import Link from "next/link";
-import { IMAGES, SVGICONS } from "../constant/theme";
+import { SVGICONS } from "../constant/theme";
 import { mapdata } from "../constant/alldata";
-import Image from "next/image";
 
 function Connect() {
     const [active, setactive] = useState(1)
@@ -17,12 +16,6 @@ function Connect() {
                 <div className="clearfix m-b60 m-lg-b30">
                     <div className="d-flex align-items-center m-b15 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">
                         <div className="info-widget style-12 m-r10 bg-light">
-                            <div className="avatar-group">
-                                <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar1} alt="avatar1" />
-                                <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar2} alt="avatar2" />
-                                <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar3} alt="avatar3" />
-                                <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar4} alt="avatar4" />
-                            </div>
                             <div className="clearfix">
                                 <span>Talk to over 215 doctor</span>
                             </div>
