@@ -41,11 +41,11 @@ import smallavatar5 from '../../public/assets/images/avatar/small/Rectangle41.pn
 import smallavatar6 from '../../public/assets/images/avatar/small/avatar6.webp';
 import herobannerbg1 from '../../public/assets/images/hero-banner/bg1.webp';
 import herobanner1 from '../../public/assets/images/hero-banner/LandingPageGuy.png';
-import about1 from '../../public/assets/images/about/bg1.png';
+import about1 from '../../public/assets/images/about/bg1.jpg';
 import about2 from '../../public/assets/images/about/bg2.png';
-import about3 from '../../public/assets/images/about/Doctor3.png';
+import about3 from '../../public/assets/images/about/Doctor3.jpg';
 import about4 from '../../public/assets/images/about/about4.png'
-import about5 from '../../public/assets/images/about/Doctor.png'
+import about5 from '../../public/assets/images/about/Doctor.jpg'
 import about6 from '../../public/assets/images/about/img6.webp'
 import about7 from '../../public/assets/images/about/img7.webp'
 import about8 from '../../public/assets/images/about/about3.png'
@@ -77,7 +77,7 @@ import testimonial2 from '../../public/assets/images/testimonial/testi.png'
 import testimonial3 from '../../public/assets/images/testimonial/img3.webp'
 import testimonial4 from '../../public/assets/images/testimonial/img4.webp'
 import testimonial5 from '../../public/assets/images/testimonial/img5.webp'
-import bnr1 from '../../public/assets/images/banner/bnr1.webp'
+import bnr1 from '../../public/assets/images/banner/bnr1.jpg'
 import bnr2 from '../../public/assets/images/banner/bnr2.webp'
 import bnr3 from '../../public/assets/images/banner/bnr3.webp'
 import avtarmiddle1 from '../../public/assets/images/avatar/middle/img1.webp'

@@ -161,11 +161,47 @@ export const footerdata2 = [
 // pages
 // testimonial
 export const testidata = [
-  { treat: "Emergency Transfer", delay: "0.2s", title: "Samrawit T.", position: "Family member", image: IMAGES.testimonial1, message: "LHS coordinated everything for my father's emergency transfer to Dubai. From hospital to air ambulance, their team was fast, caring, and professional. We’re forever grateful!" },
-  { treat: "Treatment Abroad", delay: "0.4s", title: "Abdu M.", position: "Patient", image: IMAGES.testimonial2, message: "LHS helped me get a successful kidney transplant in India. They guided me through every step, and I’m now recovering well. Thank you, LHS!" },
-  { treat: "Physician Referral", delay: "0.6s", title: "Dr. Mekdes A.", position: "Physician", image: IMAGES.testimonial4, message: "LHS made international transfer seamless for my patient. Their updates, coordination, and follow-up were outstanding. I refer with full confidence." },
+  { 
+    treat: "Kidney Transplant", 
+    delay: "0.1s", 
+    title: "Yared & Tizibit", 
+    position: "Patient & Family", 
+    image: IMAGES.testimonial1, 
+    message: "“We can’t thank you enough for the support we received on this journey. I was given a second chance at life through a kidney donation from my brother, and words will never be enough to express our gratitude to Dr. Yonathan and the Lighthouse Healthcare Solutions team. From helping us secure board letters, guiding us through hospital options in different countries, and finally supporting us in choosing the right hospital, Dr. Yonathan was there every step of the way. He stayed with us in India throughout the treatment, handling every detail so we could focus only on healing. Even now, after returning home safely, the team continues to check in on us. We are forever grateful and indebted to you for your care and dedication.”" 
+  },
+  { 
+    treat: "Medical Escort Services", 
+    delay: "0.2s", 
+    title: "Prof. Alemu G.", 
+    position: "Parent", 
+    image: IMAGES.testimonial2, 
+    message: "“I highly recommend this company for medical escort services. They were the ones who helped my child travel safely to Bangkok on Ethiopian Airlines. Thanks to their continuous medical support during the flight, my baby boy arrived safely to receive the care he needed. They arranged everything — from securing a stretcher with the airline, to organizing tarmac ambulances at both departure and arrival, and even bringing advanced medical equipment onboard. Their professionalism and commitment gave us peace of mind throughout the journey. I am proud to recommend them and proud to have such a service available here in Ethiopia.”" 
+  },
+  { 
+    treat: "Emergency Transfer", 
+    delay: "0.3s", 
+    title: "Samrawit T.", 
+    position: "Family member", 
+    image: IMAGES.testimonial1, 
+    message: "“LHS coordinated everything for my father's emergency transfer to Dubai. From hospital to air ambulance, their team was fast, caring, and professional. We’re forever grateful!”" 
+  },
+  { 
+    treat: "Treatment Abroad", 
+    delay: "0.4s", 
+    title: "Abdu M.", 
+    position: "Dessie", 
+    image: IMAGES.testimonial2, 
+    message: "“LHS helped me get a successful kidney transplant in India. They guided me through every step, and I’m now recovering well. Thank you, LHS!”" 
+  },
+  { 
+    treat: "Physician Referral", 
+    delay: "0.5s", 
+    title: "Dr. Mekdes A.", 
+    position: "Internist", 
+    image: IMAGES.testimonial4, 
+    message: "“LHS made international transfer seamless for my patient. Their updates, coordination, and follow-up were outstanding. I refer with full confidence.”" 
+  }
 ];
-
 export const testiswipeerdata2 = [
   { image: IMAGES.testimonialsmall1, name: "Danial Frankie" },
   { image: IMAGES.testimonialsmall2, name: "Esteban Serrano" },
@@ -254,7 +290,7 @@ export const serviceDetailData: Record<string, ServiceDetail> = {
 
   "medical-assistance": {
     title: "Medical Assistance",
-    image: IMAGES.about5,
+    image: IMAGES.bnr1,
     overview: `End to end coordination for insurers and corporates operating in Ethiopia and the region.`,
     medicalAssistanceSections: [
       {
@@ -438,8 +474,24 @@ export const serviceDetailData: Record<string, ServiceDetail> = {
 
 // teamdetail
 export const empolydata = [
-  { id: 1, delay: "0.2s", image: IMAGES.team2, title: "Dr. Yonathan Gary", position: "Managing Director", linkedin:"http://linkedin.com/in/dr-yonathan-gary", bio: "Dr. Yonathan Gary Fufa is an Emergency and Critical Care Specialist in Ethiopia with strong experience in emergency medicine, medical evacuations, remote care, and aeromedical transport. He has led over 110 air ambulance missions across Africa, the Middle East, Europe, and Asia. His expertise includes supporting remote expeditions, corporate projects, and international organizations such as the UN and WFP. As Managing Director of Lighthouse Healthcare Solutions, he leads medical escort services, air ambulance operations and ensures safe and continuous patient care with consistent high standards." },
-  { id: 2, delay: "0.4s", image: IMAGES.team1, title: "Dr. Yabets Taye", position: "Deputy Managing Director", linkedin:"https://www.linkedin.com/in/yabets-t-bifitu-md-97a59387", bio: "Dr. Yabets Taye is a general practitioner specializing in medical evacuations and air ambulance transfers. He has strong experience in medical tourism, accompanying patients on commercial flights and air ambulances to leading healthcare destinations. He also provides remote site medical support, including mining operations and field projects. In addition, he has provided medical coverage for international and domestic events. As Deputy Managing Director of LHS, he coordinates medical travel services and ensures safe and continuous patient care across diverse settings with consistent high quality standards." },
+  { 
+    id: 1, 
+    delay: "0.2s", 
+    image: IMAGES.team2, 
+    title: "Dr. Yonathan Gary", 
+    position: "Managing Director", 
+    linkedin: "http://linkedin.com/in/dr-yonathan-gary", 
+    bio: "Dr. Yonathan Gary is an Emergency Medicine Specialist and healthcare leader whose career sits at the intersection of frontline critical care, aeromedical transport, and cross-border healthcare coordination. Trained in emergency medicine at Addis Ababa University following his medical degree at Hawassa University, he has spent more than a decade treating the most acute cases medicine presents from trauma and adult medical emergencies to complex pediatric and neonatal resuscitation in both major hospital settings and remote, resource-limited environments.\nDr. Yonathan G has personally overseen more than 350 emergency medical evacuations across Ethiopia, Europe, South America, the Middle East, Asia, and Africa, managing everything from initial case assessment through in-flight critical care to safe handover at the receiving hospital, including specialized VVIP and corporate evacuations. This aeromedical expertise is grounded in direct clinical experience: as part of the team that helped establish Ethiopia's second Emergency Medicine Residency Program and rebuild the emergency department at St. Paul Millennium Medical College, he provided frontline trauma and critical care management, and served on hospital disaster-response teams during two of the country's major mass-casualty incidents.\nHis experience extends into humanitarian and remote settings, including leading a WFP/UN inter-agency medical clinic during a regional humanitarian crisis, and serving as the sole Remote site physician for international film crews, scientific expeditions, and industrial projects operating in some of Ethiopia's most isolated terrain, including the Danakil Depression.\nToday, Dr. Yonathan G leads Lighthouse Healthcare Solutions, where he combines clinical judgment with operational leadership directing commercial airline medical escorts, cross-border patient coordination, and hospital partnerships across the region. He also serves as Medical Director for the Great Ethiopian Run, one of Africa's largest mass-participation road races. His work is grounded in a consistent commitment: making safe, physician-led medical transport and cross-border care coordination accessible to patients and institutions who need it most." 
+  },
+  { 
+    id: 2, 
+    delay: "0.4s", 
+    image: IMAGES.team1, 
+    title: "Dr. Yabets Taye", 
+    position: "Deputy Managing Director", 
+    linkedin: "https://www.linkedin.com/in/yabets-t-bifitu-md-97a59387", 
+    bio: "Dr. Yabets Taye Bifitu is a General Practitioner and Deputy Managing Director at Lighthouse Healthcare Solutions (LHS), where he helps guide the organization's efforts to deliver coordinated, reliable healthcare support across borders.\nHis clinical background spans aviation medicine, emergency medicine, and remote-site medical support, alongside experience in occupational health and safety and medical coordination. This foundation has given him firsthand exposure to the realities of caring for patients in demanding and unpredictable environments, from medical evacuations and commercial medical escorts to international patient coordination and cross-border healthcare logistics. He holds BLS, ACLS, and relevant aviation medicine certifications, reflecting his ongoing commitment to maintaining the clinical readiness his work requires.\nAt LHS, Dr. Yabets' contribution extends beyond clinical expertise into the operational side of the business. He is involved in day-to-day operations, finance, and service delivery, and plays an active role in case coordination, ensuring that patients move safely and smoothly between healthcare providers, international partners, insurers, and corporate clients. He also supports business development and the company's broader strategic growth, bringing a perspective shaped by direct clinical experience to decisions about how LHS's services are structured and delivered.\nDr. Yabets approaches leadership as an ongoing process of learning and collaboration rather than a fixed set of answers. He values practical, patient-centered solutions and works closely with colleagues and partner organizations to strengthen how care is coordinated, particularly in situations where logistics, timing, and communication can be as critical as clinical treatment itself. Rather than positioning himself as having all the answers, he focuses on building relationships and systems that make coordinated care more dependable for the people who rely on it.\nHis work reflects LHS's broader purpose: connecting clinical care with the coordination and logistics needed to support patients safely, wherever they are." 
+  },
 ];
 
 // component
@@ -548,9 +600,31 @@ export const pricingdata2: PricingItem[] = [
 ];
 
 export const testiswipeerdata = [
-  { image: IMAGES.testimonial1, name: "Samrawit T.", message: `“LHS coordinated everything for my father's emergency transfer to Dubai. From hospital to air ambulance, their team was fast, caring, and professional. We’re forever grateful!”` },
-  { image: IMAGES.testimonial2, name: "Abdu M.", message: `“LHS helped me get a successful kidney transplant in India. They guided me through every step, and I’m now recovering well. Thank you, LHS!”` },
-  { image: IMAGES.testimonial4, name: "Dr. Mekdes A.", message: `“LHS made international transfer seamless for my patient. Their updates, coordination, and follow-up were outstanding. I refer with full confidence.”` },
+  { 
+    image: IMAGES.testimonial1, 
+    name: "Samrawit T.", 
+    message: `“LHS coordinated everything for my father's emergency transfer to Dubai. From hospital to air ambulance, their team was fast, caring, and professional. We’re forever grateful!”` 
+  },
+  { 
+    image: IMAGES.testimonial2, 
+    name: "Abdu M.", 
+    message: `“LHS helped me get a successful kidney transplant in India. They guided me through every step, and I’m now recovering well. Thank you, LHS!”` 
+  },
+  { 
+    image: IMAGES.testimonial4, 
+    name: "Dr. Mekdes A.", 
+    message: `“LHS made international transfer seamless for my patient. Their updates, coordination, and follow-up were outstanding. I refer with full confidence.”` 
+  },
+  { 
+    image: IMAGES.testimonial1, 
+    name: "Yared & Tizibit", 
+    message: `“We can’t thank you enough for the support we received on this journey. I was given a second chance at life through a kidney donation from my brother, and words will never be enough to express our gratitude to Dr. Yonathan and the Lighthouse Healthcare Solutions team. From helping us secure board letters, guiding us through hospital options, and staying with us in India throughout the treatment, handling every detail so we could focus only on healing. Even now, after returning home safely, the team continues to check in on us.”` 
+  },
+  { 
+    image: IMAGES.testimonial2, 
+    name: "Prof. Alemu G.", 
+    message: `“I highly recommend this company for medical escort services. They were the ones who helped my child travel safely to Bangkok on Ethiopian Airlines with continuous medical support during the flight. They arranged everything — from securing a stretcher with the airline, to organizing tarmac ambulances at both departure and arrival, and bringing advanced medical equipment onboard. Their professionalism and commitment gave us peace of mind throughout the journey.”` 
+  }
 ];
 
 export const serviceboxdata = [
