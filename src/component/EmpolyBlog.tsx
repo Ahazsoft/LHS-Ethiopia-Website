@@ -15,46 +15,73 @@ function EmpolyBlog() {
     return (
         <>
             <div className="row items-center">
-                {empolydata.slice(0, empolydata.length).map((data, i) => (
-                    <div className="col-xl-6 col-sm-6 wow fadeInUp" data-wow-delay={data.delay} data-wow-duration="0.8s" key={i}>
-                        <div className={`dz-team style-1 box-hover ${active === data.id ? 'active' : ''}`} onMouseEnter={() => setActive(data.id)}>
-                            <div className="dz-media">
-                                <Image src={data.image} alt="/" />
-                                <Link href="/appointment" className="btn btn-primary">
-                                    <i className="feather icon-calendar m-r5" /> Request Assistance
-                                </Link>
-                            </div>
-                            <div className="dz-content">
-                                <div className="clearfix">
-                                    <h3 className="dz-name"><Link href="#">{data.title}</Link></h3>
-                                    <span className="dz-position">{data.position}</span>
+                {empolydata.slice(0, empolydata.length).map((data, i) => {
+                    const isOpen = openId === data.id;
+                    const isHovered = active === data.id;
+
+                    return (
+                        <div className="col-xl-6 col-sm-6 wow fadeInUp" data-wow-delay={data.delay} data-wow-duration="0.8s" key={i}>
+                            <div 
+                                className={`dz-team style-1 box-hover ${isHovered ? 'active' : ''}`} 
+                                onMouseEnter={() => setActive(data.id)}
+                            >
+                                <div className="dz-media">
+                                    <Image src={data.image} alt="/" />
+                                    <Link href="/appointment" className="btn btn-primary">
+                                        <i className="feather icon-calendar m-r5" /> Request Assistance
+                                    </Link>
                                 </div>
-                                <button
-                                    type="button"
-                                    className={`btn btn-square btn-secondary${openId === data.id ? " is-open" : ""}`}
-                                    title={openId === data.id ? "Show less" : "Show more"}
-                                    aria-expanded={openId === data.id}
-                                    aria-label={openId === data.id ? "Show less" : "Show more"}
-                                    onClick={() => toggleBio(data.id)}
-                                >
-                                    <i className={`feather ${openId === data.id ? "icon-chevron-up" : "icon-arrow-right"}`} />
-                                </button>
-                                {openId === data.id && data.bio && (
-                                    <p className="dz-team-bio">{data.bio}</p>
-                                )}
+                                <div className="dz-content">
+                                    <div className="clearfix">
+                                        {/* Name links to the specific team member's detail page */}
+                                        <h3 className="dz-name">
+                                            <Link href={`/team-detail/${data.id}`} className={isHovered ? "" : "text-secondary"}>
+                                                {data.title}
+                                            </Link>
+                                        </h3>
+                                        <span className={`dz-position ${isHovered ? "" : "text-secondary"}`}>
+                                            {data.position}
+                                        </span>
+                                    </div>
+                                    
+                                    {/* Toggle Button */}
+                                    <button
+                                        type="button"
+                                        className={`btn btn-square btn-secondary${isOpen ? " is-open" : ""}`}
+                                        title={isOpen ? "Show less" : "Show more"}
+                                        aria-expanded={isOpen}
+                                        aria-label={isOpen ? "Show less" : "Show more"}
+                                        onClick={() => toggleBio(data.id)}
+                                    >
+                                        <i className={`feather ${isOpen ? "icon-chevron-up" : "icon-arrow-right"}`} />
+                                    </button>
+
+                                    {/* Expandable Small Bio + Read More Link */}
+                                    {isOpen && data.bio && (
+                                        <div className={`mt-3 pt-2 border-top ${isHovered ? "border-white/10" : "border-secondary/10"}`}>
+                                            <p className={`dz-team-bio text-sm m-b10 ${isHovered ? "text-white" : "text-secondary"}`}>
+                                                {data.bio.length > 120 ? data.bio.substring(0, 120) + "..." : data.bio}
+                                            </p>
+                                            {/* Read More button links directly to this team member's page */}
+                                            <Link 
+    href={`/team?id=${data.id}`} 
+    className="text-secondary font-weight-bold text-sm inline-flex items-center gap-1 hover:underline"
+>
+    Read More <i className="feather icon-arrow-right text-xs" />
+</Link>
+                                        </div>
+                                    )}
+                                </div>
+                                <ul className="dz-social">
+                                    <li><Link href={data.linkedin} target="_blank"><i className="fa-brands text-secondary fa-linkedin" /></Link></li>
+                                </ul>
                             </div>
-                            <ul className="dz-social">
-                                <li><Link href={data.linkedin} target="_blank"><i className="fa-brands text-secondary fa-linkedin" /></Link></li>
-                                {/* <li><Link href="https://www.instagram.com/dexignzone" target="_blank"><i className="fa-brands fa-instagram" /></Link></li> */}
-                                {/* <li><Link href="https://www.facebook.com/dexignzone" target="_blank"><i className="fa-brands fa-facebook-f" /></Link></li> */}
-                                {/* <li><Link href="https://x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /></Link></li> */}
-                                {/* <li><Link href="https://www.youtube.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /></Link></li> */}
-                            </ul>
                         </div>
-                    </div>
-                ))}
-            </div >
+                    );
+                })}
+            </div>
         </>
-    )
+    );
 }
+
 export default EmpolyBlog;
