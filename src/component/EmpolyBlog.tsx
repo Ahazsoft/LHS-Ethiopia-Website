@@ -26,16 +26,16 @@ function EmpolyBlog() {
                                 onMouseEnter={() => setActive(data.id)}
                             >
                                 <div className="dz-media">
-                                    <Image src={data.image} alt="/" />
-                                    <Link href="/appointment" className="btn btn-primary">
-                                        <i className="feather icon-calendar m-r5" /> Request Assistance
+                                    <Image src={data.image} alt={data.title} />
+                                    {/* View All / Request Assistance Button linked to team page with query parameter */}
+                                    <Link href={`/team?id=${data.id}`} className="btn btn-primary">
+                                        <i className="feather icon-calendar m-r5" /> View All
                                     </Link>
                                 </div>
                                 <div className="dz-content">
                                     <div className="clearfix">
-                                        {/* Name links to the specific team member's detail page */}
                                         <h3 className="dz-name">
-                                            <Link href={`/team-detail/${data.id}`} className={isHovered ? "" : "text-secondary"}>
+                                            <Link href={`/team?id=${data.id}`} className={isHovered ? "" : "text-secondary"}>
                                                 {data.title}
                                             </Link>
                                         </h3>
@@ -56,19 +56,36 @@ function EmpolyBlog() {
                                         <i className={`feather ${isOpen ? "icon-chevron-up" : "icon-arrow-right"}`} />
                                     </button>
 
-                                    {/* Expandable Small Bio + Read More Link */}
+                                    {/* Expandable Bio */}
                                     {isOpen && data.bio && (
                                         <div className={`mt-3 pt-2 border-top ${isHovered ? "border-white/10" : "border-secondary/10"}`}>
-                                            <p className={`dz-team-bio text-sm m-b10 ${isHovered ? "text-white" : "text-secondary"}`}>
-                                                {data.bio.length > 120 ? data.bio.substring(0, 120) + "..." : data.bio}
+                                            <p 
+                                                className="text-sm m-b10"
+                                                style={{ 
+                                                    textAlign: "justify", 
+                                                    textAlignLast: "left", 
+                                                    textJustify: "inter-word",
+                                                    color: isHovered ? "#ffffff" : "#301934" 
+                                                }}
+                                            >
+                                                {data.bio.length > 90 ? data.bio.substring(0, 90) + "..." : data.bio}
                                             </p>
-                                            {/* Read More button links directly to this team member's page */}
-                                            <Link 
-    href={`/team?id=${data.id}`} 
-    className="text-secondary font-weight-bold text-sm inline-flex items-center gap-1 hover:underline"
->
-    Read More <i className="feather icon-arrow-right text-xs" />
-</Link>
+                                            
+                                            {/* Centered Read More Link always forced to purple with underline on hover */}
+                                            <div className="text-center mt-3">
+                                                <Link 
+                                                    href={`/team?id=${data.id}`} 
+                                                    className="font-weight-bold text-sm inline-flex items-center gap-1 transition-all"
+                                                    style={{ 
+                                                        color: "#301934", 
+                                                        textDecoration: "none" 
+                                                    }}
+                                                    onMouseOver={(e) => e.currentTarget.style.textDecoration = "underline"}
+                                                    onMouseOut={(e) => e.currentTarget.style.textDecoration = "none"}
+                                                >
+                                                    Read More <i className="feather icon-arrow-right text-xs" />
+                                                </Link>
+                                            </div>
                                         </div>
                                     )}
                                 </div>
