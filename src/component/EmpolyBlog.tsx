@@ -39,7 +39,7 @@ function EmpolyBlog() {
                                                 {data.title}
                                             </Link>
                                         </h3>
-                                        <span className={`dz-position ${isHovered ? "" : "text-secondary"}`}>
+                                        <span className={`dz-position ${isHovered ? "" : "text-secondary"}`} style={{ color: "#301934" }}>
                                             {data.position}
                                         </span>
                                     </div>
@@ -71,19 +71,31 @@ function EmpolyBlog() {
                                                 {data.bio.length > 90 ? data.bio.substring(0, 90) + "..." : data.bio}
                                             </p>
                                             
-                                            {/* Centered Read More Link always forced to purple with underline on hover */}
+                                            {/* Centered Styled Read More Button matching reference */}
                                             <div className="text-center mt-3">
                                                 <Link 
                                                     href={`/team?id=${data.id}`} 
-                                                    className="font-weight-bold text-sm inline-flex items-center gap-1 transition-all"
+                                                    className="d-inline-flex align-items-center justify-content-between p-1 rounded-pill text-decoration-none shadow-sm transition-all"
                                                     style={{ 
-                                                        color: "#301934", 
-                                                        textDecoration: "none" 
+                                                        backgroundColor: "#301934", 
+                                                        color: "#ffffff",
+                                                        minWidth: "140px",
+                                                        textDecoration: "none"
                                                     }}
-                                                    onMouseOver={(e) => e.currentTarget.style.textDecoration = "underline"}
-                                                    onMouseOut={(e) => e.currentTarget.style.textDecoration = "none"}
+                                                    onMouseOver={(e) => {
+                                                        e.currentTarget.style.transform = "translateY(-2px)";
+                                                    }}
+                                                    onMouseOut={(e) => {
+                                                        e.currentTarget.style.transform = "translateY(0)";
+                                                    }}
                                                 >
-                                                    Read More <i className="feather icon-arrow-right text-xs" />
+                                                    <span className="px-3 font-weight-bold text-sm">Read More</span>
+                                                    <span 
+                                                        className="d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm"
+                                                        style={{ width: "36px", height: "36px", color: "#301934" }}
+                                                    >
+                                                        <i className="feather icon-arrow-right" />
+                                                    </span>
                                                 </Link>
                                             </div>
                                         </div>
