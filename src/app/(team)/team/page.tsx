@@ -1,7 +1,11 @@
 "use client"
+
+// Force this page to be dynamically rendered at runtime, avoiding prerender errors
+export const dynamic = 'force-dynamic';
+
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Frequently from "@/component/Frequently";
 import PageBanner from "@/component/PageBanner";
 import { IMAGES } from "@/constant/theme";
@@ -10,7 +14,7 @@ import Header from "@/layout/Header";
 import { empolydata } from "@/constant/alldata";
 import Image from "next/image";
 
-function Team() {
+function TeamContent() {
     const [active, setActive] = useState(1);
     const searchParams = useSearchParams();
     const selectedId = searchParams.get("id");
@@ -137,4 +141,10 @@ function Team() {
     );
 }
 
-export default Team;
+export default function Team() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <TeamContent />
+        </Suspense>
+    );
+}
