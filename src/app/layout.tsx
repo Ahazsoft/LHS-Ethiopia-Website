@@ -13,6 +13,9 @@ import "lightgallery/css/lg-thumbnail.css";
 import "../../public/assets/css/style.css";
 import ScrolltoTop from "@/component/ScrolltoTop";
 
+// 1. Import the Vercel packages
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   title: "LHS -  Medical Tour",
   description:
@@ -35,6 +38,10 @@ export default function RootLayout({
       <body>
         {children}
         <ScrolltoTop />
+        
+        
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
